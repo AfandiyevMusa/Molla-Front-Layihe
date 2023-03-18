@@ -1,0 +1,226 @@
+* {
+  ::selection {
+    background: yellow;
+  }
+}
+
+header {
+  background-color: #333;
+  #up-nav {
+    .container {
+      border-bottom: 1px solid #444444;
+      padding-top: 10px;
+      .call-part {
+        font-size: 15px !important;
+        i {
+          text-shadow: 0px 1px rgb(187, 187, 187), 0px -1px rgb(187, 187, 187),
+            1px 0px rgb(187, 187, 187), -1px 0px rgb(187, 187, 187);
+        }
+        span {
+          color: #ccc;
+        }
+      }
+      .language-part {
+        color: #ccc;
+        ul {
+          display: flex;
+          justify-content: end;
+          li {
+            text-decoration: none;
+            list-style: none;
+            margin-left: 10px;
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 1.5;
+            transition: all 0.5s;
+            .each-detail {
+              position: relative;
+              span {
+                cursor: pointer;
+                i {
+                  margin-left: 8px;
+                  font-size: 12px !important;
+                }
+              }
+              .drop-money {
+                opacity: 0;
+                transition: all 0.3s;
+                z-index: 1;
+                position: absolute;
+                padding-top: 16px !important;
+                ul {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: start;
+                  padding: 0px !important;
+                  background-color: white;
+                  li {
+                    color: #b9b9b9;
+                    transition: all 0.5s;
+                    cursor: pointer;
+                    font-size: 12px;
+                    padding-right: 15px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                  }
+                  li:hover {
+                    color: #cf9836;
+                  }
+                }
+              }
+              .drop-lang {
+                opacity: 0;
+                transition: all 0.3s;
+                z-index: 1;
+                position: absolute;
+                padding-top: 16px !important;
+                ul {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: start;
+                  padding: 0px !important;
+                  background-color: white;
+                  li {
+                    color: #b9b9b9;
+                    transition: all 0.5s;
+                    cursor: pointer;
+                    font-size: 12px;
+                    padding-right: 15px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                  }
+                  li:hover {
+                    color: #cf9836;
+                  }
+                }
+              }
+            }
+
+            .money-part:hover .drop-money {
+              opacity: 1 !important;
+            }
+            .lang-part:hover .drop-lang {
+              opacity: 1 !important;
+            }
+          }
+          li:hover {
+            color: #cf9836;
+          }
+        }
+      }
+    }
+  }
+
+  #down-nav {
+    .container {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      .logo {
+        img {
+          width: 105px;
+          height: 25px;
+        }
+      }
+      .search {
+        position: relative;
+        i {
+          position: absolute;
+          top: 16px;
+          left: 28px;
+          font-size: 20px;
+          color: rgb(24, 24, 24);
+          transform: rotateY(180deg);
+          transition: all 0.4s;
+          cursor: pointer;
+        }
+        i:hover {
+          color: #fcb941;
+        }
+        input {
+          width: 570px;
+          border-radius: 25px;
+          border: none !important;
+          padding: 12px;
+          padding: 12px 0px 12px 50px;
+          outline: none;
+        }
+        ::placeholder {
+          color: #777777;
+          font-size: 15px;
+        }
+      }
+      .options {
+        color: white;
+        display: flex;
+        justify-content: end;
+        padding-right: 20px;
+        position: relative;
+        .compare {
+          display: flex;
+          flex-direction: column;
+          padding-right: 20px;
+          i {
+            font-size: 25px;
+            text-align: center;
+          }
+          span {
+            color: #ccc;
+          }
+        }
+        .wishlist {
+          display: flex;
+          flex-direction: column;
+          padding-right: 20px;
+          .wish {
+            sup {
+              position: relative;
+              font-size: 15px;
+              left: 40px;
+              top: -13px;
+              background-color: #fcb941;
+              width: 20px;
+              height: 20px;
+              padding: 1px 4px;
+              color: black;
+              border-radius: 15px;
+            }
+            i {
+              font-size: 25px;
+              text-align: center;
+            }
+          }
+          span {
+            color: #ccc;
+          }
+        }
+        .cartlist {
+          display: flex;
+          flex-direction: column;
+          padding-right: 20px;
+          .cart {
+            sup {
+              position: relative;
+              font-size: 15px;
+              left: 43px;
+              top: -15px;
+              background-color: #fcb941;
+              width: 20px;
+              height: 20px;
+              padding: 1px 4px;
+              color: black;
+              border-radius: 15px;
+            }
+            i {
+              font-size: 25px;
+            }
+          }
+          span {
+            color: #ccc;
+            display: flex;
+            justify-content: end;
+          }
+        }
+      }
+    }
+  }
+}

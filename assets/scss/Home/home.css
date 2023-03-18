@@ -1,0 +1,319 @@
+* ::-moz-selection {
+  background: yellow;
+}
+
+* ::selection {
+  background: yellow;
+}
+
+header {
+  background-color: #333;
+}
+
+header #up-nav .container {
+  border-bottom: 1px solid #444444;
+  padding-top: 10px;
+}
+
+header #up-nav .container .call-part {
+  font-size: 15px !important;
+}
+
+header #up-nav .container .call-part i {
+  text-shadow: 0px 1px #bbbbbb, 0px -1px #bbbbbb, 1px 0px #bbbbbb, -1px 0px #bbbbbb;
+}
+
+header #up-nav .container .call-part span {
+  color: #ccc;
+}
+
+header #up-nav .container .language-part {
+  color: #ccc;
+}
+
+header #up-nav .container .language-part ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+header #up-nav .container .language-part ul li {
+  text-decoration: none;
+  list-style: none;
+  margin-left: 10px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+header #up-nav .container .language-part ul li .each-detail {
+  position: relative;
+}
+
+header #up-nav .container .language-part ul li .each-detail span {
+  cursor: pointer;
+}
+
+header #up-nav .container .language-part ul li .each-detail span i {
+  margin-left: 8px;
+  font-size: 12px !important;
+}
+
+header #up-nav .container .language-part ul li .each-detail .drop-money {
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  z-index: 1;
+  position: absolute;
+  padding-top: 16px !important;
+}
+
+header #up-nav .container .language-part ul li .each-detail .drop-money ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding: 0px !important;
+  background-color: white;
+}
+
+header #up-nav .container .language-part ul li .each-detail .drop-money ul li {
+  color: #b9b9b9;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  font-size: 12px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+header #up-nav .container .language-part ul li .each-detail .drop-money ul li:hover {
+  color: #cf9836;
+}
+
+header #up-nav .container .language-part ul li .each-detail .drop-lang {
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  z-index: 1;
+  position: absolute;
+  padding-top: 16px !important;
+}
+
+header #up-nav .container .language-part ul li .each-detail .drop-lang ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding: 0px !important;
+  background-color: white;
+}
+
+header #up-nav .container .language-part ul li .each-detail .drop-lang ul li {
+  color: #b9b9b9;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  font-size: 12px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+header #up-nav .container .language-part ul li .each-detail .drop-lang ul li:hover {
+  color: #cf9836;
+}
+
+header #up-nav .container .language-part ul li .money-part:hover .drop-money {
+  opacity: 1 !important;
+}
+
+header #up-nav .container .language-part ul li .lang-part:hover .drop-lang {
+  opacity: 1 !important;
+}
+
+header #up-nav .container .language-part ul li:hover {
+  color: #cf9836;
+}
+
+header #down-nav .container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+header #down-nav .container .logo img {
+  width: 105px;
+  height: 25px;
+}
+
+header #down-nav .container .search {
+  position: relative;
+}
+
+header #down-nav .container .search i {
+  position: absolute;
+  top: 16px;
+  left: 28px;
+  font-size: 20px;
+  color: #181818;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+header #down-nav .container .search i:hover {
+  color: #fcb941;
+}
+
+header #down-nav .container .search input {
+  width: 570px;
+  border-radius: 25px;
+  border: none !important;
+  padding: 12px;
+  padding: 12px 0px 12px 50px;
+  outline: none;
+}
+
+header #down-nav .container .search ::-webkit-input-placeholder {
+  color: #777777;
+  font-size: 15px;
+}
+
+header #down-nav .container .search :-ms-input-placeholder {
+  color: #777777;
+  font-size: 15px;
+}
+
+header #down-nav .container .search ::-ms-input-placeholder {
+  color: #777777;
+  font-size: 15px;
+}
+
+header #down-nav .container .search ::placeholder {
+  color: #777777;
+  font-size: 15px;
+}
+
+header #down-nav .container .options {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding-right: 20px;
+  position: relative;
+}
+
+header #down-nav .container .options .compare {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-right: 20px;
+}
+
+header #down-nav .container .options .compare i {
+  font-size: 25px;
+  text-align: center;
+}
+
+header #down-nav .container .options .compare span {
+  color: #ccc;
+}
+
+header #down-nav .container .options .wishlist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-right: 20px;
+}
+
+header #down-nav .container .options .wishlist .wish sup {
+  position: relative;
+  font-size: 15px;
+  left: 40px;
+  top: -13px;
+  background-color: #fcb941;
+  width: 20px;
+  height: 20px;
+  padding: 1px 4px;
+  color: black;
+  border-radius: 15px;
+}
+
+header #down-nav .container .options .wishlist .wish i {
+  font-size: 25px;
+  text-align: center;
+}
+
+header #down-nav .container .options .wishlist span {
+  color: #ccc;
+}
+
+header #down-nav .container .options .cartlist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-right: 20px;
+}
+
+header #down-nav .container .options .cartlist .cart sup {
+  position: relative;
+  font-size: 15px;
+  left: 43px;
+  top: -15px;
+  background-color: #fcb941;
+  width: 20px;
+  height: 20px;
+  padding: 1px 4px;
+  color: black;
+  border-radius: 15px;
+}
+
+header #down-nav .container .options .cartlist .cart i {
+  font-size: 25px;
+}
+
+header #down-nav .container .options .cartlist span {
+  color: #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+/*# sourceMappingURL=home.css.map */
