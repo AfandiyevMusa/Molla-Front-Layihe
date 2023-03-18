@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="./assets/scss/Home/home.css">
     <title>Home</title>
 </head>
+
 <body>
     <header>
         <section id="up-nav">
@@ -20,8 +22,8 @@
                     <div class="col-6 language-part">
                         <ul>
                             <li>
-                                <div class="each-detail">
-                                    <span class="money-part">USD<i class="fa-solid fa-chevron-down"></i></span>
+                                <div class="each-detail money-part">
+                                    <span>USD<i class="fa-solid fa-chevron-down"></i></span>
                                     <div class="drop-money">
                                         <ul>
                                             <li>Eur</li>
@@ -86,6 +88,145 @@
                 </div>
             </div>
         </section>
+
+        <section id="down-nav-phone">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 logo">
+                        <i class="fa-solid fa-bars open"></i>
+                        <img src="./assets/imgs/Home/molla-logo.png" alt="">
+                    </div>
+                    <div class="col-6 options">
+                        <div class="compare">
+                            <i class="fa-solid fa-shuffle"></i>
+                            <span>Compare</span>
+                        </div>
+                        <div class="wishlist">
+                            <div class="wish">
+                                <sup class="wishlist-sup">0</sup>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <span>Wishlist</span>
+                        </div>
+                        <div class="cartlist">
+                            <div class="cart">
+                                <sup class="cart-sup">0</sup>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                            <span>Cart</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sidebar">
+            <div class="close-part">
+                <i class="fa-solid fa-x close"></i>
+            </div>
+            <div class="search container">
+                <input type="text" placeholder="Search product ...">
+                <i class="fa-solid fa-magnifying-glass search"></i>
+            </div>
+            <div class="tab-menu">
+                <div class="for-names">
+                    <div class="names">
+                        <h6 data-id="1" class="for-menu active-menu">MENU</h6>
+                        <h6 data-id="2" class="for-categories">CATEGORIES</h6>
+                    </div>
+                </div>
+                <div class="infos">
+                    <ul data-id="1" class="for-menu elems">
+                        <li><a href="">Home</a><i class="fa-solid fa-chevron-down"></i></li>
+                        <li><a href="">Shop</a><i class="fa-solid fa-chevron-down"></i></li>
+                        <li><a href="">Wishlist</a><i class="fa-solid fa-chevron-down"></i></li>
+                        <li><a href="">Pages</a><i class="fa-solid fa-chevron-down"></i></li>
+                        <li><a href="">Blog</a><i class="fa-solid fa-chevron-down"></i></li>
+                        <li><a href="">Cart</a><i class="fa-solid fa-chevron-down"></i></li>
+                    </ul>
+                    <ul data-id="2" class="for-categories elems d-none">
+                        <li><a href="">Electronics</a></li>
+                        <li><a href="">Gift Ideas</a></li>
+                        <li><a href="">Beds</a></li>
+                        <li><a href="">Lighting</a></li>
+                        <li><a href="">Sofas & Sleeper sofas</a></li>
+                        <li><a href="">Storage</a></li>
+                        <li><a href="">Armchairs & Chaises</a></li>
+                        <li><a href="">Decoration</a></li>
+                        <li><a href="">Kitchen Cabinets</a></li>
+                        <li><a href="">Coffee & Tables</a></li>
+                        <li><a href="">Outdoor Furniture</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="socials"></div>
+        </section>
+
+        <section id="main-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3 burger-m">
+                        <div class="not-table">
+                            <i class="fa-solid fa-x x-icon"></i>
+                            <i class="fa-solid fa-bars tab-menu"></i>
+                            <span>Browse Categories</span>
+                            <i class="fa-solid fa-chevron-down down-ch"></i>
+                        </div>
+                        <div class="table">
+                            <ul>
+                                <li>Electronics</li>
+                                <li>Gift Ideas</li>
+                                <li>Beds</li>
+                                <li>Lighting</li>
+                                <li>Sofas & Sleeper sofas</li>
+                                <li>Storage</li>
+                                <li>Armchairs & Chaises</li>
+                                <li>Decoration</li>
+                                <li>Kitchen Cabinets</li>
+                                <li>Coffee & Tables</li>
+                                <li>Outdoor Furniture</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-5 categories">
+                        <div class="list">
+                            <ul>
+                                <span class="left-side">|</span>
+                                <li><a href="" class="home">Home</a></li>
+                                <li><a href="">Shop</a></li>
+                                <li><a href="">Wishlist</a></li>
+                                <li class="hi">
+                                    <div class="pages">
+                                        <a href="">
+                                            Pages
+                                            <i class="fa-solid fa-chevron-down"></i>
+                                        </a>
+                                    </div>
+                                    <div class="drop-list">
+                                        <ul>
+                                            <li><a href="">About</a></li>
+                                            <li><a href="">Contact</a></li>
+                                            <li><a href="">Login</a></li>
+                                            <li><a href="">FAQs</a></li>
+                                            <li><a href="">Error 404</a></li>
+                                            <li><a href="">Coming Soon</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="">Blog</a></li>
+                                <li><a href="">Cart</a></li>
+                                <span class="right-side">|</span>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-4 bulb">
+                        <i class="fa-regular fa-lightbulb"></i>
+                        <span>Clearance <strong>Up to 30% Off</strong></span>
+                    </div>
+                </div>
+            </div>
+        </section>
     </header>
 
     <main></main>
@@ -99,4 +240,5 @@
     <script src="https://kit.fontawesome.com/ba8f3ff677.js" crossorigin="anonymous"></script>
     <script src="./assets/js/home.js"></script>
 </body>
+
 </html>
