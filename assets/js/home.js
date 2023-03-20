@@ -89,26 +89,26 @@ $(function () {
 
     //Owl Carousel Plugin
     $('.owl-carousel').owlCarousel({
-        loop:true,
-        margin:10,
-        responsiveClass:true,
-        responsive:{
-            0:{
-                items:1,
-                nav:true
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+                nav: true
             },
-            500:{
-                items:1,
-                nav:false
+            500: {
+                items: 1,
+                nav: false
             },
-            900:{
-                items:2,
-                nav:true
+            900: {
+                items: 2,
+                nav: true
             },
-            1200:{
-                items:4,
-                nav:false,
-                loop:false
+            1200: {
+                items: 4,
+                nav: false,
+                loop: false
             }
         }
     })
@@ -116,7 +116,7 @@ $(function () {
     //Products TabMenu
     let captions = document.querySelectorAll("#products-tab-menu .products-menu .for-products-name .product-names h4");
     let allDetails = document.querySelectorAll("#products-tab-menu .products-menu .details .allcontents");
-    
+
     captions.forEach(eachCaption => {
         eachCaption.addEventListener("click", function (e) {
             document.querySelector(".active-tab").classList.remove("active-tab");
@@ -134,29 +134,85 @@ $(function () {
 
     //Brand Carousel
     $('.allbrands').owlCarousel({
-        loop:true,
-        margin:10,
-        responsiveClass:true,
-        responsive:{
-            0:{
-                items:1,
-                nav:true
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+                nav: true
             },
-            600:{
-                items:3,
-                nav:false
+            600: {
+                items: 3,
+                nav: false
             },
-            1000:{
-                items:5,
-                nav:true,
-                loop:true
+            1000: {
+                items: 5,
+                nav: true,
+                loop: true
             }
         }
     })
 
+    //Trending Products Carousel
+    // $('.owl-carousel').owlCarousel({
+    // loop:true,
+    // margin:10,
+    // responsiveClass:true,
+    // responsive:{
+    //     0:{
+    //         items:1,
+    //         nav:true
+    //     },
+    //     600:{
+    //         items:3,
+    //         nav:false
+    //     },
+    //     1000:{
+    //         items:5,
+    //         nav:true,
+    //         loop:false
+    //     }
+    // }
+    // })
 
+    //Trending Products TabMenu
+    let names = document.querySelectorAll("#trending-products .all-of-them .heads .list-type h6");
+    let trends = document.querySelectorAll("#trending-products .all-of-them .products-list .allcards .allcontents");
+    
+    names.forEach(eachName => {
+        eachName.addEventListener("click", function (e) {
+            document.querySelector(".active-trend").classList.remove("active-trend");
+            this.classList.add("active-trend");
 
+            trends.forEach(eachTrend => {
+                if (this.getAttribute("data-id") == eachTrend.getAttribute("data-id")) {
+                    eachTrend.classList.remove("d-none");
+                } else {
+                    eachTrend.classList.add("d-none");
+                }
+            });
+        })
+    });
+    
+    //Top Selling Products TabMenu
+    let sellnames = document.querySelectorAll("#top-selling-products .all-of-them .heads .list-type h6");
+    let topSellingProducts = document.querySelectorAll("#top-selling-products .all-of-them .products-list .allcards .allcontents");
+    
+    sellnames.forEach(eachSellName => {
+        eachSellName.addEventListener("click", function (e) {
+            document.querySelector(".active-list").classList.remove("active-list");
+            this.classList.add("active-list");
 
+            topSellingProducts.forEach(eachProduct => {
+                if (this.getAttribute("data-id") == eachProduct.getAttribute("data-id")) {
+                    eachProduct.classList.remove("d-none");
+                } else {
+                    eachProduct.classList.add("d-none");
+                }
+            });
+        })
+    });
 
 
 
