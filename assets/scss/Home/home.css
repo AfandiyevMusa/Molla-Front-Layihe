@@ -446,7 +446,7 @@ header #down-nav .container {
   padding-bottom: 20px;
 }
 
-header #down-nav .container .logo img {
+header #down-nav .container .logo a img {
   width: 105px;
   height: 25px;
 }
@@ -1630,6 +1630,8 @@ main #products-tab-menu .products-menu .details .for-featured .owl-carousel {
 }
 
 main #products-tab-menu .products-menu .details .for-featured .owl-carousel .cards {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   border: 1px solid #ebebeb;
   cursor: pointer;
   display: block;
@@ -1794,6 +1796,8 @@ main #products-tab-menu .products-menu .details .for-featured .owl-carousel .car
 }
 
 main #products-tab-menu .products-menu .details .for-featured .owl-carousel .cards:hover .close-hovered {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   display: none !important;
 }
 
@@ -1806,6 +1810,8 @@ main #products-tab-menu .products-menu .details .for-sale .owl-carousel {
 }
 
 main #products-tab-menu .products-menu .details .for-sale .owl-carousel .cards {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   border: 1px solid #ebebeb;
   cursor: pointer;
   display: block;
@@ -1970,6 +1976,8 @@ main #products-tab-menu .products-menu .details .for-sale .owl-carousel .cards:h
 }
 
 main #products-tab-menu .products-menu .details .for-sale .owl-carousel .cards:hover .close-hovered {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   display: none !important;
 }
 
@@ -1982,6 +1990,8 @@ main #products-tab-menu .products-menu .details .for-rated .owl-carousel {
 }
 
 main #products-tab-menu .products-menu .details .for-rated .owl-carousel .cards {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   border: 1px solid #ebebeb;
   cursor: pointer;
   display: block;
@@ -2146,6 +2156,8 @@ main #products-tab-menu .products-menu .details .for-rated .owl-carousel .cards:
 }
 
 main #products-tab-menu .products-menu .details .for-rated .owl-carousel .cards:hover .close-hovered {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   display: none !important;
 }
 
@@ -2405,6 +2417,8 @@ main #deals-and-outlet .deals .all-products .other-cards {
 }
 
 main #deals-and-outlet .deals .all-products .other-cards .cards {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   border: 1px solid #ebebeb;
   background-color: white;
   cursor: pointer;
@@ -2530,6 +2544,8 @@ main #deals-and-outlet .deals .all-products .other-cards .cards:hover .open-hove
 }
 
 main #deals-and-outlet .deals .all-products .other-cards .cards:hover .close-hovered {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   display: none !important;
 }
 
@@ -2641,6 +2657,8 @@ main #trending-products .all-of-them .container .products-list .allcards .for-al
 }
 
 main #trending-products .all-of-them .container .products-list .allcards .for-all .container .owl-carousel .cards {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   border: 1px solid #ebebeb;
   cursor: pointer;
   display: block;
@@ -2805,6 +2823,8 @@ main #trending-products .all-of-them .container .products-list .allcards .for-al
 }
 
 main #trending-products .all-of-them .container .products-list .allcards .for-all .container .owl-carousel .cards:hover .close-hovered {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   display: none !important;
 }
 
@@ -2817,6 +2837,8 @@ main #trending-products .all-of-them .container .products-list .allcards .for-ac
 }
 
 main #trending-products .all-of-them .container .products-list .allcards .for-accessories .container .cards {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   border: 1px solid #ebebeb;
   cursor: pointer;
 }
@@ -2937,6 +2959,8 @@ main #trending-products .all-of-them .container .products-list .allcards .for-ac
 }
 
 main #trending-products .all-of-them .container .products-list .allcards .for-accessories .container .cards:hover .close-hovered {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   display: none !important;
 }
 
@@ -2953,6 +2977,8 @@ main #trending-products .all-of-them .container .products-list .allcards .for-ca
 }
 
 main #trending-products .all-of-them .container .products-list .allcards .for-cameras .container .cards {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   border: 1px solid #ebebeb;
   cursor: pointer;
 }
@@ -3073,6 +3099,8 @@ main #trending-products .all-of-them .container .products-list .allcards .for-ca
 }
 
 main #trending-products .all-of-them .container .products-list .allcards .for-cameras .container .cards:hover .close-hovered {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   display: none !important;
 }
 
@@ -3089,6 +3117,8 @@ main #trending-products .all-of-them .container .products-list .allcards .for-co
 }
 
 main #trending-products .all-of-them .container .products-list .allcards .for-computers .container .cards {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   border: 1px solid #ebebeb;
   cursor: pointer;
   display: block;
@@ -3210,6 +3240,8 @@ main #trending-products .all-of-them .container .products-list .allcards .for-co
 }
 
 main #trending-products .all-of-them .container .products-list .allcards .for-computers .container .cards:hover .close-hovered {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   display: none !important;
 }
 
@@ -3226,6 +3258,8 @@ main #trending-products .all-of-them .container .products-list .allcards .for-en
 }
 
 main #trending-products .all-of-them .container .products-list .allcards .for-entertainment .container .cards {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   border: 1px solid #ebebeb;
   cursor: pointer;
 }
@@ -3346,6 +3380,8 @@ main #trending-products .all-of-them .container .products-list .allcards .for-en
 }
 
 main #trending-products .all-of-them .container .products-list .allcards .for-entertainment .container .cards:hover .close-hovered {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   display: none !important;
 }
 
@@ -3402,6 +3438,8 @@ main #top-selling-products .all-of-them .container .products-list .allcards .for
 }
 
 main #top-selling-products .all-of-them .container .products-list .allcards .for-all .container .owl-carousel .cards {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   border: 1px solid #ebebeb;
   cursor: pointer;
   display: block;
@@ -3566,6 +3604,8 @@ main #top-selling-products .all-of-them .container .products-list .allcards .for
 }
 
 main #top-selling-products .all-of-them .container .products-list .allcards .for-all .container .owl-carousel .cards:hover .close-hovered {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   display: none !important;
 }
 
@@ -3578,6 +3618,8 @@ main #top-selling-products .all-of-them .container .products-list .allcards .for
 }
 
 main #top-selling-products .all-of-them .container .products-list .allcards .for-accessories .container .cards {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   border: 1px solid #ebebeb;
   cursor: pointer;
 }
@@ -3698,6 +3740,8 @@ main #top-selling-products .all-of-them .container .products-list .allcards .for
 }
 
 main #top-selling-products .all-of-them .container .products-list .allcards .for-accessories .container .cards:hover .close-hovered {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   display: none !important;
 }
 
@@ -3710,6 +3754,8 @@ main #top-selling-products .all-of-them .container .products-list .allcards .for
 }
 
 main #top-selling-products .all-of-them .container .products-list .allcards .for-cameras .container .cards {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   border: 1px solid #ebebeb;
   cursor: pointer;
 }
@@ -3830,6 +3876,8 @@ main #top-selling-products .all-of-them .container .products-list .allcards .for
 }
 
 main #top-selling-products .all-of-them .container .products-list .allcards .for-cameras .container .cards:hover .close-hovered {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   display: none !important;
 }
 
@@ -3842,6 +3890,8 @@ main #top-selling-products .all-of-them .container .products-list .allcards .for
 }
 
 main #top-selling-products .all-of-them .container .products-list .allcards .for-computers .container .cards {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   border: 1px solid #ebebeb;
   cursor: pointer;
   display: block;
@@ -3963,6 +4013,8 @@ main #top-selling-products .all-of-them .container .products-list .allcards .for
 }
 
 main #top-selling-products .all-of-them .container .products-list .allcards .for-computers .container .cards:hover .close-hovered {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   display: none !important;
 }
 
@@ -3975,6 +4027,8 @@ main #top-selling-products .all-of-them .container .products-list .allcards .for
 }
 
 main #top-selling-products .all-of-them .container .products-list .allcards .for-entertainment .container .cards {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   border: 1px solid #ebebeb;
   cursor: pointer;
 }
@@ -4095,6 +4149,8 @@ main #top-selling-products .all-of-them .container .products-list .allcards .for
 }
 
 main #top-selling-products .all-of-them .container .products-list .allcards .for-entertainment .container .cards:hover .close-hovered {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   display: none !important;
 }
 
@@ -4705,9 +4761,13 @@ footer #bottomF .last-infos span {
 .active-bar {
   -webkit-transform: translateX(0px);
           transform: translateX(0px);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .hide {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   -webkit-transform: translateX(-280px);
           transform: translateX(-280px);
   z-index: -1;
@@ -4726,6 +4786,8 @@ footer #bottomF .last-infos span {
 }
 
 .open-hovered {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   display: none !important;
 }
 

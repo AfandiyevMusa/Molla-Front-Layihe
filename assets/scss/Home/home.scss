@@ -331,10 +331,12 @@ header {
       padding-top: 20px;
       padding-bottom: 20px;
       .logo {
-        img {
-          width: 105px;
-          height: 25px;
-        }
+          a{
+              img {
+                width: 105px;
+                height: 25px;
+              }
+          }
       }
       .search {
         position: relative;
@@ -1238,6 +1240,7 @@ main {
           .owl-carousel {
             position: relative;
             .cards {
+              transition: all 0.3s;
               border: 1px solid #ebebeb;
               cursor: pointer;
               display: block;
@@ -1367,6 +1370,7 @@ main {
                 transition: all 0.5s;
               }
               .close-hovered {
+                transition: all 0.5s;
                 display: none !important;
               }
             }
@@ -1377,6 +1381,7 @@ main {
           .owl-carousel {
             position: relative;
             .cards {
+              transition: all 0.3s;
               border: 1px solid #ebebeb;
               cursor: pointer;
               display: block;
@@ -1506,6 +1511,7 @@ main {
                 transition: all 0.5s;
               }
               .close-hovered {
+                transition: all 0.5s;
                 display: none !important;
               }
             }
@@ -1516,6 +1522,7 @@ main {
           .owl-carousel {
             position: relative;
             .cards {
+              transition: all 0.3s;
               border: 1px solid #ebebeb;
               cursor: pointer;
               display: block;
@@ -1645,6 +1652,7 @@ main {
                 transition: all 0.5s;
               }
               .close-hovered {
+                transition: all 0.5s;
                 display: none !important;
               }
             }
@@ -1839,6 +1847,7 @@ main {
           display: flex;
           gap: 30px;
           .cards {
+            transition: all 0.3s;
             border: 1px solid #ebebeb;
             background-color: white;
             cursor: pointer;
@@ -1936,6 +1945,7 @@ main {
               transition: all 0.5s;
             }
             .close-hovered {
+              transition: all 0.5s;
               display: none !important;
             }
           }
@@ -2034,6 +2044,7 @@ main {
                   display: flex;
                   gap: 15px;
                   .cards {
+                    transition: all 0.3s;
                     border: 1px solid #ebebeb;
                     cursor: pointer;
                     display: block;
@@ -2163,6 +2174,7 @@ main {
                       transition: all 0.5s;
                     }
                     .close-hovered {
+                      transition: all 0.5s;
                       display: none !important;
                     }
                   }
@@ -2175,6 +2187,7 @@ main {
                 display: flex;
                 gap: 15px;
                 .cards {
+                  transition: all 0.3s;
                   border: 1px solid #ebebeb;
                   cursor: pointer;
                   .img-part {
@@ -2267,6 +2280,7 @@ main {
                     transition: all 0.5s;
                   }
                   .close-hovered {
+                    transition: all 0.5s;
                     display: none !important;
                   }
                 }
@@ -2279,6 +2293,7 @@ main {
                 display: flex;
                 gap: 15px;
                 .cards {
+                  transition: all 0.3s;
                   border: 1px solid #ebebeb;
                   cursor: pointer;
                   .img-part {
@@ -2371,6 +2386,7 @@ main {
                     transition: all 0.5s;
                   }
                   .close-hovered {
+                    transition: all 0.5s;
                     display: none !important;
                   }
                 }
@@ -2383,6 +2399,7 @@ main {
                 display: flex;
                 gap: 15px;
                 .cards {
+                  transition: all 0.3s;
                   border: 1px solid #ebebeb;
                   cursor: pointer;
                   display: block;
@@ -2476,6 +2493,7 @@ main {
                     transition: all 0.5s;
                   }
                   .close-hovered {
+                    transition: all 0.5s;
                     display: none !important;
                   }
                 }
@@ -2488,6 +2506,7 @@ main {
                 display: flex;
                 gap: 15px;
                 .cards {
+                  transition: all 0.3s;
                   border: 1px solid #ebebeb;
                   cursor: pointer;
                   .img-part {
@@ -2580,6 +2599,7 @@ main {
                     transition: all 0.5s;
                   }
                   .close-hovered {
+                    transition: all 0.5s;
                     display: none !important;
                   }
                 }
@@ -2628,6 +2648,7 @@ main {
                   display: flex;
                   gap: 15px;
                   .cards {
+                    transition: all 0.3s;
                     border: 1px solid #ebebeb;
                     cursor: pointer;
                     display: block;
@@ -2757,6 +2778,7 @@ main {
                       transition: all 0.5s;
                     }
                     .close-hovered {
+                      transition: all 0.5s;
                       display: none !important;
                     }
                   }
@@ -2769,6 +2791,7 @@ main {
                 display: flex;
                 gap: 15px;
                 .cards {
+                  transition: all 0.3s;
                   border: 1px solid #ebebeb;
                   cursor: pointer;
                   .img-part {
@@ -2861,6 +2884,7 @@ main {
                     transition: all 0.5s;
                   }
                   .close-hovered {
+                    transition: all 0.5s;
                     display: none !important;
                   }
                 }
@@ -2872,6 +2896,7 @@ main {
                 display: flex;
                 gap: 15px;
                 .cards {
+                  transition: all 0.3s;
                   border: 1px solid #ebebeb;
                   cursor: pointer;
                   .img-part {
@@ -2964,6 +2989,7 @@ main {
                     transition: all 0.5s;
                   }
                   .close-hovered {
+                    transition: all 0.5s;
                     display: none !important;
                   }
                 }
@@ -2975,6 +3001,7 @@ main {
                 display: flex;
                 gap: 15px;
                 .cards {
+                  transition: all 0.3s;
                   border: 1px solid #ebebeb;
                   cursor: pointer;
                   display: block;
@@ -3068,6 +3095,7 @@ main {
                     transition: all 0.5s;
                   }
                   .close-hovered {
+                    transition: all 0.5s;
                     display: none !important;
                   }
                 }
@@ -3079,6 +3107,7 @@ main {
                 display: flex;
                 gap: 15px;
                 .cards {
+                  transition: all 0.3s;
                   border: 1px solid #ebebeb;
                   cursor: pointer;
                   .img-part {
@@ -3171,6 +3200,7 @@ main {
                     transition: all 0.5s;
                   }
                   .close-hovered {
+                    transition: all 0.5s;
                     display: none !important;
                   }
                 }
@@ -3724,9 +3754,11 @@ footer {
 
 .active-bar {
   transform: translateX(0px);
+  transition: all 0.5s;
 }
 
 .hide {
+  transition: all 0.5s;
   transform: translateX(-280px);
   z-index: -1;
 }
@@ -3742,6 +3774,7 @@ footer {
   transform: translateY(-200px);
 }
 .open-hovered {
+  transition: all 0.5s;
   display: none !important;
 }
 
