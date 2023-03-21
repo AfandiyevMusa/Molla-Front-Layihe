@@ -14,7 +14,7 @@ header {
 
 header #up-nav {
   background-color: #333;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 
 header #up-nav .container {
@@ -552,12 +552,17 @@ header #down-nav .container .options .wishlist {
   cursor: pointer;
 }
 
-header #down-nav .container .options .wishlist .wish {
+header #down-nav .container .options .wishlist a {
+  text-decoration: none !important;
+  color: white;
+}
+
+header #down-nav .container .options .wishlist a .wish {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-header #down-nav .container .options .wishlist .wish sup {
+header #down-nav .container .options .wishlist a .wish sup {
   position: relative;
   font-size: 15px;
   left: 40px;
@@ -570,16 +575,16 @@ header #down-nav .container .options .wishlist .wish sup {
   border-radius: 15px;
 }
 
-header #down-nav .container .options .wishlist .wish i {
+header #down-nav .container .options .wishlist a .wish i {
   font-size: 25px;
   text-align: center;
 }
 
-header #down-nav .container .options .wishlist .wish:hover {
+header #down-nav .container .options .wishlist a .wish:hover {
   color: #fcb941;
 }
 
-header #down-nav .container .options .wishlist span {
+header #down-nav .container .options .wishlist a span {
   color: #ccc;
 }
 
@@ -595,12 +600,17 @@ header #down-nav .container .options .cartlist {
   cursor: pointer;
 }
 
-header #down-nav .container .options .cartlist .cart {
+header #down-nav .container .options .cartlist a {
+  text-decoration: none !important;
+  color: white;
+}
+
+header #down-nav .container .options .cartlist a .cart {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-header #down-nav .container .options .cartlist .cart sup {
+header #down-nav .container .options .cartlist a .cart sup {
   position: relative;
   font-size: 15px;
   left: 43px;
@@ -613,15 +623,15 @@ header #down-nav .container .options .cartlist .cart sup {
   border-radius: 15px;
 }
 
-header #down-nav .container .options .cartlist .cart i {
+header #down-nav .container .options .cartlist a .cart i {
   font-size: 25px;
 }
 
-header #down-nav .container .options .cartlist .cart:hover {
+header #down-nav .container .options .cartlist a .cart:hover {
   color: #fcb941;
 }
 
-header #down-nav .container .options .cartlist span {
+header #down-nav .container .options .cartlist a span {
   color: #ccc;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -659,7 +669,7 @@ header #down-nav-phone .container .logo .open {
   cursor: pointer;
 }
 
-header #down-nav-phone .container .logo img {
+header #down-nav-phone .container .logo a img {
   width: 105px;
   height: 25px;
 }
@@ -715,12 +725,17 @@ header #down-nav-phone .container .options .wishlist {
   cursor: pointer;
 }
 
-header #down-nav-phone .container .options .wishlist .wish {
+header #down-nav-phone .container .options .wishlist a {
+  text-decoration: none !important;
+  color: white;
+}
+
+header #down-nav-phone .container .options .wishlist a .wish {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-header #down-nav-phone .container .options .wishlist .wish sup {
+header #down-nav-phone .container .options .wishlist a .wish sup {
   position: relative;
   font-size: 15px;
   left: 40px;
@@ -733,16 +748,16 @@ header #down-nav-phone .container .options .wishlist .wish sup {
   border-radius: 15px;
 }
 
-header #down-nav-phone .container .options .wishlist .wish i {
+header #down-nav-phone .container .options .wishlist a .wish i {
   font-size: 25px;
   text-align: center;
 }
 
-header #down-nav-phone .container .options .wishlist .wish:hover {
+header #down-nav-phone .container .options .wishlist a .wish:hover {
   color: #fcb941;
 }
 
-header #down-nav-phone .container .options .wishlist span {
+header #down-nav-phone .container .options .wishlist a span {
   color: #ccc;
 }
 
@@ -755,19 +770,27 @@ header #down-nav-phone .container .options .cartlist {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-right: 20px;
+  position: relative;
+  bottom: 23px;
+  left: 20px;
   cursor: pointer;
 }
 
-header #down-nav-phone .container .options .cartlist .cart {
+header #down-nav-phone .container .options .cartlist a {
+  text-decoration: none !important;
+  color: white;
+}
+
+header #down-nav-phone .container .options .cartlist a .cart {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-header #down-nav-phone .container .options .cartlist .cart sup {
+header #down-nav-phone .container .options .cartlist a .cart sup {
   position: relative;
   font-size: 15px;
-  left: 43px;
-  top: -15px;
+  left: 20px;
+  top: 10px;
   background-color: #fcb941;
   width: 20px;
   height: 20px;
@@ -776,15 +799,15 @@ header #down-nav-phone .container .options .cartlist .cart sup {
   border-radius: 15px;
 }
 
-header #down-nav-phone .container .options .cartlist .cart i {
+header #down-nav-phone .container .options .cartlist a .cart i {
   font-size: 25px;
 }
 
-header #down-nav-phone .container .options .cartlist .cart:hover {
+header #down-nav-phone .container .options .cartlist a .cart:hover {
   color: #fcb941;
 }
 
-header #down-nav-phone .container .options .cartlist span {
+header #down-nav-phone .container .options .cartlist a span {
   color: #ccc;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -797,7 +820,7 @@ header #down-nav-phone .container .options .cartlist span {
 header .sidebar {
   position: fixed;
   height: 100vh;
-  z-index: 2;
+  z-index: 5;
   top: 0;
   left: 0;
   -webkit-transition: all 0.5s;
@@ -1278,6 +1301,10 @@ header #main-nav .container .bulb i {
 
 header #main-nav .container .bulb span {
   font-size: 16px;
+}
+
+main {
+  overflow: hidden;
 }
 
 main #productSlider .container .slider {
@@ -4430,7 +4457,7 @@ main #socials .container .backImg .whiteBoard .all .right .input-part i:hover {
 }
 
 footer #upF {
-  padding-top: 30px;
+  padding-top: 65px;
 }
 
 footer #upF .container {
@@ -4447,6 +4474,17 @@ footer #upF .container .logo-part img {
 footer #upF .container .logo-part p {
   color: #7d7d7d;
   padding-bottom: 10px;
+}
+
+footer #upF .container .logo-part span {
+  color: black;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  font-size: 20px !important;
+}
+
+footer #upF .container .logo-part span:hover {
+  color: #fcb941;
 }
 
 footer #upF .container .logo-part .contact {
@@ -4490,13 +4528,19 @@ footer #upF .container .options ul li {
 }
 
 footer #upF .container .options ul li a {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   text-decoration: none;
   color: #7d7d7d;
 }
 
+footer #upF .container .options ul li a:hover {
+  color: #fcb941;
+}
+
 footer #bottomF {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 footer #bottomF .last-infos {
@@ -4510,7 +4554,7 @@ footer #bottomF .last-infos {
 
 footer #bottomF .last-infos span {
   color: #7d7d7d;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 200;
 }
 
@@ -4742,6 +4786,22 @@ footer #bottomF .last-infos span {
   }
   #productSlider .container .for-phone-products .each-photo img {
     width: 700px !important;
+  }
+  #down-nav-phone .container .options .cartlist {
+    position: relative;
+    top: 0px;
+  }
+  #down-nav-phone .container .options .cartlist a .cart sup {
+    position: relative;
+    font-size: 15px;
+    left: 43px !important;
+    top: -15px !important;
+    background-color: #fcb941;
+    width: 20px;
+    height: 20px;
+    padding: 1px 4px;
+    color: black;
+    border-radius: 15px;
   }
 }
 
