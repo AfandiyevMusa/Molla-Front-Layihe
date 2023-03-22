@@ -1415,12 +1415,533 @@ main #cart-part .deactive-shop button:hover {
   background-color: #bf913e;
 }
 
+main #shop {
+  border: 1px solid #ebebeb;
+}
+
+main #shop .all {
+  padding-top: 25px;
+}
+
 main #shop .all .col3 {
   width: 25%;
 }
 
+main #shop .all .col3 .filters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main #shop .all .col3 .filters h6 {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+main #shop .all .col3 .filters span {
+  color: #fcb941;
+  font-weight: 300;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+main #shop .all .col3 .accordion {
+  padding-top: 20px;
+  border: none !important;
+  margin-left: -20px !important;
+}
+
+main #shop .all .col3 .accordion .accordion-item {
+  border: none !important;
+  border-top: 1px solid #ebebeb !important;
+  padding-top: 7px !important;
+  padding-bottom: 7px !important;
+}
+
+main #shop .all .col3 .accordion .accordion-item .accordion-header {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+main #shop .all .col3 .accordion .accordion-item .accordion-header button {
+  border: none !important;
+  background-color: white;
+  color: black;
+  font-size: 20px !important;
+  font-weight: 300;
+}
+
+main #shop .all .col3 .accordion .accordion-item .accordion-header button i {
+  color: black;
+}
+
+main #shop .all .col3 .accordion .accordion-item .accordion-collapse .category {
+  padding-top: 20px;
+}
+
+main #shop .all .col3 .accordion .accordion-item .accordion-collapse .category .each-category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main #shop .all .col3 .accordion .accordion-item .accordion-collapse .category .each-category span {
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+main #shop .all .col3 .accordion .accordion-item .accordion-collapse .category .each-category span:hover {
+  color: #fcb941;
+}
+
+main #shop .all .col3 .accordion .accordion-item .accordion-collapse .category .each-category p {
+  font-weight: 300;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+}
+
+main #shop .all .col3 .accordion .accordion-item .accordion-collapse .size .each-input {
+  padding-bottom: 5px;
+}
+
+main #shop .all .col3 .accordion .accordion-item .accordion-collapse .size .each-input input {
+  height: 15px;
+  width: 15px;
+}
+
+main #shop .all .col3 .accordion .accordion-item .accordion-collapse .size .each-input label {
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+main #shop .all .col3 .accordion .accordion-item .accordion-collapse .colour button {
+  width: 27px;
+  height: 27px;
+  border: none;
+  border-radius: 100px;
+  margin-right: 5px;
+}
+
+main #shop .all .col3 .accordion .accordion-item .accordion-collapse .brands .each-input {
+  padding-bottom: 5px;
+}
+
+main #shop .all .col3 .accordion .accordion-item .accordion-collapse .brands .each-input input {
+  height: 15px;
+  width: 15px;
+}
+
+main #shop .all .col3 .accordion .accordion-item .accordion-collapse .brands .each-input label {
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .up span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 300;
+}
+
+main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .up p {
+  color: #fcb941;
+  font-weight: 300;
+  cursor: pointer;
+}
+
 main #shop .all .col9 {
   width: 75%;
+}
+
+main #shop .all .col9 .infos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+main #shop .all .col9 .infos h6 {
+  color: #cfcfcf;
+}
+
+main #shop .all .col9 .infos h6 strong {
+  color: black !important;
+  font-weight: 400;
+}
+
+main #shop .all .col9 .infos .sorting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+
+main #shop .all .col9 .infos .sorting span {
+  font-weight: 300;
+}
+
+main #shop .all .col9 .infos .sorting .dropdown button {
+  position: relative;
+  bottom: 5px;
+  border: 1px solid #d7d7d7;
+  background-color: white;
+  color: #a1a1a1;
+  width: 140px;
+  border-radius: 0px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #shop .all .col9 .infos .sorting .dropdown ul {
+  position: relative;
+  background-color: #656966;
+}
+
+main #shop .all .col9 .infos .sorting .dropdown ul .check {
+  position: absolute;
+  left: 10px;
+  top: 17px;
+  color: white;
+}
+
+main #shop .all .col9 .infos .sorting .dropdown ul .check:hover {
+  color: #588feb !important;
+}
+
+main #shop .all .col9 .infos .sorting .dropdown ul li {
+  float: right;
+  width: 93%;
+}
+
+main #shop .all .col9 .infos .sorting .dropdown ul li a {
+  color: white;
+  margin-right: 15px;
+  padding-left: 15px;
+}
+
+main #shop .all .col9 .infos .sorting .dropdown ul li a:hover {
+  background-color: #588feb !important;
+}
+
+main #shop .all .col9 .infos .sorting i {
+  position: relative;
+  top: 6px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+main #shop .all .col9 .infos .sorting i:hover {
+  color: black !important;
+}
+
+main #shop .all .col9 .each-cards {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #ebebeb;
+}
+
+main #shop .all .col9 .each-cards .left {
+  position: relative;
+}
+
+main #shop .all .col9 .each-cards .left p {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 15px;
+  color: white;
+  background-color: #7dd2ea;
+  width: 50px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #shop .all .col9 .each-cards .left img {
+  width: 220px;
+  height: 220px;
+}
+
+main #shop .all .col9 .each-cards .middle {
+  padding-top: 15px;
+  position: relative;
+  right: 10px;
+}
+
+main #shop .all .col9 .each-cards .middle span {
+  font-weight: 400;
+  font-size: 15px;
+  color: #777777;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+main #shop .all .col9 .each-cards .middle span:hover {
+  color: #fcb941;
+}
+
+main #shop .all .col9 .each-cards .middle h6 {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  font-size: 19px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+}
+
+main #shop .all .col9 .each-cards .middle h6:hover {
+  color: #fcb941;
+}
+
+main #shop .all .col9 .each-cards .middle p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #969696;
+}
+
+main #shop .all .col9 .each-cards .middle button {
+  padding-top: 15px;
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 100px;
+  margin-right: 5px;
+}
+
+main #shop .all .col9 .each-cards .right {
+  padding-top: 15px;
+}
+
+main #shop .all .col9 .each-cards .right span {
+  color: #fcb941;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+main #shop .all .col9 .each-cards .right .stars {
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 13px;
+}
+
+main #shop .all .col9 .each-cards .right .stars p {
+  color: #d0d0d0;
+  position: relative;
+  left: 7px;
+  bottom: 6px;
+  font-size: 16px !important;
+}
+
+main #shop .all .col9 .each-cards .right .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 25px;
+  cursor: pointer;
+}
+
+main #shop .all .col9 .each-cards .right .icons .left-icon {
+  border-right: 2px dotted #e5e5e5;
+  padding-right: 20px;
+}
+
+main #shop .all .col9 .each-cards .right .icons .left-icon i {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  color: #777777 !important;
+}
+
+main #shop .all .col9 .each-cards .right .icons .left-icon span {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  color: #777777 !important;
+}
+
+main #shop .all .col9 .each-cards .right .icons .left-icon:hover i {
+  color: #fcb941 !important;
+}
+
+main #shop .all .col9 .each-cards .right .icons .left-icon:hover span {
+  color: #fcb941 !important;
+  border-bottom: 1px solid #fcb941;
+  padding-bottom: 5px;
+}
+
+main #shop .all .col9 .each-cards .right .icons .right-icon i {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  color: #777777 !important;
+}
+
+main #shop .all .col9 .each-cards .right .icons .right-icon span {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  color: #777777 !important;
+}
+
+main #shop .all .col9 .each-cards .right .icons .right-icon:hover i {
+  color: #fcb941 !important;
+}
+
+main #shop .all .col9 .each-cards .right .icons .right-icon:hover span {
+  color: #fcb941 !important;
+  border-bottom: 1px solid #fcb941;
+  padding-bottom: 5px;
+}
+
+main #shop .all .col9 .each-cards .right button {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1.5px solid #fcb941;
+  background-color: white;
+  color: #fcb941;
+  font-weight: 300;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  text-transform: uppercase;
+}
+
+main #shop .all .col9 .each-cards .right button i {
+  margin-right: 10px;
+}
+
+main #shop .all .col9 .each-cards .right button:hover {
+  background-color: #fcb941;
+  color: white;
+}
+
+main #shop .all .col9 .pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+main #shop .all .col9 .pagination ul li {
+  margin-left: 5px;
+}
+
+main #shop .all .col9 .pagination ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #81807d;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  background-color: white !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+main #shop .all .col9 .pagination ul li a .left {
+  padding-right: 10px;
+}
+
+main #shop .all .col9 .pagination ul li a .right {
+  padding-left: 10px;
+}
+
+main #shop .all .col9 .pagination ul li a:hover {
+  color: #fcb941;
+  border: 1px solid #ebebeb !important;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+main #shop .all .col9 .pagination ul .first a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 2px;
+  margin-right: 2px;
+  color: #fcb941;
+  border: 1px solid #ebebeb !important;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+main #shop .all .col9 .pagination ul .disabled a {
+  background-color: white !important;
+  color: #cccccc;
+}
+
+main #shop .all .col9 .pagination * {
+  border: none !important;
 }
 
 footer #upF {
