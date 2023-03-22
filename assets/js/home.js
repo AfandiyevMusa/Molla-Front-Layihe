@@ -87,31 +87,37 @@ $(function () {
     rightIcon.addEventListener("click", rightSlider);
     leftIcon.addEventListener("click", leftSlider);
 
-    //Owl Carousel Plugin
-    $('.owl-carousel').owlCarousel({
-        loop: true,
-        margin: 10,
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1,
-                nav: true
+
+    $('.products').owlCarousel({
+        loop:true,
+        margin:10,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:true,
+                loop:false
             },
-            500: {
-                items: 1,
-                nav: true
+            600:{
+                items:1,
+                nav:false,
+                loop:false
             },
-            1000: {
-                items: 2,
-                nav: true
+            750:{
+                items:2,
+                nav:true,
+                loop:false
             },
-            1200: {
-                items: 4,
-                nav: false,
-                loop: false
+            1000:{
+                items:4,
+                nav:true,
+                loop:false
             }
         }
     })
+
+    let owlNav = document.querySelector(".owl-nav");
+    owlNav.classList.remove("disabled");
 
     //Products TabMenu
     let captions = document.querySelectorAll("#products-tab-menu .products-menu .for-products-name .product-names h4");
@@ -133,73 +139,48 @@ $(function () {
     });
 
     //Brand Carousel
-    // $('.allbrands').owlCarousel({
-    //     loop: true,
-    //     margin: 10,
-    //     responsiveClass: true,
-    //     responsive: {
-    //         0: {
-    //             items: 1,
-    //             nav: true
-    //         },
-    //         500: {
-    //             items: 3,
-    //             nav: false
-    //         },
-    //         900: {
-    //             items: 2,
-    //             nav: true
-    //         },
-    //         1200: {
-    //             items: 3,
-    //             nav: false,
-    //             loop: false
-    //         }
-    //     }
-    // })
-    // $('.allbrands').owlCarousel({
-    //     loop: true,
-    //     margin: 10,
-    //     responsiveClass: true,
-    //     responsive: {
-    //         0: {
-    //             items: 1,
-    //             nav: true
-    //         },
-    //         600: {
-    //             items: 3,
-    //             nav: false
-    //         },
-    //         1000: {
-    //             items: 5,
-    //             nav: true,
-    //             loop: true
-    //         }
-    //     }
-    // })
-
+    $('.allbrands').owlCarousel({
+        loop:true,
+        margin:10,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:2,
+                nav:true,
+                loop:false
+            },
+            600:{
+                items:4,
+                nav:false,
+                loop:false
+            },
+            1000:{
+                items:7,
+                nav:true,
+                loop:false
+            }
+        }
+    })
     //Trending Products Carousel
-    $('.everytrends').owlCarousel({
-        loop: true,
-        margin: 10,
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1,
-                nav: true
+    $('.trending-products').owlCarousel({
+        loop:true,
+        margin:10,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:true,
+                loop:false
             },
-            576: {
-                items: 1,
-                nav: false
+            600:{
+                items:3,
+                nav:false,
+                loop:false
             },
-            768: {
-                items: 2,
-                nav: true
-            },
-            992: {
-                items: 3,
-                nav: false,
-                loop: false
+            1000:{
+                items:3,
+                nav:true,
+                loop:false
             }
         }
     })
@@ -222,6 +203,30 @@ $(function () {
             });
         })
     });
+
+    //Top-selling Products Carousel
+    $('.top-products').owlCarousel({
+        loop:true,
+        margin:10,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:true,
+                loop:false
+            },
+            600:{
+                items:3,
+                nav:false,
+                loop:false
+            },
+            1000:{
+                items:3,
+                nav:true,
+                loop:false
+            }
+        }
+    })
 
     //Top Selling Products TabMenu
     let sellnames = document.querySelectorAll("#top-selling-products .all-of-them .heads .list-type h6");
