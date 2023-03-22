@@ -63,11 +63,16 @@ header #up-nav .container .language-part ul li .each-detail {
   position: relative;
 }
 
-header #up-nav .container .language-part ul li .each-detail span {
+header #up-nav .container .language-part ul li .each-detail a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+header #up-nav .container .language-part ul li .each-detail a span {
   cursor: pointer;
 }
 
-header #up-nav .container .language-part ul li .each-detail span i {
+header #up-nav .container .language-part ul li .each-detail a span i {
   margin-left: 8px;
   font-size: 12px !important;
 }
@@ -2670,12 +2675,20 @@ main #trending-products .all-of-them .container .products-list {
   gap: 10px;
 }
 
-main #trending-products .all-of-them .container .products-list .fixed-photo img {
+main #trending-products .all-of-them .container .products-list .col3 {
+  width: 25%;
+}
+
+main #trending-products .all-of-them .container .products-list .col3 .fixed-photo img {
   width: 330px;
   height: 482px;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-all .container .owl-carousel {
+main #trending-products .all-of-them .container .products-list .col9 {
+  width: 75%;
+}
+
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-all .container .owl-carousel {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2683,7 +2696,7 @@ main #trending-products .all-of-them .container .products-list .allcards .for-al
   gap: 15px;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-all .container .owl-carousel .cards {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-all .container .owl-carousel .cards {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border: 1px solid #ebebeb;
@@ -2691,11 +2704,11 @@ main #trending-products .all-of-them .container .products-list .allcards .for-al
   display: block;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-all .container .owl-carousel .cards .img-part {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-all .container .owl-carousel .cards .img-part {
   position: relative;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-all .container .owl-carousel .cards .img-part p {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-all .container .owl-carousel .cards .img-part p {
   position: absolute;
   padding: 15px;
   border-radius: 100px;
@@ -2703,17 +2716,17 @@ main #trending-products .all-of-them .container .products-list .allcards .for-al
   left: 20px;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-all .container .owl-carousel .cards .img-part .new {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-all .container .owl-carousel .cards .img-part .new {
   background-color: #ef837b;
   top: 25px;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-all .container .owl-carousel .cards .img-part .top {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-all .container .owl-carousel .cards .img-part .top {
   background-color: #7dd2ea;
   top: 65px;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-all .container .owl-carousel .cards .img-part .heart {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-all .container .owl-carousel .cards .img-part .heart {
   background-color: #fcb941;
   position: absolute;
   font-size: 18px;
@@ -2726,11 +2739,11 @@ main #trending-products .all-of-them .container .products-list .allcards .for-al
   transition: all 0.5s;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-all .container .owl-carousel .cards .img-part .heart:hover {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-all .container .owl-carousel .cards .img-part .heart:hover {
   color: white;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-all .container .owl-carousel .cards .img-part .options-part {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-all .container .owl-carousel .cards .img-part .options-part {
   opacity: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2747,56 +2760,56 @@ main #trending-products .all-of-them .container .products-list .allcards .for-al
   transition: all 0.5s;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-all .container .owl-carousel .cards .img-part .options-part i {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-all .container .owl-carousel .cards .img-part .options-part i {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   padding-top: 7px;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-all .container .owl-carousel .cards .img-part .options-part i:hover {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-all .container .owl-carousel .cards .img-part .options-part i:hover {
   color: #fcb941;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-all .container .owl-carousel .cards .img-part .options-part span {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-all .container .owl-carousel .cards .img-part .options-part span {
   font-size: 20px;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-all .container .owl-carousel .cards .text-part {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-all .container .owl-carousel .cards .text-part {
   width: 250px !important;
   padding: 10px 15px;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-all .container .owl-carousel .cards .text-part .mini-detail {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-all .container .owl-carousel .cards .text-part .mini-detail {
   color: #d7d7d7;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-all .container .owl-carousel .cards .text-part span {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-all .container .owl-carousel .cards .text-part span {
   font-size: 16px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   cursor: pointer;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-all .container .owl-carousel .cards .text-part span:hover {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-all .container .owl-carousel .cards .text-part span:hover {
   color: #fcb941;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-all .container .owl-carousel .cards .text-part .cost {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-all .container .owl-carousel .cards .text-part .cost {
   font-size: 20px;
   padding-top: 8px;
   color: #fcb941;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-all .container .owl-carousel .cards .text-part .stars {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-all .container .owl-carousel .cards .text-part .stars {
   display: inline-block;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-all .container .owl-carousel .cards .text-part .reviews {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-all .container .owl-carousel .cards .text-part .reviews {
   color: #d7d7d7;
   display: inline-block;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-all .container .owl-carousel .owl-prev {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-all .container .owl-carousel .owl-prev {
   position: absolute;
   top: 0px;
   background-color: rgba(255, 255, 255, 0.9);
@@ -2804,7 +2817,7 @@ main #trending-products .all-of-them .container .products-list .allcards .for-al
   height: 565px;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-all .container .owl-carousel .owl-prev span {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-all .container .owl-carousel .owl-prev span {
   color: #fcb941;
   font-size: 40px !important;
   font-weight: 100 !important;
@@ -2812,7 +2825,7 @@ main #trending-products .all-of-them .container .products-list .allcards .for-al
   padding-right: 10px;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-all .container .owl-carousel .owl-next {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-all .container .owl-carousel .owl-next {
   position: absolute;
   top: 0px;
   right: 14px;
@@ -2823,7 +2836,7 @@ main #trending-products .all-of-them .container .products-list .allcards .for-al
   transition: all 0.4s;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-all .container .owl-carousel .owl-next span {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-all .container .owl-carousel .owl-next span {
   color: #fcb941;
   font-size: 40px !important;
   font-weight: 100 !important;
@@ -2831,31 +2844,31 @@ main #trending-products .all-of-them .container .products-list .allcards .for-al
   padding-right: 10px;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-all .container .owl-carousel .owl-prev:hover {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-all .container .owl-carousel .owl-prev:hover {
   background-color: white;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-all .container .owl-carousel .owl-next:hover {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-all .container .owl-carousel .owl-next:hover {
   background-color: white;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-all .container .owl-carousel .cards:hover .options-part {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-all .container .owl-carousel .cards:hover .options-part {
   opacity: 1 !important;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-all .container .owl-carousel .cards:hover .open-hovered {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-all .container .owl-carousel .cards:hover .open-hovered {
   display: block !important;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-all .container .owl-carousel .cards:hover .close-hovered {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-all .container .owl-carousel .cards:hover .close-hovered {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   display: none !important;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-accessories .container {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-accessories .container {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2863,18 +2876,18 @@ main #trending-products .all-of-them .container .products-list .allcards .for-ac
   gap: 15px;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-accessories .container .cards {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-accessories .container .cards {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border: 1px solid #ebebeb;
   cursor: pointer;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-accessories .container .cards .img-part {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-accessories .container .cards .img-part {
   position: relative;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-accessories .container .cards .img-part p {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-accessories .container .cards .img-part p {
   position: absolute;
   padding: 15px;
   border-radius: 100px;
@@ -2882,17 +2895,17 @@ main #trending-products .all-of-them .container .products-list .allcards .for-ac
   left: 20px;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-accessories .container .cards .img-part .new {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-accessories .container .cards .img-part .new {
   background-color: #ef837b;
   top: 25px;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-accessories .container .cards .img-part .top {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-accessories .container .cards .img-part .top {
   background-color: #7dd2ea;
   top: 65px;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-accessories .container .cards .img-part .heart {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-accessories .container .cards .img-part .heart {
   background-color: #fcb941;
   position: absolute;
   font-size: 18px;
@@ -2905,11 +2918,11 @@ main #trending-products .all-of-them .container .products-list .allcards .for-ac
   transition: all 0.5s;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-accessories .container .cards .img-part .heart:hover {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-accessories .container .cards .img-part .heart:hover {
   color: white;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-accessories .container .cards .img-part .options-part {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-accessories .container .cards .img-part .options-part {
   opacity: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2926,76 +2939,76 @@ main #trending-products .all-of-them .container .products-list .allcards .for-ac
   transition: all 0.5s;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-accessories .container .cards .img-part .options-part i {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-accessories .container .cards .img-part .options-part i {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   padding-top: 7px;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-accessories .container .cards .img-part .options-part i:hover {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-accessories .container .cards .img-part .options-part i:hover {
   color: #fcb941;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-accessories .container .cards .img-part .options-part span {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-accessories .container .cards .img-part .options-part span {
   font-size: 20px;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-accessories .container .cards .text-part {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-accessories .container .cards .text-part {
   width: 250px !important;
   padding: 10px 15px;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-accessories .container .cards .text-part .mini-detail {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-accessories .container .cards .text-part .mini-detail {
   color: #d7d7d7;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-accessories .container .cards .text-part span {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-accessories .container .cards .text-part span {
   font-size: 16px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   cursor: pointer;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-accessories .container .cards .text-part span:hover {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-accessories .container .cards .text-part span:hover {
   color: #fcb941;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-accessories .container .cards .text-part .cost {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-accessories .container .cards .text-part .cost {
   font-size: 20px;
   padding-top: 8px;
   color: #fcb941;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-accessories .container .cards .text-part .stars {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-accessories .container .cards .text-part .stars {
   display: inline-block;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-accessories .container .cards .text-part .reviews {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-accessories .container .cards .text-part .reviews {
   color: #d7d7d7;
   display: inline-block;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-accessories .container .cards:hover .options-part {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-accessories .container .cards:hover .options-part {
   opacity: 1 !important;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-accessories .container .cards:hover .open-hovered {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-accessories .container .cards:hover .open-hovered {
   display: block !important;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-accessories .container .cards:hover .close-hovered {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-accessories .container .cards:hover .close-hovered {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   display: none !important;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-cameras {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-cameras {
   margin-left: 80px;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-cameras .container {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-cameras .container {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3003,18 +3016,18 @@ main #trending-products .all-of-them .container .products-list .allcards .for-ca
   gap: 15px;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-cameras .container .cards {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-cameras .container .cards {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border: 1px solid #ebebeb;
   cursor: pointer;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-cameras .container .cards .img-part {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-cameras .container .cards .img-part {
   position: relative;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-cameras .container .cards .img-part p {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-cameras .container .cards .img-part p {
   position: absolute;
   padding: 15px;
   border-radius: 100px;
@@ -3022,17 +3035,17 @@ main #trending-products .all-of-them .container .products-list .allcards .for-ca
   left: 20px;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-cameras .container .cards .img-part .new {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-cameras .container .cards .img-part .new {
   background-color: #ef837b;
   top: 25px;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-cameras .container .cards .img-part .top {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-cameras .container .cards .img-part .top {
   background-color: #7dd2ea;
   top: 65px;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-cameras .container .cards .img-part .heart {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-cameras .container .cards .img-part .heart {
   background-color: #fcb941;
   position: absolute;
   font-size: 18px;
@@ -3045,11 +3058,11 @@ main #trending-products .all-of-them .container .products-list .allcards .for-ca
   transition: all 0.5s;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-cameras .container .cards .img-part .heart:hover {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-cameras .container .cards .img-part .heart:hover {
   color: white;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-cameras .container .cards .img-part .options-part {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-cameras .container .cards .img-part .options-part {
   opacity: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3066,76 +3079,76 @@ main #trending-products .all-of-them .container .products-list .allcards .for-ca
   transition: all 0.5s;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-cameras .container .cards .img-part .options-part i {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-cameras .container .cards .img-part .options-part i {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   padding-top: 7px;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-cameras .container .cards .img-part .options-part i:hover {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-cameras .container .cards .img-part .options-part i:hover {
   color: #fcb941;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-cameras .container .cards .img-part .options-part span {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-cameras .container .cards .img-part .options-part span {
   font-size: 20px;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-cameras .container .cards .text-part {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-cameras .container .cards .text-part {
   width: 250px !important;
   padding: 10px 15px;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-cameras .container .cards .text-part .mini-detail {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-cameras .container .cards .text-part .mini-detail {
   color: #d7d7d7;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-cameras .container .cards .text-part span {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-cameras .container .cards .text-part span {
   font-size: 16px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   cursor: pointer;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-cameras .container .cards .text-part span:hover {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-cameras .container .cards .text-part span:hover {
   color: #fcb941;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-cameras .container .cards .text-part .cost {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-cameras .container .cards .text-part .cost {
   font-size: 20px;
   padding-top: 8px;
   color: #fcb941;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-cameras .container .cards .text-part .stars {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-cameras .container .cards .text-part .stars {
   display: inline-block;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-cameras .container .cards .text-part .reviews {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-cameras .container .cards .text-part .reviews {
   color: #d7d7d7;
   display: inline-block;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-cameras .container .cards:hover .options-part {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-cameras .container .cards:hover .options-part {
   opacity: 1 !important;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-cameras .container .cards:hover .open-hovered {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-cameras .container .cards:hover .open-hovered {
   display: block !important;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-cameras .container .cards:hover .close-hovered {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-cameras .container .cards:hover .close-hovered {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   display: none !important;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-computers {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-computers {
   margin-left: 130px;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-computers .container {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-computers .container {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3143,7 +3156,7 @@ main #trending-products .all-of-them .container .products-list .allcards .for-co
   gap: 15px;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-computers .container .cards {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-computers .container .cards {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border: 1px solid #ebebeb;
@@ -3151,11 +3164,11 @@ main #trending-products .all-of-them .container .products-list .allcards .for-co
   display: block;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-computers .container .cards .img-part {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-computers .container .cards .img-part {
   position: relative;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-computers .container .cards .img-part p {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-computers .container .cards .img-part p {
   position: absolute;
   padding: 15px;
   border-radius: 100px;
@@ -3163,17 +3176,17 @@ main #trending-products .all-of-them .container .products-list .allcards .for-co
   left: 20px;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-computers .container .cards .img-part .new {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-computers .container .cards .img-part .new {
   background-color: #ef837b;
   top: 25px;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-computers .container .cards .img-part .top {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-computers .container .cards .img-part .top {
   background-color: #7dd2ea;
   top: 65px;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-computers .container .cards .img-part .heart {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-computers .container .cards .img-part .heart {
   background-color: #fcb941;
   position: absolute;
   font-size: 18px;
@@ -3186,11 +3199,11 @@ main #trending-products .all-of-them .container .products-list .allcards .for-co
   transition: all 0.5s;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-computers .container .cards .img-part .heart:hover {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-computers .container .cards .img-part .heart:hover {
   color: white;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-computers .container .cards .img-part .options-part {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-computers .container .cards .img-part .options-part {
   opacity: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3207,76 +3220,76 @@ main #trending-products .all-of-them .container .products-list .allcards .for-co
   transition: all 0.5s;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-computers .container .cards .img-part .options-part i {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-computers .container .cards .img-part .options-part i {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   padding-top: 7px;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-computers .container .cards .img-part .options-part i:hover {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-computers .container .cards .img-part .options-part i:hover {
   color: #fcb941;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-computers .container .cards .img-part .options-part span {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-computers .container .cards .img-part .options-part span {
   font-size: 20px;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-computers .container .cards .text-part {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-computers .container .cards .text-part {
   width: 250px !important;
   padding: 10px 15px;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-computers .container .cards .text-part .mini-detail {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-computers .container .cards .text-part .mini-detail {
   color: #d7d7d7;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-computers .container .cards .text-part span {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-computers .container .cards .text-part span {
   font-size: 16px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   cursor: pointer;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-computers .container .cards .text-part span:hover {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-computers .container .cards .text-part span:hover {
   color: #fcb941;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-computers .container .cards .text-part .cost {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-computers .container .cards .text-part .cost {
   font-size: 20px;
   padding-top: 8px;
   color: #fcb941;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-computers .container .cards .text-part .stars {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-computers .container .cards .text-part .stars {
   display: inline-block;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-computers .container .cards .text-part .reviews {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-computers .container .cards .text-part .reviews {
   color: #d7d7d7;
   display: inline-block;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-computers .container .cards:hover .options-part {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-computers .container .cards:hover .options-part {
   opacity: 1 !important;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-computers .container .cards:hover .open-hovered {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-computers .container .cards:hover .open-hovered {
   display: block !important;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-computers .container .cards:hover .close-hovered {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-computers .container .cards:hover .close-hovered {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   display: none !important;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-entertainment {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-entertainment {
   margin-left: 30px;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-entertainment .container {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-entertainment .container {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3284,18 +3297,18 @@ main #trending-products .all-of-them .container .products-list .allcards .for-en
   gap: 15px;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-entertainment .container .cards {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-entertainment .container .cards {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border: 1px solid #ebebeb;
   cursor: pointer;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-entertainment .container .cards .img-part {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-entertainment .container .cards .img-part {
   position: relative;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-entertainment .container .cards .img-part p {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-entertainment .container .cards .img-part p {
   position: absolute;
   padding: 15px;
   border-radius: 100px;
@@ -3303,17 +3316,17 @@ main #trending-products .all-of-them .container .products-list .allcards .for-en
   left: 20px;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-entertainment .container .cards .img-part .new {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-entertainment .container .cards .img-part .new {
   background-color: #ef837b;
   top: 25px;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-entertainment .container .cards .img-part .top {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-entertainment .container .cards .img-part .top {
   background-color: #7dd2ea;
   top: 65px;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-entertainment .container .cards .img-part .heart {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-entertainment .container .cards .img-part .heart {
   background-color: #fcb941;
   position: absolute;
   font-size: 18px;
@@ -3326,11 +3339,11 @@ main #trending-products .all-of-them .container .products-list .allcards .for-en
   transition: all 0.5s;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-entertainment .container .cards .img-part .heart:hover {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-entertainment .container .cards .img-part .heart:hover {
   color: white;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-entertainment .container .cards .img-part .options-part {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-entertainment .container .cards .img-part .options-part {
   opacity: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3347,66 +3360,66 @@ main #trending-products .all-of-them .container .products-list .allcards .for-en
   transition: all 0.5s;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-entertainment .container .cards .img-part .options-part i {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-entertainment .container .cards .img-part .options-part i {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   padding-top: 7px;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-entertainment .container .cards .img-part .options-part i:hover {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-entertainment .container .cards .img-part .options-part i:hover {
   color: #fcb941;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-entertainment .container .cards .img-part .options-part span {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-entertainment .container .cards .img-part .options-part span {
   font-size: 20px;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-entertainment .container .cards .text-part {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-entertainment .container .cards .text-part {
   width: 250px !important;
   padding: 10px 15px;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-entertainment .container .cards .text-part .mini-detail {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-entertainment .container .cards .text-part .mini-detail {
   color: #d7d7d7;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-entertainment .container .cards .text-part span {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-entertainment .container .cards .text-part span {
   font-size: 16px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   cursor: pointer;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-entertainment .container .cards .text-part span:hover {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-entertainment .container .cards .text-part span:hover {
   color: #fcb941;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-entertainment .container .cards .text-part .cost {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-entertainment .container .cards .text-part .cost {
   font-size: 20px;
   padding-top: 8px;
   color: #fcb941;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-entertainment .container .cards .text-part .stars {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-entertainment .container .cards .text-part .stars {
   display: inline-block;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-entertainment .container .cards .text-part .reviews {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-entertainment .container .cards .text-part .reviews {
   color: #d7d7d7;
   display: inline-block;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-entertainment .container .cards:hover .options-part {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-entertainment .container .cards:hover .options-part {
   opacity: 1 !important;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-entertainment .container .cards:hover .open-hovered {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-entertainment .container .cards:hover .open-hovered {
   display: block !important;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-main #trending-products .all-of-them .container .products-list .allcards .for-entertainment .container .cards:hover .close-hovered {
+main #trending-products .all-of-them .container .products-list .col9 .allcards .for-entertainment .container .cards:hover .close-hovered {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   display: none !important;
@@ -4621,22 +4634,6 @@ footer #bottomF .last-infos span {
     position: relative;
     left: 30% !important;
   }
-  #socials .container .backImg .whiteBoard {
-    height: 600px !important;
-  }
-  #socials .container .backImg .whiteBoard .all {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  #socials .container .backImg .whiteBoard .all .left {
-    border-bottom: 1px solid #ebebeb;
-    padding-bottom: 30px;
-  }
-  #socials .container .backImg .whiteBoard .all .cross {
-    display: none !important;
-  }
   #bottomF .last-infos {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4656,24 +4653,6 @@ footer #bottomF .last-infos span {
     width: 272px;
     height: 20px;
   }
-}
-
-@media only screen and (max-width: 1151px) {
-  .burger-m .table {
-    left: 50px;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  #productSlider .container .slider .right {
-    position: relative;
-  }
-  #productSlider .container .otherproducts {
-    display: none;
-  }
-  #productSlider .container .for-phone-products {
-    display: block !important;
-  }
   #trending-products .all-of-them .heads {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -4692,8 +4671,29 @@ footer #bottomF .last-infos span {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  #trending-products .all-of-them .products-list .fixed-photo {
+  #trending-products .all-of-them .products-list .col3 {
     display: none !important;
+  }
+  #trending-products .all-of-them .products-list .col9 {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 1151px) {
+  .burger-m .table {
+    left: 50px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #productSlider .container .slider .right {
+    position: relative;
+  }
+  #productSlider .container .otherproducts {
+    display: none;
+  }
+  #productSlider .container .for-phone-products {
+    display: block !important;
   }
   #top-selling-products .all-of-them .heads {
     -webkit-box-orient: vertical;
@@ -4773,6 +4773,26 @@ footer #bottomF .last-infos span {
     width: 272px;
     height: 20px;
   }
+  #socials .container .backImg .whiteBoard {
+    height: 660px !important;
+  }
+  #socials .container .backImg .whiteBoard .all {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #socials .container .backImg .whiteBoard .all .left {
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 30px !important;
+  }
+  #socials .container .backImg .whiteBoard .all .cross {
+    display: none !important;
+  }
+  #socials .container .backImg .whiteBoard .all .right .input-part {
+    position: relative;
+    left: 2px !important;
+  }
 }
 
 @media screen and (min-width: 541px) and (max-width: 992px) {
@@ -4802,6 +4822,26 @@ footer #bottomF .last-infos span {
     padding: 1px 4px;
     color: black;
     border-radius: 15px;
+  }
+  #socials .container .backImg .whiteBoard {
+    height: 600px !important;
+  }
+  #socials .container .backImg .whiteBoard .all {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #socials .container .backImg .whiteBoard .all .left {
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 30px !important;
+  }
+  #socials .container .backImg .whiteBoard .all .cross {
+    display: none !important;
+  }
+  #socials .container .backImg .whiteBoard .all .right .input-part {
+    position: relative;
+    left: 2px !important;
   }
 }
 

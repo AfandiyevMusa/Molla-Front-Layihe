@@ -63,11 +63,16 @@ header #up-nav .container .language-part ul li .each-detail {
   position: relative;
 }
 
-header #up-nav .container .language-part ul li .each-detail span {
+header #up-nav .container .language-part ul li .each-detail a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+header #up-nav .container .language-part ul li .each-detail a span {
   cursor: pointer;
 }
 
-header #up-nav .container .language-part ul li .each-detail span i {
+header #up-nav .container .language-part ul li .each-detail a span i {
   margin-left: 8px;
   font-size: 12px !important;
 }

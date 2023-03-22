@@ -99,9 +99,9 @@ $(function () {
             },
             500: {
                 items: 1,
-                nav: false
+                nav: true
             },
-            900: {
+            1000: {
                 items: 2,
                 nav: true
             },
@@ -133,30 +133,30 @@ $(function () {
     });
 
     //Brand Carousel
-    $('.allbrands').owlCarousel({
-        loop: true,
-        margin: 10,
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1,
-                nav: true
-            },
-            500: {
-                items: 1,
-                nav: false
-            },
-            900: {
-                items: 2,
-                nav: true
-            },
-            1200: {
-                items: 4,
-                nav: false,
-                loop: false
-            }
-        }
-    })
+    // $('.allbrands').owlCarousel({
+    //     loop: true,
+    //     margin: 10,
+    //     responsiveClass: true,
+    //     responsive: {
+    //         0: {
+    //             items: 1,
+    //             nav: true
+    //         },
+    //         500: {
+    //             items: 3,
+    //             nav: false
+    //         },
+    //         900: {
+    //             items: 2,
+    //             nav: true
+    //         },
+    //         1200: {
+    //             items: 3,
+    //             nav: false,
+    //             loop: false
+    //         }
+    //     }
+    // })
     // $('.allbrands').owlCarousel({
     //     loop: true,
     //     margin: 10,
@@ -179,31 +179,35 @@ $(function () {
     // })
 
     //Trending Products Carousel
-    // $('.owl-carousel').owlCarousel({
-    // loop:true,
-    // margin:10,
-    // responsiveClass:true,
-    // responsive:{
-    //     0:{
-    //         items:1,
-    //         nav:true
-    //     },
-    //     600:{
-    //         items:3,
-    //         nav:false
-    //     },
-    //     1000:{
-    //         items:5,
-    //         nav:true,
-    //         loop:false
-    //     }
-    // }
-    // })
+    $('.everytrends').owlCarousel({
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+                nav: true
+            },
+            576: {
+                items: 1,
+                nav: false
+            },
+            768: {
+                items: 2,
+                nav: true
+            },
+            992: {
+                items: 3,
+                nav: false,
+                loop: false
+            }
+        }
+    })
 
     //Trending Products TabMenu
     let names = document.querySelectorAll("#trending-products .all-of-them .heads .list-type h6");
     let trends = document.querySelectorAll("#trending-products .all-of-them .products-list .allcards .allcontents");
-    
+
     names.forEach(eachName => {
         eachName.addEventListener("click", function (e) {
             document.querySelector(".active-trend").classList.remove("active-trend");
@@ -218,11 +222,11 @@ $(function () {
             });
         })
     });
-    
+
     //Top Selling Products TabMenu
     let sellnames = document.querySelectorAll("#top-selling-products .all-of-them .heads .list-type h6");
     let topSellingProducts = document.querySelectorAll("#top-selling-products .all-of-them .products-list .allcards .allcontents");
-    
+
     sellnames.forEach(eachSellName => {
         eachSellName.addEventListener("click", function (e) {
             document.querySelector(".active-list").classList.remove("active-list");

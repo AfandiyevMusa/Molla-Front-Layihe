@@ -40,12 +40,16 @@ header {
             transition: all 0.5s;
             .each-detail {
               position: relative;
-              span {
-                cursor: pointer;
-                i {
-                  margin-left: 8px;
-                  font-size: 12px !important;
-                }
+              a{
+                  text-decoration: none;
+                  color: #ccc;
+                span {
+                    cursor: pointer;
+                    i {
+                      margin-left: 8px;
+                      font-size: 12px !important;
+                    }
+                  }
               }
               .drop-money {
                 // opacity: 0;
