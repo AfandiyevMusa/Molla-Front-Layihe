@@ -1,5 +1,5 @@
 $(function(){
-    //Sidebar
+    //Sidebar Home
     let sidebar = document.querySelector(".sidebar");
     let closeButton = document.querySelector(".sidebar .close-part .close");
     let openButton = document.querySelector("#down-nav-phone .container .logo i")
@@ -32,4 +32,19 @@ $(function(){
             });
         })
     });
+
+    //Sidebar Shop
+    let filterBar = document.querySelector("#filter-for-phone .all");
+    // let closePart = document.querySelector(".sidebar .close-part .close");
+    let settingsButton = document.querySelector("#settings .all .button")
+
+    settingsButton.addEventListener("click", function () {
+        filterBar.classList.add("active-filter");
+        filterBar.classList.remove("hide-filter");
+    })
+
+    // closePart.addEventListener("click", function () {
+    //     filterBar.classList.add("hide-filter");
+    //     filterBar.classList.remove("active-filter");
+    // })
 })
