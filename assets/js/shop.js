@@ -38,13 +38,20 @@ $(function(){
     // let closePart = document.querySelector(".sidebar .close-part .close");
     let settingsButton = document.querySelector("#settings .all .button")
 
-    settingsButton.addEventListener("click", function () {
-        filterBar.classList.add("active-filter");
-        filterBar.classList.remove("hide-filter");
-    })
-
-    // closePart.addEventListener("click", function () {
-    //     filterBar.classList.add("hide-filter");
-    //     filterBar.classList.remove("active-filter");
+    // settingsButton.addEventListener("click", function () {
+    //     filterBar.classList.add("active-filter");
+    //     filterBar.classList.remove("hide-filter");
     // })
+
+    settingsButton.addEventListener("click", function () {
+        if (filterBar.classList.contains("hide-filter")) {
+            filterBar.classList.add("active-filter");
+            filterBar.classList.remove("hide-filter");
+            settingsButton.classList.add("slide-settings")
+        } else {
+            filterBar.classList.remove("active-filter");
+            filterBar.classList.add("hide-filter");
+            settingsButton.classList.remove("slide-settings")
+        }
+    })
 })

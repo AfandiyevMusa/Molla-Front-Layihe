@@ -744,11 +744,11 @@ header {
   #main-nav {
     border-bottom: 1px solid #ededed;
     .container {
-      margin-bottom: -20px;
-      margin-top: -16px;
-      padding-top: 15px;
+      margin-bottom: -35px;
+      // margin-top: -16px;
+      // padding-top: 15px;
       .burger-m {
-        margin-bottom: 20px;
+        // margin-bottom: 20px;
         cursor: pointer;
         width: 300px;
         .not-table {
@@ -788,6 +788,7 @@ header {
         }
         .table {
           //   opacity: 0;
+          margin-top: -15px;
           display: none;
           width: 275px;
           transition: all 0.3s;
@@ -821,6 +822,11 @@ header {
               color: #cf9836;
             }
           }
+          ul:hover {
+            .table {
+              background-color: #fcb941;
+            }
+          }
         }
       }
       .burger-m:hover .table {
@@ -833,7 +839,9 @@ header {
       .burger-m:hover .x-icon {
         opacity: 1 !important;
       }
-
+      .burger-m:hover .not-table {
+        background-color: #fcb941;
+      }
       .categories {
         .list {
           ul {
@@ -873,6 +881,7 @@ header {
               .cross {
                 display: inline-block;
                 position: relative;
+                padding-bottom: 16px;
               }
               .cross::after {
                 content: "";
@@ -914,6 +923,7 @@ header {
 
               .drop-list {
                 //   opacity: 0;
+                margin-top: -19px;
                 display: none;
                 width: 210px;
                 transition: all 0.3s;
@@ -946,7 +956,7 @@ header {
               .home {
                 color: #fcb941;
                 border-bottom: 2px solid #fcb941;
-                padding-bottom: 31px;
+                padding-bottom: 16px;
               }
             }
           }
@@ -984,6 +994,7 @@ main {
       .container {
         h1 {
           font-weight: 400;
+          letter-spacing: 3px;
         }
         p {
           font-weight: 300;
@@ -1181,8 +1192,6 @@ main {
                     font-weight: 300;
                     cursor: pointer;
                   }
-                }
-                .bottom {
                 }
               }
             }
@@ -1482,6 +1491,7 @@ main {
     top: 100px !important;
     .all {
       .button {
+        transition: all 0.5s;
         i {
           cursor: pointer;
           display: flex;
@@ -1509,10 +1519,10 @@ main {
       overflow: scroll;
       background-color: white;
       position: fixed;
-      height: 100vh;
-      z-index: 5;
       top: 0;
       left: 0;
+      height: 100vh;
+      z-index: 5;
       padding-top: 25px;
       .col3 {
         width: 300px;
@@ -1630,8 +1640,6 @@ main {
                     cursor: pointer;
                   }
                 }
-                .bottom {
-                }
               }
             }
           }
@@ -1724,6 +1732,11 @@ footer {
       }
     }
   }
+}
+
+.slide-settings{
+  transform: translateX(320px);
+  transition: all 0.5s;
 }
 
 .active-bar {

@@ -1015,13 +1015,10 @@ header #main-nav {
 }
 
 header #main-nav .container {
-  margin-bottom: -20px;
-  margin-top: -16px;
-  padding-top: 15px;
+  margin-bottom: -35px;
 }
 
 header #main-nav .container .burger-m {
-  margin-bottom: 20px;
   cursor: pointer;
   width: 300px;
 }
@@ -1075,6 +1072,7 @@ header #main-nav .container .burger-m .not-table:hover {
 }
 
 header #main-nav .container .burger-m .table {
+  margin-top: -15px;
   display: none;
   width: 275px;
   -webkit-transition: all 0.3s;
@@ -1118,6 +1116,10 @@ header #main-nav .container .burger-m .table ul li:hover {
   color: #cf9836;
 }
 
+header #main-nav .container .burger-m .table ul:hover .table {
+  background-color: #fcb941;
+}
+
 header #main-nav .container .burger-m:hover .table {
   display: block;
 }
@@ -1128,6 +1130,10 @@ header #main-nav .container .burger-m:hover .tab-menu {
 
 header #main-nav .container .burger-m:hover .x-icon {
   opacity: 1 !important;
+}
+
+header #main-nav .container .burger-m:hover .not-table {
+  background-color: #fcb941;
 }
 
 header #main-nav .container .categories .list ul {
@@ -1176,6 +1182,7 @@ header #main-nav .container .categories .list ul li a i {
 header #main-nav .container .categories .list ul li .cross {
   display: inline-block;
   position: relative;
+  padding-bottom: 16px;
 }
 
 header #main-nav .container .categories .list ul li .cross::after {
@@ -1234,6 +1241,7 @@ header #main-nav .container .categories .list ul li .pages:hover::after {
 }
 
 header #main-nav .container .categories .list ul li .drop-list {
+  margin-top: -19px;
   display: none;
   width: 210px;
   -webkit-transition: all 0.3s;
@@ -1281,7 +1289,7 @@ header #main-nav .container .categories .list ul li .drop-list ul li a:hover {
 header #main-nav .container .categories .list ul li .home {
   color: #fcb941;
   border-bottom: 2px solid #fcb941;
-  padding-bottom: 31px;
+  padding-bottom: 16px;
 }
 
 header #main-nav .container .categories .hi:hover .drop-list {
