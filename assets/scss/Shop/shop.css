@@ -1179,6 +1179,10 @@ header #main-nav .container .categories .list ul li a i {
   left: 50px;
 }
 
+header #main-nav .container .categories .list ul li a:hover {
+  color: #fcb941;
+}
+
 header #main-nav .container .categories .list ul li .cross {
   display: inline-block;
   position: relative;
@@ -1487,6 +1491,10 @@ main #shop .all .col3 .accordion .accordion-item .accordion-header button i {
   color: black;
 }
 
+main #shop .all .col3 .accordion .accordion-item .accordion-collapse {
+  width: 100%;
+}
+
 main #shop .all .col3 .accordion .accordion-item .accordion-collapse .category {
   padding-top: 20px;
 }
@@ -1536,6 +1544,7 @@ main #shop .all .col3 .accordion .accordion-item .accordion-collapse .size .each
 main #shop .all .col3 .accordion .accordion-item .accordion-collapse .size .each-input input {
   height: 15px;
   width: 15px;
+  accent-color: black;
 }
 
 main #shop .all .col3 .accordion .accordion-item .accordion-collapse .size .each-input label {
@@ -1558,6 +1567,7 @@ main #shop .all .col3 .accordion .accordion-item .accordion-collapse .brands .ea
 main #shop .all .col3 .accordion .accordion-item .accordion-collapse .brands .each-input input {
   height: 15px;
   width: 15px;
+  accent-color: black;
 }
 
 main #shop .all .col3 .accordion .accordion-item .accordion-collapse .brands .each-input label {
@@ -1565,7 +1575,12 @@ main #shop .all .col3 .accordion .accordion-item .accordion-collapse .brands .ea
   padding-left: 10px;
 }
 
+main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price {
+  width: 100%;
+}
+
 main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .up {
+  padding-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1588,6 +1603,116 @@ main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .up 
   color: #fcb941;
   font-weight: 300;
   cursor: pointer;
+}
+
+main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom {
+  width: 100%;
+}
+
+main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom .range-slider {
+  height: 5px;
+  position: relative;
+  background-color: #eeeeee;
+  border-radius: 2px;
+}
+
+main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom .range-slider .range-selected {
+  height: 100%;
+  left: 0%;
+  right: 0%;
+  position: absolute;
+  border-radius: 5px;
+  background-color: black;
+}
+
+main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom .range-input {
+  position: relative;
+}
+
+main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom .range-input input {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  top: -5px;
+  background: none;
+  pointer-events: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom .range-input input::-webkit-slider-thumb {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: #fff;
+  pointer-events: auto;
+  -webkit-appearance: none;
+}
+
+main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom .range-input input::-moz-range-thumb {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 3px solid black;
+  background-color: #fff;
+  pointer-events: auto;
+  -moz-appearance: none;
+}
+
+main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom .range-price {
+  margin: 30px 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom .range-price label {
+  margin-right: 5px;
+}
+
+main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom .range-price input {
+  border: none;
+  outline: none;
+  width: 55px;
+  padding: 5px;
+  color: #494949;
+}
+
+main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom .range-price .min {
+  position: relative;
+  right: 50px;
+  bottom: 8px;
+}
+
+main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom .range-price p {
+  z-index: 1;
+  color: #494949;
+}
+
+main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom .range-price .max {
+  position: relative;
+  bottom: 8px;
+  left: 12px;
+}
+
+main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom .range-price .max-part {
+  position: relative;
+  left: 60px;
+}
+
+main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom .range-price input:first-of-type {
+  margin-right: 15px;
+}
+
+main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom .range-price input::-webkit-outer-spin-button,
+main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom .range-price input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 main #shop .all .col9 {
@@ -1962,6 +2087,7 @@ main #settings {
   position: -webkit-sticky !important;
   position: sticky !important;
   top: 100px !important;
+  z-index: 20;
 }
 
 main #settings .all .button {
@@ -2164,6 +2290,134 @@ main #filter-for-phone .all .col3 .accordion .accordion-item .accordion-collapse
   color: #fcb941;
   font-weight: 300;
   cursor: pointer;
+}
+
+main #filter-for-phone .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom {
+  width: 100%;
+}
+
+main #filter-for-phone .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom .sliderR {
+  height: 5px;
+  position: relative;
+  background-color: #eeeeee;
+  border-radius: 2px;
+}
+
+main #filter-for-phone .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom .sliderR .selected-range {
+  height: 100%;
+  left: 0%;
+  right: 0%;
+  position: absolute;
+  border-radius: 5px;
+  background-color: black;
+}
+
+main #filter-for-phone .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom .input-range {
+  position: relative;
+}
+
+main #filter-for-phone .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom .input-range input {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  top: -5px;
+  background: none;
+  pointer-events: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+main #filter-for-phone .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom .input-range input::-webkit-slider-thumb {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: #fff;
+  pointer-events: auto;
+  -webkit-appearance: none;
+}
+
+main #filter-for-phone .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom .input-range input::-moz-range-thumb {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 3px solid black;
+  background-color: #fff;
+  pointer-events: auto;
+  -moz-appearance: none;
+}
+
+main #filter-for-phone .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom .price-range {
+  margin: 30px 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main #filter-for-phone .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom .price-range label {
+  margin-right: 5px;
+}
+
+main #filter-for-phone .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom .price-range input {
+  border: none;
+  outline: none;
+  width: 55px;
+  padding: 5px;
+  color: #494949;
+}
+
+main #filter-for-phone .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom .price-range .min {
+  position: relative;
+  right: 50px;
+  bottom: 8px;
+}
+
+main #filter-for-phone .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom .price-range p {
+  z-index: 1;
+  color: #494949;
+}
+
+main #filter-for-phone .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom .price-range .max {
+  position: relative;
+  bottom: 8px;
+  left: 12px;
+}
+
+main #filter-for-phone .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom .price-range .max-part {
+  position: relative;
+  left: 60px;
+}
+
+main #filter-for-phone .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom .price-range input:first-of-type {
+  margin-right: 15px;
+}
+
+main #filter-for-phone .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom .price-range input::-webkit-outer-spin-button,
+main #filter-for-phone .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom .price-range input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+main #scrollBtn .btn i {
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  z-index: 99;
+  font-size: 30px;
+  background-color: #fafafa;
+  color: #999999;
+  cursor: pointer;
+  padding: 18px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+main #scrollBtn .btn i:hover {
+  background-color: #eaeaea;
 }
 
 footer #upF {

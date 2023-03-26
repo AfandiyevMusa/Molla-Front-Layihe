@@ -294,16 +294,114 @@
         </section>
 
         <section id="cart-part">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="deactive-shop">
-                            <i class="fa-solid fa-cart-shopping cart"></i>
-                            <span>No products added to the cart</span>
-                            <button><a href="./shop.html">RETURN TO SHOP</a></button>
+            <div class="all d-none">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="deactive-shop">
+                                <i class="fa-solid fa-cart-shopping cart"></i>
+                                <span>No products added to the cart</span>
+                                <button><a href="./shop.html">RETURN TO SHOP</a></button>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section id="product-table">
+            <div class="all">
+                <div class="container">
+                    <div class="products">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 col-lg-9">
+                                <div class="left">
+                                    <div class="table-part">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Product</th>
+                                                    <th scope="col"></th>
+                                                    <th scope="col">Price</th>
+                                                    <th scope="col">Quantity</th>
+                                                    <th scope="col">Total</th>
+                                                    <th scope="col"></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="image"><img src="./assets/imgs/Home/featured2.jpeg"
+                                                            alt=""></td>
+                                                    <td class="name">Microsoft – Refurbish Xbox One S 500GB</td>
+                                                    <td class="oneprice">$279.99</td>
+                                                    <td class="quantity">
+                                                        <i class="fa-solid fa-minus minus"></i>
+                                                        <input type="number" class="input text-center" min="1"
+                                                        max="10000" value="1">
+                                                        <i class="fa-solid fa-plus plus"></i>
+                                                    </td>
+                                                    <td class="total">$279.99</td>
+                                                    <td class="delete"><i class="fa-solid fa-x" ></i></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="icons">
+                                        <div class="left-icon">
+                                            <input type="text" class="input" placeholder="coupon code">
+                                            <i class="fa-solid fa-arrow-right-long"></i>
+                                        </div>
+                                        <div class="right-icon">
+                                            <a href="">Update Cart<i class="fa-solid fa-arrows-rotate"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-3">
+                                <div class="right">
+                                    <h4>Cart Total</h4>
+                                    <div class="subtotal">
+                                        <span>Subtotal:</span>
+                                        <p>$279.99</p>
+                                    </div>
+                                    <div class="shipping">
+                                        <span>Shipping:</span>
+                                        <div class="each-option option">
+                                            <label class="container"><input type="radio" checked="checked" name="radio">Free Shipping</label>
+                                            <p>$0.00</p>
+                                        </div>
+                                        <div class="each-option">
+                                            <label class="container"><input type="radio"  name="radio">Standard:</label>
+                                            <p>$10.00</p>
+                                        </div>
+                                        <div class="each-option">
+                                            <label class="container"><input type="radio"  name="radio">Express:</label>
+                                            <p>$20.00</p>
+                                        </div>
+                                    </div>
+                                    <div class="estimate">
+                                        <span>Estimate for Your Country</span>
+                                        <p>Change address</p>
+                                    </div>
+                                    <div class="total">
+                                        <span>Total:</span>
+                                        <span>$279.99</span>
+                                    </div>
+                                    <button>Proceed to checkout</button>
+                                </div>
+                                <div class="bottom">
+                                    <a href="">Continue Shopping<i class="fa-solid fa-rotate"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="scrollBtn">
+            <div class="btn">
+                <i class="fa-solid fa-arrow-up-long"></i>
             </div>
         </section>
     </main>

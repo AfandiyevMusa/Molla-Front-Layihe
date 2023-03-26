@@ -878,6 +878,12 @@ header {
                   left: 50px;
                 }
               }
+              a:hover{
+                color: #fcb941;
+              }
+              a:hover{
+                color: #fcb941;
+              }
               .cross {
                 display: inline-block;
                 position: relative;
@@ -892,6 +898,7 @@ header {
                 bottom: 0;
                 left: 0;
                 background-color: #fcb941;
+                color: #fcb941;
                 transform-origin: bottom right;
                 transition: transform 0.25s ease-out;
               }
@@ -1010,6 +1017,7 @@ main {
         }
         .img {
           img {
+            object-fit: cover;
             position: absolute;
             opacity: 0;
             transition: all 0.5s;
@@ -1017,10 +1025,12 @@ main {
           }
         }
         .contents {
+          transition: all 0.5s;
           .airpods {
+            transition: all 0.5s;
             //Then Added
             display: none;
-            top: 200px;
+            // top: 200px;
             transition: all 2s;
 
             position: relative;
@@ -1081,9 +1091,10 @@ main {
             }
           }
           .homepod {
+            transition: all 0.5s;
             //Then Added
             display: none;
-            top: 200px;
+            // top: 200px;
             transition: all 2s;
 
             position: relative;
@@ -1152,6 +1163,7 @@ main {
           margin-top: 13px;
           img {
             padding-bottom: 5px;
+            object-fit: cover;
           }
           .text {
             position: absolute;
@@ -2165,8 +2177,8 @@ main {
         display: flex;
         img {
           display: flex;
-          width: 120px;
-          height: 45px;
+          width: 100px;
+          height: 23px;
         }
         .owl-prev {
           display: none !important;
@@ -3404,6 +3416,8 @@ main {
     .all {
       display: flex;
       justify-content: space-between;
+      --animate-duration: 800ms;
+      --animate-delay: 2s;
       .content {
         display: flex;
         i {
@@ -3421,6 +3435,9 @@ main {
             color: #9a9a9a;
           }
         }
+      }
+      .animate__fadeInLeftBig {
+        --animate-duration: 10s;
       }
     }
   }
@@ -3579,6 +3596,27 @@ main {
             }
           }
         }
+      }
+    }
+  }
+
+  #scrollBtn {
+    .btn {
+      // display: none;
+      i {
+        position: fixed;
+        bottom: 100px;
+        right: 50px;
+        z-index: 99;
+        font-size: 30px;
+        background-color: #fafafa;
+        color: #999999;
+        cursor: pointer;
+        padding: 18px;
+        transition: all 0.5s;
+      }
+      i:hover {
+        background-color: #eaeaea;
       }
     }
   }
@@ -4073,6 +4111,36 @@ footer {
   }
 }
 
+@keyframes slidewords {
+  0% {
+    opacity: 0;
+    transform: translate(0px, 50px);
+    transform-origin: 0px 0px;
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.slider-animation {
+  animation-duration: 1000ms;
+  animation-timing-function: ease;
+  animation-delay: 100ms;
+  animation-name: slidewords;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+  background-color: white !important;
+}
+
 .active-bar {
   transform: translateX(0px);
   transition: all 0.5s;
@@ -4090,10 +4158,8 @@ footer {
 
 .active-words {
   display: block !important;
-  transition: all 2s !important;
-  // top: 0px !important;
-  transform: translateY(-200px);
 }
+
 .open-hovered {
   transition: all 0.5s;
   display: none !important;
@@ -4126,8 +4192,3 @@ footer {
   transition: all 0.5s;
   padding-bottom: 7px !important;
 }
-
-// .non-active-chevron{
-//   cursor: not-allowed;
-//   color: gray !important;
-// }

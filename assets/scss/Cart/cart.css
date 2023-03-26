@@ -1179,6 +1179,10 @@ header #main-nav .container .categories .list ul li a i {
   left: 50px;
 }
 
+header #main-nav .container .categories .list ul li a:hover {
+  color: #fcb941;
+}
+
 header #main-nav .container .categories .list ul li .cross {
   display: inline-block;
   position: relative;
@@ -1376,7 +1380,7 @@ main #cart-part {
   border-bottom: 1px solid #ededed;
 }
 
-main #cart-part .deactive-shop {
+main #cart-part .all .deactive-shop {
   padding-top: 80px;
   padding-bottom: 50px;
   display: -webkit-box;
@@ -1394,19 +1398,19 @@ main #cart-part .deactive-shop {
           justify-content: center;
 }
 
-main #cart-part .deactive-shop i {
+main #cart-part .all .deactive-shop i {
   font-size: 100px;
   color: #868686;
 }
 
-main #cart-part .deactive-shop span {
+main #cart-part .all .deactive-shop span {
   font-weight: 200;
   color: #616161;
   padding-top: 25px;
   padding-bottom: 35px;
 }
 
-main #cart-part .deactive-shop button {
+main #cart-part .all .deactive-shop button {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   background-color: #fcb941;
@@ -1414,14 +1418,387 @@ main #cart-part .deactive-shop button {
   padding: 10px 30px;
 }
 
-main #cart-part .deactive-shop button a {
+main #cart-part .all .deactive-shop button a {
   text-decoration: none;
   color: white;
   font-size: 14px;
 }
 
-main #cart-part .deactive-shop button:hover {
+main #cart-part .all .deactive-shop button:hover {
   background-color: #bf913e;
+}
+
+main #product-table {
+  border-bottom: 1px solid #ebebeb;
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+main #product-table .all .products .left .table-part .table thead tr th {
+  padding-left: 20px;
+  color: #c5c5c5;
+  font-weight: 300;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+main #product-table .all .products .left .table-part .table tbody tr td {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 35px;
+}
+
+main #product-table .all .products .left .table-part .table tbody tr td img {
+  width: 60px;
+  height: 60px;
+}
+
+main #product-table .all .products .left .table-part .table tbody tr .quantity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main #product-table .all .products .left .table-part .table tbody tr .quantity .minus {
+  position: relative;
+  left: 20px;
+  z-index: 2;
+}
+
+main #product-table .all .products .left .table-part .table tbody tr .quantity input {
+  position: relative;
+  outline: none;
+  width: 100px !important;
+  height: 42px !important;
+  color: #c6c6c6;
+  border: 1px solid #c6c6c6;
+}
+
+main #product-table .all .products .left .table-part .table tbody tr .quantity input::-webkit-outer-spin-button,
+main #product-table .all .products .left .table-part .table tbody tr .quantity input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+main #product-table .all .products .left .table-part .table tbody tr .quantity .plus {
+  position: relative;
+  right: 20px;
+}
+
+main #product-table .all .products .left .table-part .table tbody tr .quantity i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20px;
+  height: 42px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  color: #c6c6c6;
+}
+
+main #product-table .all .products .left .table-part .table tbody tr .quantity i:hover {
+  cursor: pointer;
+  color: #fcb941;
+}
+
+main #product-table .all .products .left .table-part .table tbody tr .image {
+  padding-top: 20px;
+}
+
+main #product-table .all .products .left .table-part .table tbody tr .name {
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  padding-top: 40px;
+  font-size: 18px;
+}
+
+main #product-table .all .products .left .table-part .table tbody tr .name:hover {
+  color: #fcb941;
+}
+
+main #product-table .all .products .left .table-part .table tbody tr .oneprice {
+  padding-top: 40px;
+  font-size: 18px;
+}
+
+main #product-table .all .products .left .table-part .table tbody tr .total {
+  padding-top: 40px;
+  font-size: 18px;
+  color: #fcb941;
+}
+
+main #product-table .all .products .left .table-part .table tbody tr .delete i {
+  color: #cfcfcf;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+main #product-table .all .products .left .table-part .table tbody tr .delete i:hover {
+  color: black;
+}
+
+main #product-table .all .products .left .icons {
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main #product-table .all .products .left .icons .left-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+main #product-table .all .products .left .icons .left-icon input {
+  background-color: #fafafa;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 110px;
+  border: 1px solid #ebebeb;
+  outline: none;
+}
+
+main #product-table .all .products .left .icons .left-icon ::-webkit-input-placeholder {
+  font-size: 17px;
+  color: #b5b5b5;
+}
+
+main #product-table .all .products .left .icons .left-icon :-ms-input-placeholder {
+  font-size: 17px;
+  color: #b5b5b5;
+}
+
+main #product-table .all .products .left .icons .left-icon ::-ms-input-placeholder {
+  font-size: 17px;
+  color: #b5b5b5;
+}
+
+main #product-table .all .products .left .icons .left-icon ::placeholder {
+  font-size: 17px;
+  color: #b5b5b5;
+}
+
+main #product-table .all .products .left .icons .left-icon i {
+  padding: 14px;
+  color: #fcb941;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border: 1px solid #fcb941;
+}
+
+main #product-table .all .products .left .icons .left-icon i:hover {
+  background-color: #fcb941;
+  color: white;
+}
+
+main #product-table .all .products .left .icons .right-icon a {
+  font-size: 15px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border: 1px solid #d7d7d7;
+  background-color: white;
+  padding: 14px 23px;
+  text-decoration: none;
+  color: #515151;
+  text-transform: uppercase;
+}
+
+main #product-table .all .products .left .icons .right-icon a i {
+  padding-left: 15px;
+}
+
+main #product-table .all .products .left .icons .right-icon a:hover {
+  color: #fcb941;
+}
+
+main #product-table .all .products .right {
+  background-color: #f9f9f9;
+  border: 1px dashed #d7d7d7;
+  padding: 30px 40px;
+  width: 100%;
+}
+
+main #product-table .all .products .right h4 {
+  font-weight: 400;
+  font-size: 22px;
+  padding-bottom: 13px;
+  border-bottom: 1px solid #cbcbcb;
+}
+
+main #product-table .all .products .right .subtotal {
+  font-size: 17px;
+  padding-top: 10px;
+  font-weight: 300;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #eaeaea;
+}
+
+main #product-table .all .products .right .shipping {
+  padding-top: 20px;
+}
+
+main #product-table .all .products .right .shipping span {
+  font-size: 17px;
+  font-weight: 300;
+}
+
+main #product-table .all .products .right .shipping .each-option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 200;
+  font-size: 15px;
+}
+
+main #product-table .all .products .right .shipping .each-option label {
+  cursor: pointer;
+  padding: 0;
+}
+
+main #product-table .all .products .right .shipping .each-option label input {
+  margin-right: 10px;
+  accent-color: #fcb941;
+}
+
+main #product-table .all .products .right .shipping .option {
+  padding-top: 20px;
+}
+
+main #product-table .all .products .right .estimate {
+  border-bottom: 1px solid #f1f1f1;
+}
+
+main #product-table .all .products .right .estimate span {
+  font-size: 17px;
+  font-weight: 300;
+}
+
+main #product-table .all .products .right .estimate p {
+  display: inline-block;
+  padding-top: 10px;
+  font-size: 15px;
+  font-weight: 200;
+  color: #9e9e9e;
+  border-bottom: 1px solid #9e9e9e;
+  padding-bottom: 2px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+main #product-table .all .products .right .estimate p:hover {
+  color: #fcb941;
+  border-bottom: 1px solid #fcb941;
+}
+
+main #product-table .all .products .right .total {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 15px;
+}
+
+main #product-table .all .products .right .total span {
+  color: #fcb941;
+  font-weight: 300;
+}
+
+main #product-table .all .products .right button {
+  width: 100%;
+  border: 1px solid #fcb941;
+  background-color: transparent;
+  text-transform: uppercase;
+  color: #fcb941;
+  font-weight: 300;
+  font-size: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+main #product-table .all .products .right button:hover {
+  color: white;
+  background-color: #fcb941;
+}
+
+main #product-table .all .products .bottom {
+  text-align: center;
+  margin-top: 20px;
+  border: 1px solid #d7d7d7;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+main #product-table .all .products .bottom a {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: black;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+main #product-table .all .products .bottom a i {
+  padding-left: 10px;
+}
+
+main #product-table .all .products .bottom a:hover {
+  color: #fcb941;
+}
+
+main #scrollBtn .btn i {
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  z-index: 99;
+  font-size: 30px;
+  background-color: #fafafa;
+  color: #999999;
+  cursor: pointer;
+  padding: 18px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+main #scrollBtn .btn i:hover {
+  background-color: #eaeaea;
 }
 
 footer #upF {
@@ -1524,6 +1901,11 @@ footer #bottomF .last-infos span {
   color: #7d7d7d;
   font-size: 15px;
   font-weight: 200;
+}
+
+.clicked-input {
+  border: 1.5px solid #fcb941 !important;
+  background-color: white !important;
 }
 
 .active-bar {

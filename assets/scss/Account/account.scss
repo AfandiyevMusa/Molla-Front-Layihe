@@ -878,6 +878,9 @@ header {
                   left: 50px;
                 }
               }
+              a:hover{
+                color: #fcb941;
+              }
               .cross {
                 display: inline-block;
                 position: relative;
@@ -1073,6 +1076,9 @@ main {
                 }
                 .buttons {
                   padding-top: 15px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
                   button {
                     border: 1px solid #fcb941;
                     background-color: white;
@@ -1099,6 +1105,7 @@ main {
                     color: #a1a1a1;
                     transition: all 0.5s;
                     cursor: pointer;
+                    padding-top: 12px;
                   }
                   span:hover {
                     color: #fcb941;
@@ -1122,6 +1129,7 @@ main {
                   padding-left: 20px;
                 }
                 .buttons {
+                  display: flex;
                   padding-top: 15px;
                   button {
                     border: 1px solid #fcb941;
@@ -1210,6 +1218,27 @@ main {
             }
           }
         }
+      }
+    }
+  }
+
+  #scrollBtn {
+    .btn {
+      // display: none;
+      i {
+        position: fixed;
+        bottom: 100px;
+        right: 50px;
+        z-index: 99;
+        font-size: 30px;
+        background-color: #fafafa;
+        color: #999999;
+        cursor: pointer;
+        padding: 18px;
+        transition: all 0.5s;
+      }
+      i:hover{
+        background-color: #eaeaea;
       }
     }
   }

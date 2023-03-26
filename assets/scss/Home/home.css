@@ -1179,6 +1179,14 @@ header #main-nav .container .categories .list ul li a i {
   left: 50px;
 }
 
+header #main-nav .container .categories .list ul li a:hover {
+  color: #fcb941;
+}
+
+header #main-nav .container .categories .list ul li a:hover {
+  color: #fcb941;
+}
+
 header #main-nav .container .categories .list ul li .cross {
   display: inline-block;
   position: relative;
@@ -1195,6 +1203,7 @@ header #main-nav .container .categories .list ul li .cross::after {
   bottom: 0;
   left: 0;
   background-color: #fcb941;
+  color: #fcb941;
   -webkit-transform-origin: bottom right;
           transform-origin: bottom right;
   -webkit-transition: -webkit-transform 0.25s ease-out;
@@ -1349,6 +1358,8 @@ main #productSlider .container .slider .chevrons .right {
 }
 
 main #productSlider .container .slider .img img {
+  -o-object-fit: cover;
+     object-fit: cover;
   position: absolute;
   opacity: 0;
   -webkit-transition: all 0.5s;
@@ -1356,9 +1367,15 @@ main #productSlider .container .slider .img img {
   width: 780px;
 }
 
+main #productSlider .container .slider .contents {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
 main #productSlider .container .slider .contents .airpods {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   display: none;
-  top: 200px;
   -webkit-transition: all 2s;
   transition: all 2s;
   position: relative;
@@ -1431,8 +1448,9 @@ main #productSlider .container .slider .contents .airpods button:hover {
 }
 
 main #productSlider .container .slider .contents .homepod {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   display: none;
-  top: 200px;
   -webkit-transition: all 2s;
   transition: all 2s;
   position: relative;
@@ -1512,6 +1530,8 @@ main #productSlider .container .otherproducts .each-photo {
 
 main #productSlider .container .otherproducts .each-photo img {
   padding-bottom: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 main #productSlider .container .otherproducts .each-photo .text {
@@ -2275,8 +2295,8 @@ main #brand-carousel .brands .allbrands img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 120px;
-  height: 45px;
+  width: 100px;
+  height: 23px;
 }
 
 main #brand-carousel .brands .allbrands .owl-prev {
@@ -3865,6 +3885,8 @@ main #icons .all {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  --animate-duration: 800ms;
+  --animate-delay: 2s;
 }
 
 main #icons .all .content {
@@ -3890,6 +3912,10 @@ main #icons .all .content .words h3 {
 main #icons .all .content .words p {
   font-size: 20px;
   color: #9a9a9a;
+}
+
+main #icons .all .animate__fadeInLeftBig {
+  --animate-duration: 10s;
 }
 
 main #socials {
@@ -4125,6 +4151,24 @@ main #socials .container .backImg .whiteBoard .all .right .input-part i {
 
 main #socials .container .backImg .whiteBoard .all .right .input-part i:hover {
   background-color: #b08537;
+}
+
+main #scrollBtn .btn i {
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  z-index: 99;
+  font-size: 30px;
+  background-color: #fafafa;
+  color: #999999;
+  cursor: pointer;
+  padding: 18px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+main #scrollBtn .btn i:hover {
+  background-color: #eaeaea;
 }
 
 footer #upF {
@@ -4568,6 +4612,61 @@ footer #bottomF .last-infos span {
   }
 }
 
+@-webkit-keyframes slidewords {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0px, 50px);
+            transform: translate(0px, 50px);
+    -webkit-transform-origin: 0px 0px;
+            transform-origin: 0px 0px;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes slidewords {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0px, 50px);
+            transform: translate(0px, 50px);
+    -webkit-transform-origin: 0px 0px;
+            transform-origin: 0px 0px;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+.slider-animation {
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+  -webkit-animation-name: slidewords;
+          animation-name: slidewords;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+  background-color: white !important;
+}
+
 .active-bar {
   -webkit-transform: translateX(0px);
           transform: translateX(0px);
@@ -4589,10 +4688,6 @@ footer #bottomF .last-infos span {
 
 .active-words {
   display: block !important;
-  -webkit-transition: all 2s !important;
-  transition: all 2s !important;
-  -webkit-transform: translateY(-200px);
-          transform: translateY(-200px);
 }
 
 .open-hovered {

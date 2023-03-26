@@ -32,4 +32,28 @@ $(function(){
             });
         })
     });
+
+    //Coupon code area input background
+    let input = document.querySelector(".input");
+    input.addEventListener("click", function (e) {
+        if(!this.classList.contains("clicked-input")){
+            this.classList.add("clicked-input");
+        }
+        // else {
+        //     eachInput.classList.add("nonclicked-input");
+        // }
+    })
+
+
+
+
+
+
+
+    //Scroll to top button
+    let scrollBtn = document.querySelector("#scrollBtn .btn");
+    scrollBtn.addEventListener("click", function (e) {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    })
 })

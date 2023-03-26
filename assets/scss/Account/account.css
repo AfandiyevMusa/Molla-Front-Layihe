@@ -1179,6 +1179,10 @@ header #main-nav .container .categories .list ul li a i {
   left: 50px;
 }
 
+header #main-nav .container .categories .list ul li a:hover {
+  color: #fcb941;
+}
+
 header #main-nav .container .categories .list ul li .cross {
   display: inline-block;
   position: relative;
@@ -1284,6 +1288,12 @@ header #main-nav .container .categories .list ul li .drop-list ul li a {
 
 header #main-nav .container .categories .list ul li .drop-list ul li a:hover {
   color: #cf9836 !important;
+}
+
+header #main-nav .container .categories .list ul li .home {
+  color: #fcb941;
+  border-bottom: 2px solid #fcb941;
+  padding-bottom: 16px;
 }
 
 header #main-nav .container .categories .hi:hover .drop-list {
@@ -1437,6 +1447,15 @@ main #register .all .register-part .upregister .tab-menu .infos .for-sign input 
 
 main #register .all .register-part .upregister .tab-menu .infos .for-sign .buttons {
   padding-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main #register .all .register-part .upregister .tab-menu .infos .for-sign .buttons button {
@@ -1472,6 +1491,7 @@ main #register .all .register-part .upregister .tab-menu .infos .for-sign .butto
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   cursor: pointer;
+  padding-top: 12px;
 }
 
 main #register .all .register-part .upregister .tab-menu .infos .for-sign .buttons span:hover {
@@ -1504,6 +1524,9 @@ main #register .all .register-part .upregister .tab-menu .infos .for-register in
 }
 
 main #register .all .register-part .upregister .tab-menu .infos .for-register .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding-top: 15px;
 }
 
@@ -1619,6 +1642,24 @@ main #register .all .register-part .other-options .choice a p {
 
 main #register .all .register-part .other-options .choice a:hover {
   background-color: #f5f6f9;
+}
+
+main #scrollBtn .btn i {
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  z-index: 99;
+  font-size: 30px;
+  background-color: #fafafa;
+  color: #999999;
+  cursor: pointer;
+  padding: 18px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+main #scrollBtn .btn i:hover {
+  background-color: #eaeaea;
 }
 
 footer #upF {

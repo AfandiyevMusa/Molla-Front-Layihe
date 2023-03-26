@@ -878,6 +878,9 @@ header {
                   left: 50px;
                 }
               }
+              a:hover{
+                color: #fcb941;
+              }
               .cross {
                 display: inline-block;
                 position: relative;
@@ -1553,6 +1556,7 @@ main {
     display: none;
     position: sticky !important;
     top: 100px !important;
+    z-index: 20;
     .all {
       position: relative;
       .button {
@@ -1573,6 +1577,27 @@ main {
           border-top-left-radius: 5px;
           border-bottom-left-radius: 5px;
         }
+      }
+    }
+  }
+
+  #scrollBtn {
+    .btn {
+      // display: none;
+      i {
+        position: fixed;
+        bottom: 100px;
+        right: 50px;
+        z-index: 99;
+        font-size: 30px;
+        background-color: #fafafa;
+        color: #999999;
+        cursor: pointer;
+        padding: 18px;
+        transition: all 0.5s;
+      }
+      i:hover{
+        background-color: #eaeaea;
       }
     }
   }

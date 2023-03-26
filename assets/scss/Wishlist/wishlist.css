@@ -1179,6 +1179,10 @@ header #main-nav .container .categories .list ul li a i {
   left: 50px;
 }
 
+header #main-nav .container .categories .list ul li a:hover {
+  color: #fcb941;
+}
+
 header #main-nav .container .categories .list ul li .cross {
   display: inline-block;
   position: relative;
@@ -1376,7 +1380,7 @@ main #cart-part {
   border-bottom: 1px solid #ededed;
 }
 
-main #cart-part .deactive-shop {
+main #cart-part .all .deactive-shop {
   padding-top: 80px;
   padding-bottom: 50px;
   display: -webkit-box;
@@ -1394,19 +1398,19 @@ main #cart-part .deactive-shop {
           justify-content: center;
 }
 
-main #cart-part .deactive-shop i {
+main #cart-part .all .deactive-shop i {
   font-size: 150px;
   color: #666666;
 }
 
-main #cart-part .deactive-shop span {
+main #cart-part .all .deactive-shop span {
   font-weight: 200;
   color: #616161;
   padding-top: 25px;
   padding-bottom: 35px;
 }
 
-main #cart-part .deactive-shop button {
+main #cart-part .all .deactive-shop button {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   background-color: #fcb941;
@@ -1414,14 +1418,160 @@ main #cart-part .deactive-shop button {
   padding: 10px 60px;
 }
 
-main #cart-part .deactive-shop button a {
+main #cart-part .all .deactive-shop button a {
   text-decoration: none;
   color: white;
   font-size: 14px;
 }
 
-main #cart-part .deactive-shop button:hover {
+main #cart-part .all .deactive-shop button:hover {
   background-color: #bf913e;
+}
+
+main #product-table {
+  border-bottom: 1px solid #ebebeb;
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+main #product-table .all .products .main .table-part .table thead tr th {
+  padding-left: 20px;
+  color: #c5c5c5;
+  font-weight: 300;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+main #product-table .all .products .main .table-part .table tbody tr td {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 35px;
+}
+
+main #product-table .all .products .main .table-part .table tbody tr td img {
+  width: 60px;
+  height: 60px;
+}
+
+main #product-table .all .products .main .table-part .table tbody tr td .choose {
+  width: 100%;
+}
+
+main #product-table .all .products .main .table-part .table tbody tr td .choose a {
+  padding-left: 50px;
+  padding-right: 50px;
+  text-decoration: none;
+  width: 100%;
+  border: 1px solid #fcb941;
+  background-color: transparent;
+  text-transform: uppercase;
+  color: #fcb941;
+  font-weight: 300;
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+main #product-table .all .products .main .table-part .table tbody tr td .choose a i {
+  padding-right: 10px;
+}
+
+main #product-table .all .products .main .table-part .table tbody tr td .choose a:hover {
+  color: white;
+  background-color: #fcb941;
+}
+
+main #product-table .all .products .main .table-part .table tbody tr .image {
+  padding-top: 20px;
+}
+
+main #product-table .all .products .main .table-part .table tbody tr .name {
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  padding-top: 40px;
+  font-size: 18px;
+}
+
+main #product-table .all .products .main .table-part .table tbody tr .name:hover {
+  color: #fcb941;
+}
+
+main #product-table .all .products .main .table-part .table tbody tr .oneprice {
+  color: #fcb941;
+  padding-top: 40px;
+  font-size: 18px;
+}
+
+main #product-table .all .products .main .table-part .table tbody tr .stock {
+  padding-left: 20px;
+  font-size: 18px;
+  color: #fcb941;
+}
+
+main #product-table .all .products .main .table-part .table tbody tr .delete i {
+  color: #cfcfcf;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+main #product-table .all .products .main .table-part .table tbody tr .delete i:hover {
+  color: black;
+}
+
+main #product-table .all .products .main .icons {
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  gap: 10px;
+}
+
+main #product-table .all .products .main .icons span {
+  font-weight: 300;
+  color: #777777;
+}
+
+main #product-table .all .products .main .icons i {
+  color: #999999;
+  border: 1px solid #999999;
+  padding: 8px 8px;
+  border-radius: 50px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+main #product-table .all .products .main .icons i:hover {
+  color: #fcb941;
+  border-color: #fcb941;
+}
+
+main #scrollBtn .btn i {
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  z-index: 99;
+  font-size: 30px;
+  background-color: #fafafa;
+  color: #999999;
+  cursor: pointer;
+  padding: 18px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+main #scrollBtn .btn i:hover {
+  background-color: #eaeaea;
 }
 
 footer #upF {

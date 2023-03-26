@@ -51,8 +51,10 @@ $(function () {
             if (activeImage.nextElementSibling != null) {
                 if (activeImage.nextElementSibling.getAttribute("data-id") == eachContent.getAttribute("data-id")) {
                     eachContent.classList.add("active-words");
+                    eachContent.classList.add("slider-animation");
                 } else {
                     eachContent.classList.remove("active-words");
+                    eachContent.classList.add("slider-animation");
                 }
             } else {
                 eachContent.parentNode.firstElementChild.classList.add("active-words");
@@ -74,8 +76,10 @@ $(function () {
             if (activeImage.previousElementSibling != null) {
                 if (activeImage.previousElementSibling.getAttribute("data-id") == eachContent.getAttribute("data-id")) {
                     eachContent.classList.add("active-words");
+                    eachContent.classList.add("slider-animation");
                 } else {
                     eachContent.classList.remove("active-words");
+                    eachContent.classList.add("slider-animation");
                 }
             } else {
                 eachContent.parentNode.lastElementChild.classList.add("active-words");
@@ -89,29 +93,29 @@ $(function () {
 
 
     $('.products').owlCarousel({
-        loop:true,
-        margin:10,
-        responsiveClass:true,
-        responsive:{
-            0:{
-                items:1,
-                nav:true,
-                loop:false
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+                nav: true,
+                loop: false
             },
-            600:{
-                items:1,
-                nav:false,
-                loop:false
+            600: {
+                items: 1,
+                nav: false,
+                loop: false
             },
-            750:{
-                items:2,
-                nav:true,
-                loop:false
+            750: {
+                items: 2,
+                nav: true,
+                loop: false
             },
-            1000:{
-                items:4,
-                nav:true,
-                loop:false
+            1000: {
+                items: 4,
+                nav: true,
+                loop: false
             }
         }
     })
@@ -140,47 +144,47 @@ $(function () {
 
     //Brand Carousel
     $('.allbrands').owlCarousel({
-        loop:true,
-        margin:10,
-        responsiveClass:true,
-        responsive:{
-            0:{
-                items:2,
-                nav:true,
-                loop:false
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 2,
+                nav: true,
+                loop: false
             },
-            600:{
-                items:4,
-                nav:false,
-                loop:false
+            600: {
+                items: 4,
+                nav: false,
+                loop: false
             },
-            1000:{
-                items:7,
-                nav:true,
-                loop:false
+            1000: {
+                items: 7,
+                nav: true,
+                loop: false
             }
         }
     })
     //Trending Products Carousel
     $('.trending-products').owlCarousel({
-        loop:true,
-        margin:10,
-        responsiveClass:true,
-        responsive:{
-            0:{
-                items:1,
-                nav:true,
-                loop:false
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+                nav: true,
+                loop: false
             },
-            600:{
-                items:3,
-                nav:false,
-                loop:false
+            600: {
+                items: 3,
+                nav: false,
+                loop: false
             },
-            1000:{
-                items:3,
-                nav:true,
-                loop:false
+            1000: {
+                items: 3,
+                nav: true,
+                loop: false
             }
         }
     })
@@ -206,24 +210,24 @@ $(function () {
 
     //Top-selling Products Carousel
     $('.top-products').owlCarousel({
-        loop:true,
-        margin:10,
-        responsiveClass:true,
-        responsive:{
-            0:{
-                items:1,
-                nav:true,
-                loop:false
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+                nav: true,
+                loop: false
             },
-            600:{
-                items:3,
-                nav:false,
-                loop:false
+            600: {
+                items: 3,
+                nav: false,
+                loop: false
             },
-            1000:{
-                items:3,
-                nav:true,
-                loop:false
+            1000: {
+                items: 3,
+                nav: true,
+                loop: false
             }
         }
     })
@@ -247,6 +251,79 @@ $(function () {
         })
     });
 
+    //Sticky navbar
+    window.onscroll = function () { myFunction() };
+    var navbar = document.getElementById("main-nav");
+    var sticky = navbar.offsetTop;
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+    // function scrollPart(){
+    //     var scrollLimit = 300;
+    //     if (window.scrollY >= scrollLimit) {
+    //         $("#scrollBtn .btn").classList.remove("d-none");
+    //     }
+    // }
 
+    //Scroll to top button
+    let scrollBtn = document.querySelector("#scrollBtn .btn");
+    scrollBtn.addEventListener("click", function (e) {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    })
 
+    // window.onscroll = function () {
+    //     var scrollLimit = 300;
+    //     if (window.scrollY >= scrollLimit) {
+    //         $("#scrollBtn .btn").classList.remove("d-none");
+    //     }
+    // };
+
+    AOS.init();
+    AOS.init("fade-up");
+
+    //ADD TO WISHLIST
+    let products = [];
+    let addWishlistBtns = document.querySelectorAll(".cards .img-part .heart");
+
+    if (JSON.parse(localStorage.getItem("products")) != null) {
+        products = JSON.parse(localStorage.getItem("products"));
+    }
+
+    addWishlistBtns.forEach(eachWishlist => {
+        //get products SUP count 
+        eachWishlist.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            let itemImg = this.previousElementSibling.previousElementSibling.getAttribute("src");
+            let itemName = this.parentNode.parentNode.children[1].children[1].innerHTML;
+            let itemPrice = this.parentNode.parentNode.children[1].children[2].innerHTML;
+            let itemID = this.parentNode.parentNode.getAttribute("data-id");
+            let existProduct = products.find(m => m.id == itemID)
+            if (existProduct != undefined) {
+                this.classList.remove("fa-solid")
+                this.classList.add("fa-regular")
+                this.classList.add("open-hovered")
+
+                //delete method
+            } else {
+                this.classList.remove("fa-regular")
+                this.classList.remove("open-hovered")
+                this.classList.add("fa-solid")
+            }
+
+            products.push({
+                id: itemID,
+                image: itemImg,
+                name: itemName,
+                price: itemPrice
+            })
+            localStorage.setItem("products", JSON.stringify(products));
+            getProductsCount(products);
+        })
+    });
 })

@@ -32,4 +32,11 @@ $(function(){
             });
         })
     });
+    
+    //Scroll to top button
+    let scrollBtn = document.querySelector("#scrollBtn .btn");
+    scrollBtn.addEventListener("click", function (e) {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    })
 })

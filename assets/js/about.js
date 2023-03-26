@@ -78,4 +78,38 @@ $(function () {
             }
         }
     })
+
+    //Scroll to top button
+    let scrollBtn = document.querySelector("#scrollBtn .btn");
+    scrollBtn.addEventListener("click", function (e) {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    })
+
+    //Team members hover
+    let allMembers = document.querySelectorAll(".each-member");
+    allMembers.forEach(eachMember => {
+        eachMember.addEventListener("mouseenter", function (e) {
+            e.preventDefault();
+
+            eachMember.classList.add("backgroundC")
+            eachMember.children[3].classList.remove("d-none");
+            eachMember.children[3].classList.add("slider-animation");
+            eachMember.children[2].classList.add("hide-animation");
+            eachMember.children[1].classList.add("hide-animation");
+        })
+    });
+
+    allMembers.forEach(eachMember => {
+        eachMember.addEventListener("mouseleave", function (e) {
+            e.preventDefault();
+
+            eachMember.classList.remove("backgroundC")
+            eachMember.children[3].classList.add("d-none");
+            eachMember.children[3].classList.remove("slider-animation");
+            eachMember.children[2].classList.remove("hide-animation");
+            eachMember.children[1].classList.remove("hide-animation");
+        })
+    });
+
 })
