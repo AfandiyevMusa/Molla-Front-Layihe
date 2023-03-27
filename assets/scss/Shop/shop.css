@@ -8,10 +8,6 @@
   color: #fff;
 }
 
-header {
-  overflow: hidden;
-}
-
 header #up-nav {
   background-color: #333;
   padding-bottom: 10px;
@@ -1020,7 +1016,6 @@ header #main-nav .container {
 
 header #main-nav .container .burger-m {
   cursor: pointer;
-  width: 300px;
 }
 
 header #main-nav .container .burger-m .not-table {
@@ -1036,11 +1031,11 @@ header #main-nav .container .burger-m .not-table {
 }
 
 header #main-nav .container .burger-m .not-table .tab-menu {
-  font-size: 20px;
+  font-size: 16px;
   opacity: 1;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
-  padding-top: 3px;
+  padding-top: 4px;
 }
 
 header #main-nav .container .burger-m .not-table .x-icon {
@@ -1056,11 +1051,11 @@ header #main-nav .container .burger-m .not-table .x-icon {
 
 header #main-nav .container .burger-m .not-table span {
   font-size: 16px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 header #main-nav .container .burger-m .not-table .down-ch {
-  font-size: 18px;
+  font-size: 15px;
   padding-left: 20px;
   padding-right: 15px;
   padding-top: 5px;
@@ -1072,7 +1067,7 @@ header #main-nav .container .burger-m .not-table:hover {
 }
 
 header #main-nav .container .burger-m .table {
-  margin-top: -15px;
+  margin-top: 0;
   display: none;
   width: 275px;
   -webkit-transition: all 0.3s;
@@ -1311,13 +1306,13 @@ header #main-nav .container .bulb {
 }
 
 header #main-nav .container .bulb i {
-  font-size: 20px;
+  font-size: 17px;
   padding-right: 10px;
-  padding-top: 2px;
+  padding-top: 3px;
 }
 
 header #main-nav .container .bulb span {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 main #caption-photo .back-part {
@@ -2559,9 +2554,28 @@ footer #bottomF .last-infos span {
   z-index: -1;
 }
 
+@media only screen and (max-width: 1151px) {
+  #settings {
+    display: block !important;
+    width: 30% !important;
+  }
+  #filter-for-phone {
+    display: block !important;
+  }
+  #shop .all .col3 {
+    display: none !important;
+  }
+  #shop .all .col9 {
+    width: 100% !important;
+  }
+}
+
 @media screen and (min-width: 992px) and (max-width: 1250px) {
   #down-nav input {
     width: 400px !important;
+  }
+  #main-nav .categories .list ul span {
+    display: none;
   }
 }
 
@@ -2583,18 +2597,6 @@ footer #bottomF .last-infos span {
   }
   .phone-part .list {
     display: block !important;
-  }
-  #settings {
-    display: block !important;
-  }
-  #filter-for-phone {
-    display: block !important;
-  }
-  #shop .all .col3 {
-    display: none !important;
-  }
-  #shop .all .col9 {
-    width: 100% !important;
   }
   #bottomF .last-infos {
     display: -webkit-box;

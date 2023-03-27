@@ -286,44 +286,47 @@ $(function () {
     AOS.init();
     AOS.init("fade-up");
 
-    //ADD TO WISHLIST
-    let products = [];
-    let addWishlistBtns = document.querySelectorAll(".cards .img-part .heart");
+    //ADD TO CART
 
-    if (JSON.parse(localStorage.getItem("products")) != null) {
-        products = JSON.parse(localStorage.getItem("products"));
+    let addCartBtns = document.querySelectorAll(".addToCart");
+    // let link = document.querySelector(".cart-sup");
+    let cartProducts = [];
+    // console.log(addCartBtns);
+    if (JSON.parse(localStorage.getItem("cartProducts")) != null) {
+        cartProducts = JSON.parse(localStorage.getItem("cartProducts"));
     }
 
-    addWishlistBtns.forEach(eachWishlist => {
-        //get products SUP count 
-        eachWishlist.addEventListener("click", function (e) {
+    addCartBtns.forEach(addCart => {
+        getProductsCount(cartProducts);
+        addCart.addEventListener("click", function (e) {
             e.preventDefault();
-
-            let itemImg = this.previousElementSibling.previousElementSibling.getAttribute("src");
-            let itemName = this.parentNode.parentNode.children[1].children[1].innerHTML;
-            let itemPrice = this.parentNode.parentNode.children[1].children[2].innerHTML;
-            let itemID = this.parentNode.parentNode.getAttribute("data-id");
-            let existProduct = products.find(m => m.id == itemID)
+            let itemImg = this.parentNode.previousElementSibling.previousElementSibling.previousElementSibling.getAttribute("src");
+            let itemName = this.parentNode.parentNode.parentNode.children[1].children[1].innerText
+            let itemPrice = this.parentNode.parentNode.parentNode.children[1].children[2].innerText
+            let itemID = parseInt(this.parentNode.parentNode.parentNode.getAttribute("data-id"));
+            let existProduct = cartProducts.find(m=>m.id == itemID);
+            
             if (existProduct != undefined) {
-                this.classList.remove("fa-solid")
-                this.classList.add("fa-regular")
-                this.classList.add("open-hovered")
-
-                //delete method
+                existProduct.count += 1;    
             } else {
-                this.classList.remove("fa-regular")
-                this.classList.remove("open-hovered")
-                this.classList.add("fa-solid")
+                cartProducts.push({
+                    id: itemID,
+                    image: itemImg,
+                    name: itemName,
+                    price: itemPrice,
+                    count: 1
+                })
             }
-
-            products.push({
-                id: itemID,
-                image: itemImg,
-                name: itemName,
-                price: itemPrice
-            })
-            localStorage.setItem("products", JSON.stringify(products));
-            getProductsCount(products);
+            localStorage.setItem("cartProducts", JSON.stringify(cartProducts));
+            getProductsCount(cartProducts);
         })
     });
+
+    function getProductsCount(arr) {
+        let cnt = 0;
+        for (const eachItem of arr) {
+            cnt += eachItem.count;
+            document.querySelector(".cart sup").innerText = cnt;
+        }
+    }
 })

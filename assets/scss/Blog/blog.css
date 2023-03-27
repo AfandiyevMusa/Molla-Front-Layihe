@@ -8,10 +8,6 @@
   color: #fff;
 }
 
-header {
-  overflow: hidden;
-}
-
 header #up-nav {
   background-color: #333;
   padding-bottom: 10px;
@@ -1020,7 +1016,6 @@ header #main-nav .container {
 
 header #main-nav .container .burger-m {
   cursor: pointer;
-  width: 300px;
 }
 
 header #main-nav .container .burger-m .not-table {
@@ -1036,11 +1031,11 @@ header #main-nav .container .burger-m .not-table {
 }
 
 header #main-nav .container .burger-m .not-table .tab-menu {
-  font-size: 20px;
+  font-size: 16px;
   opacity: 1;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
-  padding-top: 3px;
+  padding-top: 4px;
 }
 
 header #main-nav .container .burger-m .not-table .x-icon {
@@ -1056,11 +1051,11 @@ header #main-nav .container .burger-m .not-table .x-icon {
 
 header #main-nav .container .burger-m .not-table span {
   font-size: 16px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 header #main-nav .container .burger-m .not-table .down-ch {
-  font-size: 18px;
+  font-size: 15px;
   padding-left: 20px;
   padding-right: 15px;
   padding-top: 5px;
@@ -1072,7 +1067,7 @@ header #main-nav .container .burger-m .not-table:hover {
 }
 
 header #main-nav .container .burger-m .table {
-  margin-top: -15px;
+  margin-top: 0;
   display: none;
   width: 275px;
   -webkit-transition: all 0.3s;
@@ -1311,13 +1306,13 @@ header #main-nav .container .bulb {
 }
 
 header #main-nav .container .bulb i {
-  font-size: 20px;
+  font-size: 17px;
   padding-right: 10px;
-  padding-top: 2px;
+  padding-top: 3px;
 }
 
 header #main-nav .container .bulb span {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 main #caption-photo .back-part {
@@ -2251,6 +2246,9 @@ footer #bottomF .last-infos span {
   #down-nav input {
     width: 400px !important;
   }
+  #main-nav .categories .list ul span {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -2268,12 +2266,6 @@ footer #bottomF .last-infos span {
   }
   .language-part {
     display: none !important;
-  }
-  .phone-part .list {
-    display: block !important;
-  }
-  #settings {
-    display: block !important;
   }
   #bottomF .last-infos {
     display: -webkit-box;
@@ -2300,15 +2292,22 @@ footer #bottomF .last-infos span {
   .burger-m .table {
     left: 50px;
   }
-}
-
-@media screen and (max-width: 540px) {
+  .phone-part .list {
+    display: block !important;
+  }
+  #settings {
+    display: block !important;
+    width: 30% !important;
+  }
   #main-content .all .col3 {
     display: none !important;
   }
   #main-content .all .col9 {
     width: 100% !important;
   }
+}
+
+@media screen and (max-width: 540px) {
   #main-content .all .col9 .left .each-content .down .fifth span {
     width: 60% !important;
   }
@@ -2350,12 +2349,6 @@ footer #bottomF .last-infos span {
     padding: 1px 4px;
     color: black;
     border-radius: 15px;
-  }
-  #main-content .all .col3 {
-    display: none !important;
-  }
-  #main-content .all .col9 {
-    width: 100% !important;
   }
   #main-content .all .col9 .left .each-content .down .fifth span {
     width: 25% !important;

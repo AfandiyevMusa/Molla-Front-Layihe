@@ -3,12 +3,9 @@
     background: #fcb941;
     color: #fff;
   }
-  // border: 1px solid red;
-  // overflow-x: hidden;
 }
 
 header {
-  overflow: hidden;
   #up-nav {
     background-color: #333;
     padding-bottom: 10px;
@@ -746,22 +743,20 @@ header {
     border-bottom: 1px solid #ededed;
     .container {
       margin-bottom: -35px;
-      // margin-top: -16px;
-      // padding-top: 15px;
       .burger-m {
         // margin-bottom: 20px;
         cursor: pointer;
-        width: 300px;
+        // width: 300px;
         .not-table {
           transition: all 0.5s;
           display: flex;
           justify-content: space-evenly;
           padding-top: 15px;
           .tab-menu {
-            font-size: 20px;
+            font-size: 16px;
             opacity: 1;
             transition: all 0.2s;
-            padding-top: 3px;
+            padding-top: 4px;
           }
           .x-icon {
             font-size: 20px;
@@ -774,10 +769,10 @@ header {
           }
           span {
             font-size: 16px;
-            margin-bottom: 30px;
+            margin-bottom: 15px;
           }
           .down-ch {
-            font-size: 18px;
+            font-size: 15px;
             padding-left: 20px;
             padding-right: 15px;
             padding-top: 5px;
@@ -789,7 +784,7 @@ header {
         }
         .table {
           //   opacity: 0;
-          margin-top: -15px;
+          margin-top: 0;
           display: none;
           width: 275px;
           transition: all 0.3s;
@@ -974,12 +969,12 @@ header {
         display: flex;
         justify-content: end;
         i {
-          font-size: 20px;
+          font-size: 17px;
           padding-right: 10px;
-          padding-top: 2px;
+          padding-top: 3px;
         }
         span {
-          font-size: 16px;
+          font-size: 15px;
         }
       }
     }
@@ -1977,10 +1972,41 @@ footer {
   z-index: -1;
 }
 
+@media only screen and (max-width: 1151px) {
+  #settings {
+    display: block !important;
+    width: 30% !important;
+  }
+  #filter-for-phone {
+    display: block !important;
+  }
+  #shop {
+    .all {
+      .col3 {
+        display: none !important;
+      }
+      .col9 {
+        width: 100% !important;
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 992px) and (max-width: 1250px) {
   #down-nav {
     input {
       width: 400px !important;
+    }
+  }
+  #main-nav{
+    .categories{
+      .list{
+        ul{
+          span{
+            display: none;
+          }
+        }
+      }
     }
   }
 }
@@ -2004,22 +2030,22 @@ footer {
   .phone-part .list {
     display: block !important;
   }
-  #settings {
-    display: block !important;
-  }
-  #filter-for-phone {
-    display: block !important;
-  }
-  #shop {
-    .all {
-      .col3 {
-        display: none !important;
-      }
-      .col9 {
-        width: 100% !important;
-      }
-    }
-  }
+  // #settings {
+  //   display: block !important;
+  // }
+  // #filter-for-phone {
+  //   display: block !important;
+  // }
+  // #shop {
+  //   .all {
+  //     .col3 {
+  //       display: none !important;
+  //     }
+  //     .col9 {
+  //       width: 100% !important;
+  //     }
+  //   }
+  // }
 
   #bottomF {
     .last-infos {

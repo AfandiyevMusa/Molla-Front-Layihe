@@ -1,4 +1,4 @@
-$(function(){
+$(function () {
     //Sidebar
     let sidebar = document.querySelector(".sidebar");
     let closeButton = document.querySelector(".sidebar .close-part .close");
@@ -32,11 +32,14 @@ $(function(){
             });
         })
     });
-    
+
     //Scroll to top button
     let scrollBtn = document.querySelector("#scrollBtn .btn");
     scrollBtn.addEventListener("click", function (e) {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
     })
+
+    //Wishlist
+    
 })
