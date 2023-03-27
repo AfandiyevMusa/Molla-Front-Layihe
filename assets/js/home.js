@@ -287,11 +287,8 @@ $(function () {
     AOS.init("fade-up");
 
     //ADD TO CART
-
     let addCartBtns = document.querySelectorAll(".addToCart");
-    // let link = document.querySelector(".cart-sup");
     let cartProducts = [];
-    // console.log(addCartBtns);
     if (JSON.parse(localStorage.getItem("cartProducts")) != null) {
         cartProducts = JSON.parse(localStorage.getItem("cartProducts"));
     }
@@ -304,10 +301,10 @@ $(function () {
             let itemName = this.parentNode.parentNode.parentNode.children[1].children[1].innerText
             let itemPrice = this.parentNode.parentNode.parentNode.children[1].children[2].innerText
             let itemID = parseInt(this.parentNode.parentNode.parentNode.getAttribute("data-id"));
-            let existProduct = cartProducts.find(m=>m.id == itemID);
-            
+            let existProduct = cartProducts.find(m => m.id == itemID);
+
             if (existProduct != undefined) {
-                existProduct.count += 1;    
+                existProduct.count += 1;
             } else {
                 cartProducts.push({
                     id: itemID,
@@ -329,4 +326,72 @@ $(function () {
             document.querySelector(".cart sup").innerText = cnt;
         }
     }
+
+    //add to wishlist
+    let addWishlistBtns = document.querySelectorAll(".heart");
+    let wishlisted = [];
+
+    if (JSON.parse(localStorage.getItem("wishlisted")) != null) {
+        wishlisted = JSON.parse(localStorage.getItem("wishlisted"));
+    }
+
+    addWishlistBtns.forEach(addWishlist => {
+        getWishlistCount(wishlisted);
+        addWishlist.addEventListener("click", function (e) {
+            e.preventDefault();
+            // this.classList.add("fa-regular");
+            // this.classList.add("open-hovered");
+            // this.classList.remove("fa-solid");
+            let productImg = this.previousElementSibling.previousElementSibling.getAttribute("src");
+            let productName = this.parentNode.nextElementSibling.children[1].innerText
+            let productPrice = this.parentNode.nextElementSibling.children[2].innerText
+            let productID = this.parentNode.parentNode.getAttribute("data-id")
+            let checkProduct = wishlisted.find(m => m.id == productID)
+
+            if (checkProduct != undefined) {
+                this.classList.add("fa-regular");
+                this.classList.add("open-hovered");
+                this.classList.remove("fa-solid");
+                let unlistedIndex = wishlisted.indexOf(checkProduct)
+                if (unlistedIndex > -1) {
+                    wishlisted.splice(unlistedIndex, 1)
+                }
+                localStorage.setItem("wishlisted", JSON.stringify(wishlisted))
+                let decreasedSup = parseInt(document.querySelector(".wishlist-sup").innerText) - 1;
+                document.querySelector(".wishlist-sup").innerText = decreasedSup;
+            } else {
+                // this.classList.remove("fa-regular");
+                // this.classList.remove("open-hovered");
+                // this.classList.add("fa-solid");
+                wishlisted.push({
+                    id: productID,
+                    image: productImg,
+                    name: productName,
+                    price: productPrice,
+                    heart: this,
+                    count: 1
+                })
+            }
+            localStorage.setItem("wishlisted", JSON.stringify(wishlisted));
+
+            // localStorage.setItem("wishlisted", JSON.stringify(wishlisted));
+            getWishlistCount(wishlisted);
+        })
+    });
+
+    function getWishlistCount(arr) {
+        let cnt = 0;
+        for (const eachItem of arr) {
+            cnt += eachItem.count;
+            document.querySelector(".wishlist-sup").innerText = cnt;
+        }
+    }
+
+
+
+
+
+
+
+
 })
