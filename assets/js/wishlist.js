@@ -43,8 +43,6 @@ $(function () {
     //Wishlist
     let wishlisted = JSON.parse(localStorage.getItem("wishlisted"));
     let tableBody = document.querySelector("tbody");
-    // let thead = document.querySelector("thead")
-    // let warningMessage = document.querySelector(".warning");
     let cartPart = document.querySelector("#cart-part")
     let productTable = document.querySelector("#product-table")
 
@@ -54,10 +52,9 @@ $(function () {
         cartPart.classList.add("d-none")
         getWishlistCount(wishlisted);
         wishlisted.forEach(wish => {
-            tableBody.innerHTML += `
-            <tr data-id="${wish.id}">
-            <td class="image"><img src="${wish.image}" alt="">
-            </td>
+            tableBody.innerHTML += `<tr 
+            data-id="${wish.id}">
+            <td class="image"><img src="${wish.image}" alt=""></td>
             <td class="name">${wish.name}</td>
             <td class="oneprice">${wish.price}</td>
             <td class="stock">
@@ -65,7 +62,7 @@ $(function () {
             </td>
             <td class="select">
                 <div class="choose">
-                    <a href=""><i class="fa-solid fa-cart-plus"></i>add to cart</a>
+                    <a href="" class="addToCart"><i class="fa-solid fa-cart-plus"></i>add to cart</a>
                 </div>
             </td>
             <td class="delete"><i class="fa-solid fa-x delete-all"></i></td>

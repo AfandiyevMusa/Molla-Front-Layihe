@@ -138,6 +138,7 @@ $(function () {
         subtotal.innerText = "$" + `${total(JSON.parse(localStorage.getItem("cartProducts"))).toFixed(2)}`;
         totalPrice.innerText = "$" + `${total(JSON.parse(localStorage.getItem("cartProducts"))).toFixed(2)}`;
     }
+
     function getProductsCount(arr) {
         let cnt = 0;
         for (const eachItem of arr) {
@@ -154,22 +155,6 @@ $(function () {
         return sum;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    //Scroll to top button
     let scrollBtn = document.querySelector("#scrollBtn .btn");
     scrollBtn.addEventListener("click", function (e) {
         document.body.scrollTop = 0;

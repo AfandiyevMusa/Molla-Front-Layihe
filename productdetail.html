@@ -1,25 +1,485 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/scss/Product Detail/productdetail.css">
     <title>Product Detail</title>
 </head>
+
 <body>
-    <header></header>
+    <header>
+        <section id="up-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 call-part">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>Call: +0123 456 789</span>
+                    </div>
+                    <div class="col-6 language-part">
+                        <ul>
+                            <li>
+                                <div class="each-detail money-part">
+                                    <span>USD<i class="fa-solid fa-chevron-down"></i></span>
+                                    <div class="drop-money">
+                                        <ul>
+                                            <li>Eur</li>
+                                            <li>Usd</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="each-detail lang-part">
+                                    <span class="lang-part">English<i class="fa-solid fa-chevron-down"></i></span>
+                                    <div class="drop-lang">
+                                        <ul>
+                                            <li>English</li>
+                                            <li>French</li>
+                                            <li>Spanish</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="each-detail">
+                                    <a href="./account.html">
+                                        <span>Sign in / Sign up</span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 phone-part">
+                        <div class="list">
+                            <span>Links<i class="fa-solid fa-chevron-down"></i></span>
+                            <div class="all-category">
+                                <div class="money">
+                                    <span class="usd">USD<i class="fa-solid fa-chevron-down"></i></span>
+                                    <ul class="money-drop">
+                                        <li><a href="">Eur</a></li>
+                                        <li><a href="">Usd</a></li>
+                                    </ul>
+                                </div>
+                                <div class="lang">
+                                    <span class="english">English<i class="fa-solid fa-chevron-down"></i></span>
+                                    <ul class="lang-drop">
+                                        <li><a href="">English</a></li>
+                                        <li><a href="">French</a></li>
+                                        <li><a href="">Spanish</a></li>
+                                    </ul>
+                                </div>
+                                <div class="sign">
+                                    <span>Sign in / Sign up</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <main></main>
+        <section id="down-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2 logo">
+                        <a href="./home.html"><img src="./assets/imgs/Home/molla-logo.png" alt=""></a>
+                    </div>
+                    <div class="col-6 search">
+                        <i class="fa-solid fa-magnifying-glass search-btn"></i>
+                        <input type="text" class="search-area" placeholder="Search product ...">
+                    </div>
+                    <div class="col-4 options">
+                        <div class="compare">
+                            <i class="fa-solid fa-shuffle"></i>
+                            <span>Compare</span>
+                        </div>
+                        <div class="wishlist">
+                            <a href="./wishlist.html">
+                                <div class="wish">
+                                    <sup class="wishlist-sup">0</sup>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <span>Wishlist</span>
+                            </a>
+                        </div>
+                        <div class="cartlist">
+                            <a href="./cart.html">
+                                <div class="cart">
+                                    <sup class="cart-sup">0</sup>
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                                <span>Cart</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <footer></footer>
+        <section id="down-nav-phone">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 logo">
+                        <i class="fa-solid fa-bars open"></i>
+                        <a href="./home.html"><img src="./assets/imgs/Home/molla-logo.png" alt=""></a>
+                    </div>
+                    <div class="col-6 options">
+                        <div class="compare">
+                            <i class="fa-solid fa-shuffle"></i>
+                            <span>Compare</span>
+                        </div>
+                        <div class="wishlist">
+                            <a href="./wishlist.html">
+                                <div class="wish">
+                                    <sup class="wishlist-sup">0</sup>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <span>Wishlist</span>
+                            </a>
+                        </div>
+                        <div class="cartlist">
+                            <a href="./cart.html">
+                                <div class="cart">
+                                    <sup class="cart-sup">0</sup>
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </div>
+                                <span>Cart</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sidebar hide">
+            <div class="sidebar-set">
+                <div class="close-part">
+                    <i class="fa-solid fa-x close"></i>
+                </div>
+                <div class="search container">
+                    <input type="text" placeholder="Search product ...">
+                    <i class="fa-solid fa-magnifying-glass search"></i>
+                </div>
+                <div class="tab-menu">
+                    <div class="for-names">
+                        <div class="names">
+                            <h6 data-id="1" class="for-menu active-menu">MENU</h6>
+                            <h6 data-id="2" class="for-categories">CATEGORIES</h6>
+                        </div>
+                    </div>
+                    <div class="infos">
+                        <ul data-id="1" class="for-menu elems">
+                            <li><a href="">Home</a><i class="fa-solid fa-chevron-down"></i></li>
+                            <li><a href="">Shop</a><i class="fa-solid fa-chevron-down"></i></li>
+                            <li><a href="">Wishlist</a><i class="fa-solid fa-chevron-down"></i></li>
+                            <li><a href="">Pages</a><i class="fa-solid fa-chevron-down"></i></li>
+                            <li><a href="">Blog</a><i class="fa-solid fa-chevron-down"></i></li>
+                            <li><a href="">Cart</a><i class="fa-solid fa-chevron-down"></i></li>
+                        </ul>
+                        <ul data-id="2" class="for-categories elems d-none">
+                            <li><a href="">Electronics</a></li>
+                            <li><a href="">Gift Ideas</a></li>
+                            <li><a href="">Beds</a></li>
+                            <li><a href="">Lighting</a></li>
+                            <li><a href="">Sofas & Sleeper sofas</a></li>
+                            <li><a href="">Storage</a></li>
+                            <li><a href="">Armchairs & Chaises</a></li>
+                            <li><a href="">Decoration</a></li>
+                            <li><a href="">Kitchen Cabinets</a></li>
+                            <li><a href="">Coffee & Tables</a></li>
+                            <li><a href="">Outdoor Furniture</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="socials">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </section>
+
+        <section id="main-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 burger-m">
+                        <div class="not-table">
+                            <i class="fa-solid fa-x x-icon"></i>
+                            <i class="fa-solid fa-bars tab-menu"></i>
+                            <span>Browse Categories</span>
+                            <i class="fa-solid fa-chevron-down down-ch"></i>
+                        </div>
+                        <div class="table">
+                            <ul>
+                                <li>Electronics</li>
+                                <li>Gift Ideas</li>
+                                <li>Beds</li>
+                                <li>Lighting</li>
+                                <li>Sofas & Sleeper sofas</li>
+                                <li>Storage</li>
+                                <li>Armchairs & Chaises</li>
+                                <li>Decoration</li>
+                                <li>Kitchen Cabinets</li>
+                                <li>Coffee & Tables</li>
+                                <li>Outdoor Furniture</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 categories">
+                        <div class="list">
+                            <ul>
+                                <span class="left-side">|</span>
+                                <li><a href="./home.html" class="cross">Home</a></li>
+                                <li><a href="./shop.html" class="cross">Shop</a></li>
+                                <li><a href="./productdetail.html" class="home">Product</a></li>
+                                <li class="hi" class="cross">
+                                    <div>
+                                        <a href="" class="pages">
+                                            Pages
+                                            <i class="fa-solid fa-chevron-down"></i>
+                                        </a>
+                                    </div>
+                                    <div class="drop-list">
+                                        <ul>
+                                            <li><a href="./about.html">About</a></li>
+                                            <li><a href="./contact.html">Contact</a></li>
+                                            <li><a href="./account.html">Login</a></li>
+                                            <li><a href="">FAQs</a></li>
+                                            <li><a href="">Error 404</a></li>
+                                            <li><a href="">Coming Soon</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="./blog.html" class="cross">Blog</a></li>
+                                <li><a href="./cart.html" class="cross">Cart</a></li>
+                                <span class="right-side">|</span>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 bulb">
+                        <i class="fa-regular fa-lightbulb"></i>
+                        <span>Clearance <strong>Up to 30% Off</strong></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section id="links">
+            <div class="container">
+                <div class="all-links">
+                    <a href="./home.html">Home</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <a href="./blog.html">Blog</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <span>Classic</span>
+                </div>
+                <div class="next-prev">
+                    <div class="next">
+                        <i class="fa-solid fa-chevron-left"></i>
+                        <span>Prev</span>
+                    </div>
+                    <div class="prev">
+                        <span>Next</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="product-info">
+            <div class="container">
+                <div class="all">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <div class="left">
+                                <div class="left-p order-last">
+                                    <img src="./assets/imgs/Product Detail/left.jpeg" alt="" class="active">
+                                    <img src="./assets/imgs/Product Detail/left-2.jpeg" alt="" class="not-active">
+                                </div>
+                                <div class="right-p order-lg-last">
+                                    <img src="./assets/imgs/Product Detail/middle.jpeg" alt="">
+                                    <i class="fa-solid fa-arrows-up-down-left-right"></i>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <div class="right">
+                                <div class="text">
+                                    <h4>Dark yellow lace cut out swing dress</h4>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                        <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                        <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                        <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                        <i class="fa-solid fa-star" style="color: #cccccc;"></i>
+                                        <p class="reviews">( 2 Reviews )</p>
+                                    </div>
+                                    <h3>$76.00–$95.00</h3>
+                                    <span>Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis
+                                        vel, nisi.</span>
+                                    <div class="color">
+                                        <h6>Color: </h6>
+                                        <div class="circle">
+                                            <button style="background-color: #cc9967;"></button>
+                                            <button style="background-color: #9966cc;"></button>
+                                            <button style="background-color: #3399cc;"></button>
+                                        </div>
+                                    </div>
+                                    <div class="size">
+                                        <h6>Size: </h6>
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle toggle" type="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Select a size
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <i class="fa-solid fa-check check"></i>
+                                                <li><a class="dropdown-item" href="#">Select a size</a></li>
+                                                <li><a class="dropdown-item" href="#">Small</a></li>
+                                                <li><a class="dropdown-item" href="#">Medium</a></li>
+                                                <li><a class="dropdown-item" href="#">Large</a></li>
+                                                <li><a class="dropdown-item" href="#">Extra Large</a></li>
+                                                <li><a class="dropdown-item" href="#">Extra Small</a></li>
+                                            </ul>
+                                        </div>
+                                        <span><i class="fa-solid fa-table-list"></i>size guide</span>
+                                    </div>
+                                    <div class="qty">
+                                        <h6>Qty: </h6>
+                                        <div class="quantity">
+                                            <i class="fa-solid fa-minus minus"></i>
+                                            <input type="number" class="input text-center" min="1" max="10000" value="1">
+                                            <i class="fa-solid fa-plus plus"></i>
+                                        </div>
+                                    </div>
+                                    <div class="options">
+                                        <div class="add-cart">
+                                            <span><i class="fa-solid fa-cart-plus"></i>Add to Cart</span>
+                                        </div>
+                                        <div class="add-wishlist">
+                                            <span><i class="fa-regular fa-heart"></i>Add to Wishlist</span>
+                                        </div>
+                                    </div>
+                                    <div class="categories">
+                                        <p>Category: </p>
+                                        <span>Dresses, </span>
+                                        <span>Women, </span>
+                                        <span>Clothing</span>
+                                    </div>
+                                    <div class="share">
+                                        <p>Share: </p>
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                        <i class="fa-brands fa-twitter"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                        <i class="fa-brands fa-pinterest"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section></section>
+
+        <section></section>
+
+
+
+        <section id="scrollBtn">
+            <div class="btn">
+                <i class="fa-solid fa-arrow-up-long"></i>
+            </div>
+        </section>
+    </main>
+
+    <!-- <footer>
+        <section id="upF">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="logo-part">
+                            <img src="./assets/imgs/Home/molla-logo2.png" alt="">
+                            <p>Praesent dapibus, neque id cursus ucibus, tortor neque egestas augue, eu vulputate magna
+                                eros eu erat.</p>
+                            <div class="contact">
+                                <i class="fa-solid fa-phone"></i>
+                                <div class="infos">
+                                    <p>Got Question? Call us 24/7</p>
+                                    <span>+0123 456 789</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="options">
+                            <h4>Useful Links</h4>
+                            <ul>
+                                <li><a href="./about.html">About Molla</a></li>
+                                <li><a href="">Our Services</a></li>
+                                <li><a href="">How to shop on Molla</a></li>
+                                <li><a href="">FAQ</a></li>
+                                <li><a href="./contact.html">Contact us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="options">
+                            <h4>Customer Service</h4>
+                            <ul>
+                                <li><a href="">Payment Methods</a></li>
+                                <li><a href="">Money-back guarantee!</a></li>
+                                <li><a href="">Returns</a></li>
+                                <li><a href="">Shipping</a></li>
+                                <li><a href="">Terms and conditions</a></li>
+                                <li><a href="">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="options">
+                            <h4>My Account</h4>
+                            <ul>
+                                <li><a href="./account.html">Sign in</a></li>
+                                <li><a href="./cart.html">View Cart</a></li>
+                                <li><a href="./wishlist.html">My Wishlist</a></li>
+                                <li><a href="">Track My Order</a></li>
+                                <li><a href="">Help</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="bottomF">
+            <div class="container">
+                <div class="last-infos">
+                    <span>Copyright © 2023 Molla Store. All Rights Reserved.</span>
+                    <img src="./assets/imgs/Home/footer-cards.png" alt="">
+                </div>
+            </div>
+        </section>
+    </footer> -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
         integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/ba8f3ff677.js" crossorigin="anonymous"></script>
     <script src="./assets/js/productdetail.js"></script>
 </body>
+
 </html>

@@ -87,7 +87,7 @@ $(function () {
     })
 
     //Team members hover
-    let allMembers = document.querySelectorAll(".each-member");
+    let allMembers = document.querySelectorAll(".people");
     allMembers.forEach(eachMember => {
         eachMember.addEventListener("mouseenter", function (e) {
             e.preventDefault();

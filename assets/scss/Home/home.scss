@@ -876,7 +876,7 @@ header {
                   left: 50px;
                 }
               }
-              a:hover{
+              a:hover {
                 color: #fcb941;
               }
               .cross {
@@ -1021,12 +1021,8 @@ main {
         .contents {
           transition: all 0.5s;
           .airpods {
-            transition: all 0.5s;
-            //Then Added
             display: none;
-            // top: 200px;
             transition: all 2s;
-
             position: relative;
             z-index: 2;
             left: 80px;
@@ -1086,11 +1082,8 @@ main {
           }
           .homepod {
             transition: all 0.5s;
-            //Then Added
             display: none;
-            // top: 200px;
             transition: all 2s;
-
             position: relative;
             z-index: 2;
             left: 80px;
@@ -3707,11 +3700,11 @@ footer {
       width: 400px !important;
     }
   }
-  #main-nav{
-    .categories{
-      .list{
-        ul{
-          span{
+  #main-nav {
+    .categories {
+      .list {
+        ul {
+          span {
             display: none;
           }
         }
@@ -4129,7 +4122,7 @@ footer {
 }
 
 .slider-animation {
-  animation-duration: 1000ms;
+  animation-duration: 3000ms;
   animation-timing-function: ease;
   animation-delay: 100ms;
   animation-name: slidewords;

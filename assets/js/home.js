@@ -262,26 +262,6 @@ $(function () {
             navbar.classList.remove("sticky");
         }
     }
-    // function scrollPart(){
-    //     var scrollLimit = 300;
-    //     if (window.scrollY >= scrollLimit) {
-    //         $("#scrollBtn .btn").classList.remove("d-none");
-    //     }
-    // }
-
-    //Scroll to top button
-    let scrollBtn = document.querySelector("#scrollBtn .btn");
-    scrollBtn.addEventListener("click", function (e) {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    })
-
-    // window.onscroll = function () {
-    //     var scrollLimit = 300;
-    //     if (window.scrollY >= scrollLimit) {
-    //         $("#scrollBtn .btn").classList.remove("d-none");
-    //     }
-    // };
 
     AOS.init();
     AOS.init("fade-up");
@@ -339,9 +319,6 @@ $(function () {
         getWishlistCount(wishlisted);
         addWishlist.addEventListener("click", function (e) {
             e.preventDefault();
-            // this.classList.add("fa-regular");
-            // this.classList.add("open-hovered");
-            // this.classList.remove("fa-solid");
             let productImg = this.previousElementSibling.previousElementSibling.getAttribute("src");
             let productName = this.parentNode.nextElementSibling.children[1].innerText
             let productPrice = this.parentNode.nextElementSibling.children[2].innerText
@@ -359,22 +336,21 @@ $(function () {
                 localStorage.setItem("wishlisted", JSON.stringify(wishlisted))
                 let decreasedSup = parseInt(document.querySelector(".wishlist-sup").innerText) - 1;
                 document.querySelector(".wishlist-sup").innerText = decreasedSup;
+                // this.classList.setItem("class", "fa-regular fa-heart open-hovered heart");
             } else {
-                // this.classList.remove("fa-regular");
-                // this.classList.remove("open-hovered");
-                // this.classList.add("fa-solid");
+                this.classList.remove("fa-regular");
+                this.classList.remove("open-hovered");
+                this.classList.add("fa-solid");
                 wishlisted.push({
                     id: productID,
                     image: productImg,
                     name: productName,
                     price: productPrice,
-                    heart: this,
                     count: 1
                 })
+                // this.setItem("class", "fa-solid fa-heart heart");
             }
             localStorage.setItem("wishlisted", JSON.stringify(wishlisted));
-
-            // localStorage.setItem("wishlisted", JSON.stringify(wishlisted));
             getWishlistCount(wishlisted);
         })
     });
@@ -387,11 +363,20 @@ $(function () {
         }
     }
 
+    //Scroll to top button
+    let scrollBtn = document.querySelector("#scrollBtn .btn");
+    scrollBtn.addEventListener("click", function (e) {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    })
 
-
-
-
-
-
+    const scrollBtnSection = document.querySelector("#scrollBtn .btn i");
+    window.addEventListener("scroll", function(e) {
+        if(this.window.scrollY >= 376.5) {
+            scrollBtn.classList.remove("slider-animation")
+        } else {
+            scrollBtn.classList.add("slider-animation")
+        }
+    })
 
 })

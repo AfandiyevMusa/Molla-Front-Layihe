@@ -1367,8 +1367,6 @@ main #productSlider .container .slider .contents {
 }
 
 main #productSlider .container .slider .contents .airpods {
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
   display: none;
   -webkit-transition: all 2s;
   transition: all 2s;
@@ -4640,8 +4638,8 @@ footer #bottomF .last-infos span {
 }
 
 .slider-animation {
-  -webkit-animation-duration: 1000ms;
-          animation-duration: 1000ms;
+  -webkit-animation-duration: 3000ms;
+          animation-duration: 3000ms;
   -webkit-animation-timing-function: ease;
           animation-timing-function: ease;
   -webkit-animation-delay: 100ms;
