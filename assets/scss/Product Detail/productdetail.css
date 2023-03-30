@@ -1830,6 +1830,197 @@ main #product-info .all .right .text .share i:hover {
   border-color: #fcb941;
 }
 
+main #tab-part {
+  height: 100vh;
+  padding-top: 70px;
+}
+
+main #tab-part .tabs .all-heads {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+main #tab-part .tabs .all-heads .eachHead {
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+main #tab-part .tabs .all-heads .addui-Tabs-active {
+  border-bottom: 2px solid #fcb941;
+  color: #fcb941;
+}
+
+main #tab-part .tabs .all-heads .eachHead:hover {
+  color: #fcb941;
+  border-bottom: 2px solid #fcb941;
+}
+
+main #tab-part .tabs .all-heads .not {
+  cursor: not-allowed;
+}
+
+main #tab-part .tabs .all-contents .each-content {
+  border: 1px solid #dadada;
+  padding: 25px;
+}
+
+main #tab-part .tabs .all-contents .each-content .description h5 {
+  font-weight: 300;
+  padding-bottom: 15px;
+  font-size: 18px;
+}
+
+main #tab-part .tabs .all-contents .each-content .description span {
+  font-size: 17px;
+  color: #b0b0b0;
+}
+
+main #tab-part .tabs .all-contents .each-content .description ul {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0;
+  padding-left: 20px;
+}
+
+main #tab-part .tabs .all-contents .each-content .description ul li {
+  font-weight: 200;
+  padding-bottom: 10px;
+}
+
+main #tab-part .tabs .all-contents .each-content .additional-info h5 {
+  font-weight: 300;
+  padding-bottom: 15px;
+  font-size: 18px;
+}
+
+main #tab-part .tabs .all-contents .each-content .additional-info .fabric {
+  padding-top: 30px;
+  padding-bottom: 8px !important;
+}
+
+main #tab-part .tabs .all-contents .each-content .additional-info span {
+  font-size: 17px;
+  color: #b0b0b0;
+}
+
+main #tab-part .tabs .all-contents .each-content .additional-info ul {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0;
+  padding-left: 20px;
+}
+
+main #tab-part .tabs .all-contents .each-content .additional-info ul li {
+  font-weight: 200;
+  padding-bottom: 7px;
+}
+
+main #tab-part .tabs .all-contents .each-content .shipping h5 {
+  font-weight: 300;
+  padding-bottom: 15px;
+  font-size: 18px;
+}
+
+main #tab-part .tabs .all-contents .each-content .shipping p {
+  font-size: 18px;
+  color: #b0b0b0;
+  font-weight: 200;
+}
+
+main #tab-part .tabs .all-contents .each-content .shipping p span {
+  color: black;
+  font-weight: 200;
+  border-bottom: 1px solid #b8b8b8;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+main #tab-part .tabs .all-contents .each-content .shipping p span:hover {
+  color: #fcb941;
+  border-color: #fcb941;
+}
+
+main #tab-part .tabs .all-contents .each-content .reviews .all-rev h4 {
+  font-size: 18px;
+  padding-bottom: 15px;
+}
+
+main #tab-part .tabs .all-contents .each-content .reviews .all-rev .each {
+  padding-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main #tab-part .tabs .all-contents .each-content .reviews .all-rev .each .left h5 {
+  font-weight: 400;
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+
+main #tab-part .tabs .all-contents .each-content .reviews .all-rev .each .left .stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+main #tab-part .tabs .all-contents .each-content .reviews .all-rev .each .left span {
+  color: #d9d9d9 !important;
+}
+
+main #tab-part .tabs .all-contents .each-content .reviews .all-rev .each .right {
+  margin-left: 20px;
+  width: 90%;
+}
+
+main #tab-part .tabs .all-contents .each-content .reviews .all-rev .each .right h5 {
+  font-weight: 300;
+  padding-bottom: 3px;
+  font-size: 20px;
+}
+
+main #tab-part .tabs .all-contents .each-content .reviews .all-rev .each .right span {
+  font-weight: 300;
+  font-size: 18px;
+  color: #838383;
+}
+
+main #tab-part .tabs .all-contents .each-content .reviews .all-rev .each .right .icons {
+  padding-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 25px;
+}
+
+main #tab-part .tabs .all-contents .each-content .reviews .all-rev .each .right .icons a {
+  text-decoration: none;
+  padding-bottom: 5px;
+  font-size: 14px;
+  color: #838383;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+main #tab-part .tabs .all-contents .each-content .reviews .all-rev .each .right .icons a i {
+  padding-right: 10px;
+}
+
+main #tab-part .tabs .all-contents .each-content .reviews .all-rev .each .right .icons a:hover {
+  color: #fcb941;
+  border-bottom: 1px solid #fcb941;
+}
+
+main #tab-part .tabs .all-contents .each-content .reviews .all-rev .cross {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ebebeb;
+}
+
 main #scrollBtn .btn i {
   position: fixed;
   bottom: 100px;

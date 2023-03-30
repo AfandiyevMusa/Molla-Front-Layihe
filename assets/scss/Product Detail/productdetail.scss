@@ -1081,7 +1081,7 @@ main {
             opacity: 0.5;
           }
           .not-active:hover {
-              opacity: 1;
+            opacity: 1;
           }
         }
         .right-p {
@@ -1371,7 +1371,193 @@ main {
       }
     }
   }
-  
+
+  #tab-part {
+    height: 100vh;
+    padding-top: 70px;
+    .tabs {
+      // padding-left: 100px;
+      // padding-right: 100px;
+      // text-align: center;
+      .all-heads {
+        margin-left: 150px;
+        margin-right: 150px;
+        .eachHead {
+          cursor: pointer;
+          transition: all 0.5s;
+        }
+        .addui-Tabs-active {
+          border-bottom: 2px solid #fcb941;
+          color: #fcb941;
+        }
+        .eachHead:hover {
+          color: #fcb941;
+          border-bottom: 2px solid #fcb941;
+        }
+        .not {
+          cursor: not-allowed;
+        }
+      }
+      .all-contents {
+        .each-content {
+          border: 1px solid #dadada;
+          padding: 25px;
+          .description {
+            h5 {
+              font-weight: 300;
+              padding-bottom: 15px;
+              font-size: 18px;
+            }
+            span {
+              font-size: 17px;
+              color: #b0b0b0;
+            }
+            ul {
+              margin-top: 20px;
+              margin-bottom: 20px;
+              padding: 0;
+              padding-left: 20px;
+              li {
+                font-weight: 200;
+                padding-bottom: 10px;
+              }
+            }
+          }
+          .additional-info {
+            h5 {
+              font-weight: 300;
+              padding-bottom: 15px;
+              font-size: 18px;
+            }
+            .fabric {
+              padding-top: 30px;
+              padding-bottom: 8px !important;
+            }
+            span {
+              font-size: 17px;
+              color: #b0b0b0;
+            }
+            ul {
+              margin-top: 20px;
+              margin-bottom: 20px;
+              padding: 0;
+              padding-left: 20px;
+              li {
+                font-weight: 200;
+                padding-bottom: 7px;
+              }
+            }
+          }
+          .shipping {
+            h5 {
+              font-weight: 300;
+              padding-bottom: 15px;
+              font-size: 18px;
+            }
+            p {
+              font-size: 18px;
+              color: #b0b0b0;
+              font-weight: 200;
+              span {
+                color: black;
+                font-weight: 200;
+                border-bottom: 1px solid #b8b8b8;
+                cursor: pointer;
+                transition: all 0.5s;
+              }
+              span:hover {
+                color: #fcb941;
+                border-color: #fcb941;
+              }
+            }
+          }
+          .reviews {
+            .all-rev {
+              h4 {
+                font-size: 18px;
+                padding-bottom: 15px;
+              }
+              .each {
+                  padding-top: 15px;
+                display: flex;
+                // gap: 25px;
+                .left {
+                  h5 {
+                    font-weight: 400;
+                    padding-bottom: 10px;
+                    font-size: 18px;
+                  }
+                  .stars {
+                    display: flex;
+                    font-size: 13px;
+                    margin-bottom: 10px;
+                  }
+                  span {
+                    color: #d9d9d9 !important;
+                  }
+                }
+                .right {
+                  margin-left: 20px;
+                  width: 90%;
+                  h5 {
+                    font-weight: 300;
+                    padding-bottom: 3px;
+                    font-size: 20px;
+                  }
+                  span {
+                      font-weight: 300;
+                    font-size: 18px;
+                    color: #838383;
+                  }
+                  .icons {
+                    padding-top: 15px;
+                    display: flex;
+                    gap: 25px;
+                    a {
+                        text-decoration: none;
+                        padding-bottom: 5px;
+                        font-size: 14px;
+                        color: #838383;
+                        cursor: pointer;
+                        transition: all 0.5s;
+                      i {
+                          padding-right: 10px;
+                      }
+                    }
+                    a:hover{
+                        color: #fcb941;
+                        border-bottom: 1px solid #fcb941;
+                    }
+                  }
+                }
+              }
+              .cross{
+                  padding-bottom: 15px;
+                  border-bottom: 1px solid #ebebeb;
+              }
+            }
+            .additions{
+                h4{
+
+                }
+                span{
+
+                }
+                p{
+
+                }
+                .stars{
+                    i{
+
+                    }
+                }
+                //input type text.....
+            }
+          }
+        }
+      }
+    }
+  }
 
   #scrollBtn {
     .btn {
