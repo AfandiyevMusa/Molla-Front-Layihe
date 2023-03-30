@@ -1,4 +1,4 @@
-$(function(){
+$(function () {
     //Sidebar
     let sidebar = document.querySelector(".sidebar");
     let closeButton = document.querySelector(".sidebar .close-part .close");
@@ -32,14 +32,14 @@ $(function(){
             });
         })
     });
-    
+
     //Input Background
     let inputs = document.querySelectorAll(".inputs");
-    
+
     inputs.forEach(eachInput => {
         // eachInput.classList.remove("clicked-input")
         eachInput.addEventListener("click", function (e) {
-            if(!this.classList.contains("clicked-input")){
+            if (!this.classList.contains("clicked-input")) {
                 this.classList.add("clicked-input");
             }
         })
@@ -51,4 +51,27 @@ $(function(){
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
     })
+
+    //cart and wishlists icon numbers
+    let wishlisted = JSON.parse(localStorage.getItem("wishlisted"));
+    function getWishlistCount(arr) {
+        let cnt = 0;
+        for (const eachItem of arr) {
+            cnt += eachItem.count;
+            document.querySelector(".wishlist-sup").innerText = cnt;
+        }
+    }
+    getWishlistCount(wishlisted);
+
+
+
+    let cartProducts = JSON.parse(localStorage.getItem("cartProducts"));
+    function getProductsCount(arr) {
+        let cnt = 0;
+        for (const eachItem of arr) {
+            cnt += eachItem.count;
+            document.querySelector(".cart sup").innerText = cnt;
+        }
+    }
+    getProductsCount(cartProducts);
 })

@@ -1478,7 +1478,7 @@ main {
                 padding-bottom: 15px;
               }
               .each {
-                  padding-top: 15px;
+                padding-top: 15px;
                 display: flex;
                 // gap: 25px;
                 .left {
@@ -1505,7 +1505,7 @@ main {
                     font-size: 20px;
                   }
                   span {
-                      font-weight: 300;
+                    font-weight: 300;
                     font-size: 18px;
                     color: #838383;
                   }
@@ -1514,44 +1514,71 @@ main {
                     display: flex;
                     gap: 25px;
                     a {
-                        text-decoration: none;
-                        padding-bottom: 5px;
-                        font-size: 14px;
-                        color: #838383;
-                        cursor: pointer;
-                        transition: all 0.5s;
+                      text-decoration: none;
+                      padding-bottom: 5px;
+                      font-size: 14px;
+                      color: #838383;
+                      cursor: pointer;
+                      transition: all 0.5s;
                       i {
-                          padding-right: 10px;
+                        padding-right: 10px;
                       }
                     }
-                    a:hover{
-                        color: #fcb941;
-                        border-bottom: 1px solid #fcb941;
+                    a:hover {
+                      color: #fcb941;
+                      border-bottom: 1px solid #fcb941;
                     }
                   }
                 }
               }
-              .cross{
-                  padding-bottom: 15px;
-                  border-bottom: 1px solid #ebebeb;
+              .cross {
+                padding-bottom: 15px;
+                border-bottom: 1px solid #ebebeb;
               }
             }
-            .additions{
-                h4{
-
+            .additions {
+              padding-top: 30px;
+              h4 {
+                font-size: 17px;
+              }
+              span {
+                font-size: 14px;
+                color: #b0b0b0;
+              }
+              p {
+                display: inline;
+                font-weight: 300;
+                font-size: 14px;
+              }
+              .stars {
+                display: inline;
+                font-size: 10px;
+                i {
                 }
-                span{
-
+              }
+              textarea {
+                border: 1px solid #ebebeb;
+                padding-left: 15px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                width: 100%;
+                outline: none;
+              }
+              .name {
+                display: flex;
+                gap: 20px;
+                input {
+                  border: 1px solid #ebebeb;
+                  padding-left: 15px;
+                  padding-top: 8px;
+                  padding-bottom: 8px;
+                  width: 100%;
+                  outline: none;
                 }
-                p{
+                padding-bottom: 18px;
+              }
 
-                }
-                .stars{
-                    i{
-
-                    }
-                }
-                //input type text.....
+              //input type text.....
             }
           }
         }

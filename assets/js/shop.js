@@ -62,18 +62,6 @@ $(function () {
         document.documentElement.scrollTop = 0;
     })
 
-    // window.onscroll = function () {
-    //     var scrollLimit = 200;
-    //     if (window.scrollY >= scrollLimit) {
-    //         alert("hello world")
-    //     }
-    // };
-
-    // window.onload = function () {
-    //     slideOne();
-    //     slideTwo();
-    // }
-
     let rangeMin = 100;
     const range = document.querySelector(".range-selected");
     const rangeInput = document.querySelectorAll(".range-input input");
@@ -159,4 +147,27 @@ $(function () {
     $("[type='number']").keypress(function (evt) {
         evt.preventDefault();
     });
+
+    //cart and wishlists icon numbers
+    let wishlisted = JSON.parse(localStorage.getItem("wishlisted"));
+    function getWishlistCount(arr) {
+        let cnt = 0;
+        for (const eachItem of arr) {
+            cnt += eachItem.count;
+            document.querySelector(".wishlist-sup").innerText = cnt;
+        }
+    }
+    getWishlistCount(wishlisted);
+
+
+
+    let cartProducts = JSON.parse(localStorage.getItem("cartProducts"));
+    function getProductsCount(arr) {
+        let cnt = 0;
+        for (const eachItem of arr) {
+            cnt += eachItem.count;
+            document.querySelector(".cart sup").innerText = cnt;
+        }
+    }
+    getProductsCount(cartProducts);
 })

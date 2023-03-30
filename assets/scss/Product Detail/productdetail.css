@@ -2021,6 +2021,56 @@ main #tab-part .tabs .all-contents .each-content .reviews .all-rev .cross {
   border-bottom: 1px solid #ebebeb;
 }
 
+main #tab-part .tabs .all-contents .each-content .reviews .additions {
+  padding-top: 30px;
+}
+
+main #tab-part .tabs .all-contents .each-content .reviews .additions h4 {
+  font-size: 17px;
+}
+
+main #tab-part .tabs .all-contents .each-content .reviews .additions span {
+  font-size: 14px;
+  color: #b0b0b0;
+}
+
+main #tab-part .tabs .all-contents .each-content .reviews .additions p {
+  display: inline;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+main #tab-part .tabs .all-contents .each-content .reviews .additions .stars {
+  display: inline;
+  font-size: 10px;
+}
+
+main #tab-part .tabs .all-contents .each-content .reviews .additions textarea {
+  border: 1px solid #ebebeb;
+  padding-left: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 100%;
+  outline: none;
+}
+
+main #tab-part .tabs .all-contents .each-content .reviews .additions .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  padding-bottom: 18px;
+}
+
+main #tab-part .tabs .all-contents .each-content .reviews .additions .name input {
+  border: 1px solid #ebebeb;
+  padding-left: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 100%;
+  outline: none;
+}
+
 main #scrollBtn .btn i {
   position: fixed;
   bottom: 100px;
