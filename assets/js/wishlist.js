@@ -33,13 +33,6 @@ $(function () {
         })
     });
 
-    //Scroll to top button
-    let scrollBtn = document.querySelector("#scrollBtn .btn");
-    scrollBtn.addEventListener("click", function (e) {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    })
-
     //Wishlist
     let wishlisted = JSON.parse(localStorage.getItem("wishlisted"));
     let tableBody = document.querySelector("tbody");
@@ -138,6 +131,20 @@ $(function () {
         }
     }
 
+    //Scroll to top button
+    let scrollBtn = document.querySelector("#scrollBtn .btn");
+    scrollBtn.addEventListener("click", function (e) {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    })
+
+    window.addEventListener("scroll", function (e) {
+        if (this.window.scrollY >= 376.5) {
+            scrollBtn.style.opacity = 1;
+        } else {
+            scrollBtn.style.opacity = 0;
+        }
+    })
 
 
 

@@ -2036,6 +2036,10 @@ main #settings .all .button i {
   border-bottom-left-radius: 5px;
 }
 
+main #scrollBtn .btn {
+  opacity: 0;
+}
+
 main #scrollBtn .btn i {
   position: fixed;
   bottom: 100px;

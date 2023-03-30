@@ -1581,7 +1581,7 @@ main {
 
   #scrollBtn {
     .btn {
-      // display: none;
+      opacity: 0;
       i {
         position: fixed;
         bottom: 100px;
@@ -1594,7 +1594,7 @@ main {
         padding: 18px;
         transition: all 0.5s;
       }
-      i:hover{
+      i:hover {
         background-color: #eaeaea;
       }
     }

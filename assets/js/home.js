@@ -370,12 +370,11 @@ $(function () {
         document.documentElement.scrollTop = 0;
     })
 
-    const scrollBtnSection = document.querySelector("#scrollBtn .btn i");
     window.addEventListener("scroll", function (e) {
         if (this.window.scrollY >= 376.5) {
-            scrollBtn.classList.remove("slider-animation")
+            scrollBtn.style.opacity = 1;
         } else {
-            scrollBtn.classList.add("slider-animation")
+            scrollBtn.style.opacity = 0;
         }
     })
 })

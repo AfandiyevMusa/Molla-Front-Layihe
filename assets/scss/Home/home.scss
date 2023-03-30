@@ -3,7 +3,6 @@
     background: #fcb941;
     color: #fff;
   }
-  // border: 1px solid red;
 }
 
 header {
@@ -746,9 +745,7 @@ header {
     .container {
       margin-bottom: -35px;
       .burger-m {
-        // margin-bottom: 20px;
         cursor: pointer;
-        // width: 300px;
         .not-table {
           transition: all 0.5s;
           display: flex;
@@ -802,10 +799,6 @@ header {
             position: absolute;
             z-index: 2;
             width: 100%;
-            // width: 15%;
-            // top: 20px;
-            // bottom: 35px;
-            // left: 20px;
             li {
               color: #757575;
               transition: all 0.5s;
@@ -868,7 +861,6 @@ header {
                 font-size: 16px;
                 margin-left: 40px;
                 transition: all 0.5s;
-                //added after
                 padding-bottom: 10px;
                 i {
                   position: relative;
@@ -1272,7 +1264,7 @@ main {
       .details {
         .allcontents {
           padding-top: 40px;
-          .owl-carousel {
+          .products {
             position: relative;
             .cards {
               transition: all 0.3s;
@@ -1802,10 +1794,12 @@ main {
                     display: flex;
                     gap: 15px;
                     .cards {
+                      width: 100%;
+                      height: 100%;
                       transition: all 0.3s;
                       border: 1px solid #ebebeb;
                       cursor: pointer;
-                      display: block;
+                      // display: block;
                       .img-part {
                         position: relative;
                         p {
@@ -3166,7 +3160,7 @@ main {
 
   #scrollBtn {
     .btn {
-      // display: none;
+      opacity: 0;
       i {
         position: fixed;
         bottom: 100px;

@@ -1791,6 +1791,10 @@ main #people-infos .all .members .each-member span {
   font-size: 100;
 }
 
+main #scrollBtn .btn {
+  opacity: 0;
+}
+
 main #scrollBtn .btn i {
   position: fixed;
   bottom: 100px;

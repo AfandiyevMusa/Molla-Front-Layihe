@@ -35,11 +35,11 @@ $(function () {
 
     //Input Background
     let inputs = document.querySelectorAll(".toggle");
-    
+
     inputs.forEach(eachInput => {
         // eachInput.classList.remove("clicked-input")
         eachInput.addEventListener("click", function (e) {
-            if(!this.classList.contains("clicked-input")){
+            if (!this.classList.contains("clicked-input")) {
                 this.classList.add("clicked-input");
             }
             // else {
@@ -47,25 +47,6 @@ $(function () {
             // }
         })
     });
-
-
-
-
-
-
-
-
-
-
-
-
-
-    //Scroll to top button
-    let scrollBtn = document.querySelector("#scrollBtn .btn");
-    scrollBtn.addEventListener("click", function (e) {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    })
 
     //cart and wishlists icon numbers
     let wishlisted = JSON.parse(localStorage.getItem("wishlisted"));
@@ -87,4 +68,86 @@ $(function () {
         }
     }
     getProductsCount(cartProducts);
+
+    // you may like
+    $('.cardss').owlCarousel({
+        loop:true,
+        margin:10,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:true,
+                loop:false
+            },
+            576:{
+                items:2,
+                nav:false,
+                loop:false
+            },
+            768:{
+                items:2,
+                nav:true,
+                loop:false
+            },
+            992:{
+                items:4,
+                nav:false,
+                loop:false
+            }
+        }
+    })
+
+    let allCards = document.querySelectorAll(".each-card")
+
+    allCards.forEach(eachCard => {
+        eachCard.addEventListener("mousemove", function (e) {
+            // icons
+            this.firstElementChild.children[3].firstElementChild.style.opacity = 1;
+            this.firstElementChild.children[3].firstElementChild.classList.remove("animate__fadeOutLeft");
+            this.firstElementChild.children[3].firstElementChild.classList.add("animate__fadeInLeft");
+            
+            //img
+            this.firstElementChild.children[2].classList.remove("open-hovered")
+            this.firstElementChild.children[1].classList.add("open-hovered")
+
+            //addcart
+            this.firstElementChild.children[3].children[1].style.opacity = 1;
+            this.firstElementChild.children[3].children[1].classList.remove("animate__fadeOutDown");
+            this.firstElementChild.children[3].children[1].classList.add("animate__fadeInUp");
+        })
+        
+        eachCard.addEventListener("mouseout", function (e) {
+            // icons
+            this.firstElementChild.children[3].firstElementChild.style.opacity = 0;
+            this.firstElementChild.children[3].firstElementChild.classList.remove("animate__fadeInLeft");
+            this.firstElementChild.children[3].firstElementChild.classList.add("animate__fadeOutLeft");
+            
+            //img
+            this.firstElementChild.children[2].classList.add("open-hovered")
+            this.firstElementChild.children[1].classList.remove("open-hovered")
+
+            //addcart
+            this.firstElementChild.children[3].children[1].style.opacity = 0;
+            this.firstElementChild.children[3].children[1].classList.add("animate__fadeOutDown");
+            this.firstElementChild.children[3].children[1].classList.remove("animate__fadeInUp");
+        })
+    });
+
+
+    //Scroll to top button
+    let scrollBtn = document.querySelector("#scrollBtn .btn");
+    scrollBtn.addEventListener("click", function (e) {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    })
+
+    window.addEventListener("scroll", function (e) {
+        if (this.window.scrollY >= 376.5) {
+            scrollBtn.style.opacity = 1;
+        } else {
+            scrollBtn.style.opacity = 0;
+        }
+    })
+
 })

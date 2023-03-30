@@ -1555,6 +1555,10 @@ main #product-table .all .products .main .icons i:hover {
   border-color: #fcb941;
 }
 
+main #scrollBtn .btn {
+  opacity: 0;
+}
+
 main #scrollBtn .btn i {
   position: fixed;
   bottom: 100px;

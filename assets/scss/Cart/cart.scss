@@ -1356,7 +1356,7 @@ main {
 
   #scrollBtn {
     .btn {
-      // display: none;
+      opacity: 0;
       i {
         position: fixed;
         bottom: 100px;
