@@ -71,29 +71,29 @@ $(function () {
 
     // you may like
     $('.cardss').owlCarousel({
-        loop:true,
-        margin:10,
-        responsiveClass:true,
-        responsive:{
-            0:{
-                items:1,
-                nav:true,
-                loop:false
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+                nav: true,
+                loop: false
             },
-            576:{
-                items:2,
-                nav:false,
-                loop:false
+            576: {
+                items: 2,
+                nav: false,
+                loop: false
             },
-            768:{
-                items:2,
-                nav:true,
-                loop:false
+            768: {
+                items: 2,
+                nav: true,
+                loop: false
             },
-            992:{
-                items:4,
-                nav:false,
-                loop:false
+            992: {
+                items: 4,
+                nav: false,
+                loop: false
             }
         }
     })
@@ -106,7 +106,7 @@ $(function () {
             this.firstElementChild.children[3].firstElementChild.style.opacity = 1;
             this.firstElementChild.children[3].firstElementChild.classList.remove("animate__fadeOutLeft");
             this.firstElementChild.children[3].firstElementChild.classList.add("animate__fadeInLeft");
-            
+
             //img
             this.firstElementChild.children[2].classList.remove("open-hovered")
             this.firstElementChild.children[1].classList.add("open-hovered")
@@ -116,13 +116,13 @@ $(function () {
             this.firstElementChild.children[3].children[1].classList.remove("animate__fadeOutDown");
             this.firstElementChild.children[3].children[1].classList.add("animate__fadeInUp");
         })
-        
+
         eachCard.addEventListener("mouseout", function (e) {
             // icons
             this.firstElementChild.children[3].firstElementChild.style.opacity = 0;
             this.firstElementChild.children[3].firstElementChild.classList.remove("animate__fadeInLeft");
             this.firstElementChild.children[3].firstElementChild.classList.add("animate__fadeOutLeft");
-            
+
             //img
             this.firstElementChild.children[2].classList.add("open-hovered")
             this.firstElementChild.children[1].classList.remove("open-hovered")
@@ -150,4 +150,48 @@ $(function () {
         }
     })
 
+
+    //Currency
+    let chooseOneOf = document.querySelector("#up-nav .language-part .money-part span")
+    let chooseEuro = document.querySelector("#up-nav .language-part .money-part .drop-money .euro")
+    let chooseUsd = document.querySelector("#up-nav .language-part .money-part .drop-money .usd")
+
+    if (localStorage.getItem('currencyChoice')) {
+        chooseOneOf.innerText = localStorage.getItem('currencyChoice');
+    }
+
+    chooseEuro.addEventListener("click", function (e) {
+        chooseOneOf.innerText = chooseEuro.innerText;
+        localStorage.setItem('currencyChoice', chooseEuro.innerText);
+    });
+
+    chooseUsd.addEventListener("click", function (e) {
+        chooseOneOf.innerText = chooseUsd.innerText;
+        localStorage.setItem('currencyChoice', chooseUsd.innerText);
+    });
+
+    //Language
+    let chooseLanguage = document.querySelector("#up-nav .language-part .lang-part span")
+    let chooseEnglish = document.querySelector("#up-nav .language-part .lang-part .drop-lang .english")
+    let chooseFrench = document.querySelector("#up-nav .language-part .lang-part .drop-lang .french")
+    let chooseSpanish = document.querySelector("#up-nav .language-part .lang-part .drop-lang .spanish")
+
+    if (localStorage.getItem('languageChoice')) {
+        chooseLanguage.innerText = localStorage.getItem('languageChoice');
+    }
+
+    chooseEnglish.addEventListener("click", function (e) {
+        chooseLanguage.innerText = chooseEnglish.innerText;
+        localStorage.setItem('languageChoice', chooseEnglish.innerText);
+    });
+
+    chooseFrench.addEventListener("click", function (e) {
+        chooseLanguage.innerText = chooseFrench.innerText;
+        localStorage.setItem('languageChoice', chooseFrench.innerText);
+    });
+
+    chooseSpanish.addEventListener("click", function (e) {
+        chooseLanguage.innerText = chooseSpanish.innerText;
+        localStorage.setItem('languageChoice', chooseSpanish.innerText);
+    });
 })

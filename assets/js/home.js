@@ -87,10 +87,53 @@ $(function () {
             }
         });
     }
-
     rightIcon.addEventListener("click", rightSlider);
     leftIcon.addEventListener("click", leftSlider);
 
+
+    //Currency
+    let chooseOneOf = document.querySelector("#up-nav .language-part .money-part span")
+    let chooseEuro = document.querySelector("#up-nav .language-part .money-part .drop-money .euro")
+    let chooseUsd = document.querySelector("#up-nav .language-part .money-part .drop-money .usd")
+
+    if (localStorage.getItem('currencyChoice')) {
+        chooseOneOf.innerText = localStorage.getItem('currencyChoice');
+    }
+
+    chooseEuro.addEventListener("click", function (e) {
+        chooseOneOf.innerText = chooseEuro.innerText;
+        localStorage.setItem('currencyChoice', chooseEuro.innerText);
+    });
+
+    chooseUsd.addEventListener("click", function (e) {
+        chooseOneOf.innerText = chooseUsd.innerText;
+        localStorage.setItem('currencyChoice', chooseUsd.innerText);
+    });
+
+    //Language
+    let chooseLanguage = document.querySelector("#up-nav .language-part .lang-part span")
+    let chooseEnglish = document.querySelector("#up-nav .language-part .lang-part .drop-lang .english")
+    let chooseFrench = document.querySelector("#up-nav .language-part .lang-part .drop-lang .french")
+    let chooseSpanish = document.querySelector("#up-nav .language-part .lang-part .drop-lang .spanish")
+
+    if (localStorage.getItem('languageChoice')) {
+        chooseLanguage.innerText = localStorage.getItem('languageChoice');
+    }
+
+    chooseEnglish.addEventListener("click", function (e) {
+        chooseLanguage.innerText = chooseEnglish.innerText;
+        localStorage.setItem('languageChoice', chooseEnglish.innerText);
+    });
+
+    chooseFrench.addEventListener("click", function (e) {
+        chooseLanguage.innerText = chooseFrench.innerText;
+        localStorage.setItem('languageChoice', chooseFrench.innerText);
+    });
+
+    chooseSpanish.addEventListener("click", function (e) {
+        chooseLanguage.innerText = chooseSpanish.innerText;
+        localStorage.setItem('languageChoice', chooseSpanish.innerText);
+    });
 
     $('.products').owlCarousel({
         loop: true,
@@ -307,7 +350,7 @@ $(function () {
         }
     }
 
-    //add to wishlist
+    //add to wishlsit with heart icon
     let addWishlistBtns = document.querySelectorAll(".heart");
     let wishlisted = [];
 
@@ -317,42 +360,56 @@ $(function () {
 
     addWishlistBtns.forEach(addWishlist => {
         getWishlistCount(wishlisted);
+
+        let checkedID = addWishlist.parentNode.parentNode.getAttribute("data-id");
+        let productInfo = wishlisted.find(m => m.id == checkedID);
+
+        if (productInfo != undefined) {
+            addWishlist.classList.remove("fa-regular");
+            addWishlist.classList.remove("open-hovered");
+            addWishlist.classList.add("fa-solid");
+        }
+
         addWishlist.addEventListener("click", function (e) {
             e.preventDefault();
             let productImg = this.previousElementSibling.previousElementSibling.getAttribute("src");
-            let productName = this.parentNode.nextElementSibling.children[1].innerText
-            let productPrice = this.parentNode.nextElementSibling.children[2].innerText
-            let productID = this.parentNode.parentNode.getAttribute("data-id")
-            let checkProduct = wishlisted.find(m => m.id == productID)
+            let productName = this.parentNode.nextElementSibling.children[1].innerText;
+            let productPrice = this.parentNode.nextElementSibling.children[2].innerText;
+            let productID = this.parentNode.parentNode.getAttribute("data-id");
+            let checkProduct = wishlisted.find(m => m.id == productID);
+
+            if (localStorage.getItem("heartColor")) {
+                this.classList = localStorage.getItem("heartColor");
+            }
 
             if (checkProduct != undefined) {
                 this.classList.add("fa-regular");
                 this.classList.add("open-hovered");
                 this.classList.remove("fa-solid");
-                let unlistedIndex = wishlisted.indexOf(checkProduct)
+                localStorage.setItem("heartColor", this.classList);
+                let unlistedIndex = wishlisted.indexOf(checkProduct);
                 if (unlistedIndex > -1) {
-                    wishlisted.splice(unlistedIndex, 1)
+                    wishlisted.splice(unlistedIndex, 1);
                 }
-                localStorage.setItem("wishlisted", JSON.stringify(wishlisted))
+                localStorage.setItem("wishlisted", JSON.stringify(wishlisted));
                 let decreasedSup = parseInt(document.querySelector(".wishlist-sup").innerText) - 1;
                 document.querySelector(".wishlist-sup").innerText = decreasedSup;
-                // this.classList.setItem("class", "fa-regular fa-heart open-hovered heart");
             } else {
                 this.classList.remove("fa-regular");
                 this.classList.remove("open-hovered");
                 this.classList.add("fa-solid");
+                localStorage.setItem("heartColor", this.classList);
                 wishlisted.push({
                     id: productID,
                     image: productImg,
                     name: productName,
                     price: productPrice,
                     count: 1
-                })
-                // this.setItem("class", "fa-solid fa-heart heart");
+                });
             }
             localStorage.setItem("wishlisted", JSON.stringify(wishlisted));
             getWishlistCount(wishlisted);
-        })
+        });
     });
 
     function getWishlistCount(arr) {
