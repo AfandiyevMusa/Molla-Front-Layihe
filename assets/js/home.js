@@ -146,12 +146,12 @@ $(function () {
                 loop: false
             },
             600: {
-                items: 1,
+                items: 2,
                 nav: false,
                 loop: false
             },
             750: {
-                items: 2,
+                items: 1,
                 nav: true,
                 loop: false
             },
@@ -310,6 +310,8 @@ $(function () {
     AOS.init("fade-up");
 
     //ADD TO CART
+    let alertMessage = document.querySelector("#info-message .all")
+
     let addCartBtns = document.querySelectorAll(".addToCart");
     let cartProducts = [];
     if (JSON.parse(localStorage.getItem("cartProducts")) != null) {
@@ -325,6 +327,15 @@ $(function () {
             let itemPrice = this.parentNode.parentNode.parentNode.children[1].children[2].innerText
             let itemID = parseInt(this.parentNode.parentNode.parentNode.getAttribute("data-id"));
             let existProduct = cartProducts.find(m => m.id == itemID);
+            alertMessage.firstElementChild.innerText = "Product added to Cart";
+            alertMessage.style.opacity = 1;
+            alertMessage.classList.add("animate__bounceInRight")
+            alertMessage.classList.remove("animate__bounceOutRight")
+            setTimeout(() => {
+                alertMessage.classList.remove("animate__bounceInRight")
+                alertMessage.classList.add("animate__bounceOutRight")
+                alertMessage.style.opacity = 0;
+            }, 3000);
 
             if (existProduct != undefined) {
                 existProduct.count += 1;
@@ -353,6 +364,7 @@ $(function () {
     //add to wishlsit with heart icon
     let addWishlistBtns = document.querySelectorAll(".heart");
     let wishlisted = [];
+    // let alertMessage = document.querySelector("#info-message .all")
 
     if (JSON.parse(localStorage.getItem("wishlisted")) != null) {
         wishlisted = JSON.parse(localStorage.getItem("wishlisted"));
@@ -363,7 +375,6 @@ $(function () {
 
         let checkedID = addWishlist.parentNode.parentNode.getAttribute("data-id");
         let productInfo = wishlisted.find(m => m.id == checkedID);
-
         if (productInfo != undefined) {
             addWishlist.classList.remove("fa-regular");
             addWishlist.classList.remove("open-hovered");
@@ -377,20 +388,26 @@ $(function () {
             let productPrice = this.parentNode.nextElementSibling.children[2].innerText;
             let productID = this.parentNode.parentNode.getAttribute("data-id");
             let checkProduct = wishlisted.find(m => m.id == productID);
-
-            if (localStorage.getItem("heartColor")) {
-                this.classList = localStorage.getItem("heartColor");
-            }
+            alertMessage.firstElementChild.innerText = "Product added to Wishlist";
+            alertMessage.style.opacity = 1;
+            alertMessage.classList.add("animate__bounceInRight")
+            alertMessage.classList.remove("animate__bounceOutRight")
+            setTimeout(() => {
+                alertMessage.classList.remove("animate__bounceInRight")
+                alertMessage.classList.add("animate__bounceOutRight")
+                alertMessage.style.opacity = 0;
+            }, 3000);
 
             if (checkProduct != undefined) {
                 this.classList.add("fa-regular");
                 this.classList.add("open-hovered");
                 this.classList.remove("fa-solid");
-                localStorage.setItem("heartColor", this.classList);
                 let unlistedIndex = wishlisted.indexOf(checkProduct);
                 if (unlistedIndex > -1) {
                     wishlisted.splice(unlistedIndex, 1);
                 }
+                
+                alertMessage.firstElementChild.innerText = "Product deleted from Wishlist";
                 localStorage.setItem("wishlisted", JSON.stringify(wishlisted));
                 let decreasedSup = parseInt(document.querySelector(".wishlist-sup").innerText) - 1;
                 document.querySelector(".wishlist-sup").innerText = decreasedSup;
@@ -398,7 +415,6 @@ $(function () {
                 this.classList.remove("fa-regular");
                 this.classList.remove("open-hovered");
                 this.classList.add("fa-solid");
-                localStorage.setItem("heartColor", this.classList);
                 wishlisted.push({
                     id: productID,
                     image: productImg,
@@ -434,4 +450,23 @@ $(function () {
             scrollBtn.style.opacity = 0;
         }
     })
+
+    //for productslider
+    let links = document.querySelectorAll(".cards")
+    let imageArr = [];
+
+    links.forEach(eachLink => {
+        eachLink.addEventListener("click", function (e){
+            let mainImg = this.firstElementChild.children[2].getAttribute("src");
+            let hovImg = this.firstElementChild.children[3].getAttribute("src");
+            
+            imageArr.push({
+                image1: mainImg,
+                image2: hovImg
+            });
+            console.log(mainImg);
+            console.log(hovImg);
+            localStorage.setItem("imageArr", JSON.stringify(imageArr));
+        })
+    });
 })

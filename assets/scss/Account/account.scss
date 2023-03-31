@@ -746,9 +746,7 @@ header {
     .container {
       margin-bottom: -35px;
       .burger-m {
-        // margin-bottom: 20px;
         cursor: pointer;
-        // width: 300px;
         .not-table {
           transition: all 0.5s;
           display: flex;
@@ -802,10 +800,6 @@ header {
             position: absolute;
             z-index: 2;
             width: 100%;
-            // width: 15%;
-            // top: 20px;
-            // bottom: 35px;
-            // left: 20px;
             li {
               color: #757575;
               transition: all 0.5s;
@@ -830,6 +824,7 @@ header {
       .burger-m:hover .table {
         //   opacity: 1 !important;
         display: block;
+        padding-top: 14px;
       }
       .burger-m:hover .tab-menu {
         opacity: 0 !important;
@@ -839,6 +834,7 @@ header {
       }
       .burger-m:hover .not-table {
         background-color: #fcb941;
+        height: 54px;
       }
       .categories {
         .list {
@@ -868,7 +864,6 @@ header {
                 font-size: 16px;
                 margin-left: 40px;
                 transition: all 0.5s;
-                //added after
                 padding-bottom: 10px;
                 i {
                   position: relative;
@@ -876,7 +871,7 @@ header {
                   left: 50px;
                 }
               }
-              a:hover{
+              a:hover {
                 color: #fcb941;
               }
               .cross {
@@ -1325,6 +1320,14 @@ footer {
       }
     }
   }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+  background-color: white !important;
 }
 
 .active-bar {

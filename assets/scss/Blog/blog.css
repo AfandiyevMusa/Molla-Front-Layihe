@@ -1051,7 +1051,7 @@ header #main-nav .container .burger-m .not-table .x-icon {
 
 header #main-nav .container .burger-m .not-table span {
   font-size: 16px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 header #main-nav .container .burger-m .not-table .down-ch {
@@ -1067,7 +1067,7 @@ header #main-nav .container .burger-m .not-table:hover {
 }
 
 header #main-nav .container .burger-m .table {
-  margin-top: 0;
+  margin-top: -15px;
   display: none;
   width: 275px;
   -webkit-transition: all 0.3s;
@@ -1117,6 +1117,7 @@ header #main-nav .container .burger-m .table ul:hover .table {
 
 header #main-nav .container .burger-m:hover .table {
   display: block;
+  padding-top: 14px;
 }
 
 header #main-nav .container .burger-m:hover .tab-menu {
@@ -1129,6 +1130,7 @@ header #main-nav .container .burger-m:hover .x-icon {
 
 header #main-nav .container .burger-m:hover .not-table {
   background-color: #fcb941;
+  height: 54px;
 }
 
 header #main-nav .container .categories .list ul {
@@ -2158,6 +2160,14 @@ footer #bottomF .last-infos span {
   color: #7d7d7d;
   font-size: 15px;
   font-weight: 200;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+  background-color: white !important;
 }
 
 @-webkit-keyframes slide {

@@ -3,6 +3,9 @@
     background: #fcb941;
     color: #fff;
   }
+  a {
+    text-decoration: none;
+  }
 }
 
 header {
@@ -823,6 +826,7 @@ header {
       .burger-m:hover .table {
         //   opacity: 1 !important;
         display: block;
+        padding-top: 14px;
       }
       .burger-m:hover .tab-menu {
         opacity: 0 !important;
@@ -832,6 +836,7 @@ header {
       }
       .burger-m:hover .not-table {
         background-color: #fcb941;
+        height: 54px;
       }
       .categories {
         .list {
@@ -977,6 +982,29 @@ header {
 
 main {
   overflow: hidden;
+  #info-message {
+    .all {
+      opacity: 0;
+      position: fixed;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      right: 25px;
+      // width: 300px;
+      z-index: 8;
+      span {
+        width: 300px !important;
+        top: 30px;
+        font-size: 17px;
+        border-radius: 5px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 30px;
+        padding-right: 50px;
+        color: white;
+        background-color: #fcb941;
+      }
+    }
+  }
+
   #productSlider {
     .container {
       .slider {
@@ -1266,89 +1294,107 @@ main {
           padding-top: 40px;
           .products {
             position: relative;
-            .cards {
-              transition: all 0.3s;
-              border: 1px solid #ebebeb;
-              cursor: pointer;
-              display: block;
-              .img-part {
-                position: relative;
-                p {
-                  position: absolute;
-                  padding: 15px;
-                  border-radius: 100px;
-                  color: white;
-                  left: 20px;
-                }
-                .new {
-                  background-color: #ef837b;
-                  top: 25px;
-                }
-                .top {
-                  background-color: #7dd2ea;
-                  top: 65px;
-                }
-                .heart {
-                  background-color: #fcb941;
-                  position: absolute;
-                  font-size: 18px;
-                  top: 25px;
-                  right: 15px;
-                  background-color: #fcb941;
-                  padding: 10px 10px;
-                  border-radius: 20px;
-                  transition: all 0.5s;
-                }
-                .heart:hover {
-                  color: white;
-                }
-                .options-part {
-                  opacity: 0;
-                  display: flex;
-                  justify-content: space-evenly;
-                  background-color: black;
-                  top: 65px;
-                  padding-top: 10px;
-                  padding-bottom: 10px;
-                  color: white;
-                  transition: all 0.5s;
-                  i {
-                    transition: all 0.2s;
-                    padding-top: 7px;
+            a {
+              .cards {
+                transition: all 0.3s;
+                border: 1px solid #ebebeb;
+                cursor: pointer;
+                display: block;
+                .img-part {
+                  position: relative;
+                  p {
+                    position: absolute;
+                    padding: 15px;
+                    border-radius: 100px;
+                    color: white;
+                    left: 20px;
                   }
-                  i:hover {
-                    color: #fcb941;
+                  .new {
+                    background-color: #ef837b;
+                    top: 25px;
+                  }
+                  .top {
+                    background-color: #7dd2ea;
+                    top: 65px;
+                  }
+                  .heart {
+                    background-color: #fcb941;
+                    position: absolute;
+                    font-size: 18px;
+                    top: 25px;
+                    right: 15px;
+                    background-color: #fcb941;
+                    padding: 10px 10px;
+                    border-radius: 20px;
+                    transition: all 0.5s;
+                    color: black;
+                  }
+                  .heart:hover {
+                    color: white;
+                  }
+                  .options-part {
+                    opacity: 0;
+                    display: flex;
+                    justify-content: space-evenly;
+                    background-color: black;
+                    top: 65px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    color: white;
+                    transition: all 0.5s;
+                    i {
+                      transition: all 0.2s;
+                      padding-top: 7px;
+                    }
+                    i:hover {
+                      color: #fcb941;
+                    }
+                    span {
+                      font-size: 20px;
+                    }
+                  }
+                }
+                .text-part {
+                  width: 250px !important;
+                  padding: 10px 15px;
+                  .mini-detail {
+                    color: #d7d7d7;
                   }
                   span {
+                    color: black;
                     font-size: 20px;
+                    transition: all 0.5s;
+                    cursor: pointer;
+                  }
+                  span:hover {
+                    color: #fcb941;
+                  }
+                  .cost {
+                    font-size: 20px;
+                    padding-top: 8px;
+                    color: #fcb941;
+                  }
+                  .stars {
+                    display: inline-block;
+                  }
+                  .reviews {
+                    color: #d7d7d7;
+                    display: inline-block;
                   }
                 }
               }
-              .text-part {
-                width: 250px !important;
-                padding: 10px 15px;
-                .mini-detail {
-                  color: #d7d7d7;
+
+              .cards:hover {
+                .options-part {
+                  opacity: 1 !important;
                 }
-                span {
-                  font-size: 20px;
+                .open-hovered {
+                  display: block !important;
                   transition: all 0.5s;
-                  cursor: pointer;
                 }
-                span:hover {
-                  color: #fcb941;
-                }
-                .cost {
-                  font-size: 20px;
-                  padding-top: 8px;
-                  color: #fcb941;
-                }
-                .stars {
-                  display: inline-block;
-                }
-                .reviews {
-                  color: #d7d7d7;
-                  display: inline-block;
+                .close-hovered {
+                  transition: all 0.5s;
+                  display: none !important;
                 }
               }
             }
@@ -1387,19 +1433,6 @@ main {
             }
             .owl-next:hover {
               background-color: rgba(255, 255, 255, 1s);
-            }
-            .cards:hover {
-              .options-part {
-                opacity: 1 !important;
-              }
-              .open-hovered {
-                display: block !important;
-                transition: all 0.5s;
-              }
-              .close-hovered {
-                transition: all 0.5s;
-                display: none !important;
-              }
             }
           }
         }
@@ -1591,93 +1624,109 @@ main {
         .other-cards {
           display: flex;
           gap: 30px;
-          .cards {
-            transition: all 0.3s;
-            border: 1px solid #ebebeb;
-            background-color: white;
-            cursor: pointer;
-            display: inline-block;
-            .img-part {
-              position: relative;
-              p {
-                position: absolute;
-                padding: 15px;
-                border-radius: 100px;
-                color: white;
-                left: 20px;
-              }
-              .new {
-                background-color: #ef837b;
-                top: 25px;
-              }
-              .top {
-                background-color: #7dd2ea;
-                top: 65px;
-                font-size: 15px;
-              }
-              .heart {
-                background-color: #fcb941;
-                position: absolute;
-                font-size: 18px;
-                top: 25px;
-                right: 15px;
-                background-color: #fcb941;
-                padding: 10px 10px;
-                border-radius: 20px;
-                transition: all 0.5s;
-              }
-              .heart:hover {
-                color: white;
-              }
-              .options-part {
-                opacity: 0;
-                display: flex;
-                justify-content: space-evenly;
-                background-color: black;
-                top: 65px;
-                padding-top: 10px;
-                padding-bottom: 10px;
-                color: white;
-                transition: all 0.5s;
-                i {
-                  transition: all 0.2s;
-                  padding-top: 7px;
+          a {
+            .cards {
+              transition: all 0.3s;
+              border: 1px solid #ebebeb;
+              background-color: white;
+              cursor: pointer;
+              display: block;
+              .img-part {
+                position: relative;
+                p {
+                  position: absolute;
+                  padding: 15px;
+                  border-radius: 100px;
+                  color: white;
+                  left: 20px;
+                  font-size: 17px;
                 }
-                i:hover {
-                  color: #fcb941;
+                .new {
+                  background-color: #ef837b;
+                  top: 25px;
+                }
+                .top {
+                  background-color: #7dd2ea;
+                  top: 65px;
+                }
+                .heart {
+                  background-color: #fcb941;
+                  position: absolute;
+                  font-size: 18px;
+                  top: 25px;
+                  right: 15px;
+                  background-color: #fcb941;
+                  padding: 10px 10px;
+                  border-radius: 20px;
+                  transition: all 0.5s;
+                  color: black;
+                }
+                .heart:hover {
+                  color: white;
+                }
+                .options-part {
+                  opacity: 0;
+                  display: flex;
+                  justify-content: space-evenly;
+                  background-color: black;
+                  top: 65px;
+                  padding-top: 10px;
+                  padding-bottom: 10px;
+                  color: white;
+                  transition: all 0.5s;
+                  i {
+                    transition: all 0.2s;
+                    padding-top: 7px;
+                  }
+                  i:hover {
+                    color: #fcb941;
+                  }
+                  span {
+                    font-size: 20px;
+                  }
+                }
+              }
+              .text-part {
+                width: 250px !important;
+                padding: 10px 15px;
+                .mini-detail {
+                  color: #d7d7d7;
                 }
                 span {
+                  color: black;
                   font-size: 20px;
+                  transition: all 0.5s;
+                  cursor: pointer;
+                }
+                span:hover {
+                  color: #fcb941;
+                }
+                .cost {
+                  font-size: 20px;
+                  padding-top: 8px;
+                  color: #fcb941;
+                }
+                .stars {
+                  display: inline-block;
+                }
+                .reviews {
+                  color: #d7d7d7;
+                  display: inline-block;
                 }
               }
             }
-            .text-part {
-              width: 300px !important;
-              padding: 10px 15px;
-              background-color: white;
-              .mini-detail {
-                color: #d7d7d7;
+
+            .cards:hover {
+              .options-part {
+                opacity: 1 !important;
               }
-              span {
-                font-size: 20px;
+              .open-hovered {
+                display: block !important;
                 transition: all 0.5s;
-                cursor: pointer;
               }
-              span:hover {
-                color: #fcb941;
-              }
-              .cost {
-                font-size: 20px;
-                padding-top: 8px;
-                color: #fcb941;
-              }
-              .stars {
-                display: inline-block;
-              }
-              .reviews {
-                padding-left: 15px;
-                color: #d7d7d7;
-                display: inline-block;
+              .close-hovered {
+                transition: all 0.5s;
+                display: none !important;
               }
             }
           }
@@ -1793,91 +1842,107 @@ main {
                     position: relative;
                     display: flex;
                     gap: 15px;
-                    .cards {
-                      width: 100%;
-                      height: 100%;
-                      transition: all 0.3s;
-                      border: 1px solid #ebebeb;
-                      cursor: pointer;
-                      // display: block;
-                      .img-part {
-                        position: relative;
-                        p {
-                          position: absolute;
-                          padding: 15px;
-                          border-radius: 100px;
-                          color: white;
-                          left: 20px;
-                        }
-                        .new {
-                          background-color: #ef837b;
-                          top: 25px;
-                        }
-                        .top {
-                          background-color: #7dd2ea;
-                          top: 65px;
-                        }
-                        .heart {
-                          background-color: #fcb941;
-                          position: absolute;
-                          font-size: 18px;
-                          top: 25px;
-                          right: 15px;
-                          background-color: #fcb941;
-                          padding: 10px 10px;
-                          border-radius: 20px;
-                          transition: all 0.5s;
-                        }
-                        .heart:hover {
-                          color: white;
-                        }
-                        .options-part {
-                          opacity: 0;
-                          display: flex;
-                          justify-content: space-evenly;
-                          background-color: black;
-                          top: 65px;
-                          padding-top: 10px;
-                          padding-bottom: 10px;
-                          color: white;
-                          transition: all 0.5s;
-                          i {
-                            transition: all 0.2s;
-                            padding-top: 7px;
+                    a {
+                      .cards {
+                        transition: all 0.3s;
+                        border: 1px solid #ebebeb;
+                        cursor: pointer;
+                        display: block;
+                        .img-part {
+                          position: relative;
+                          p {
+                            position: absolute;
+                            padding: 15px;
+                            border-radius: 100px;
+                            color: white;
+                            left: 20px;
                           }
-                          i:hover {
-                            color: #fcb941;
+                          .new {
+                            background-color: #ef837b;
+                            top: 25px;
+                          }
+                          .top {
+                            background-color: #7dd2ea;
+                            top: 65px;
+                          }
+                          .heart {
+                            background-color: #fcb941;
+                            position: absolute;
+                            font-size: 18px;
+                            top: 25px;
+                            right: 15px;
+                            background-color: #fcb941;
+                            padding: 10px 10px;
+                            border-radius: 20px;
+                            transition: all 0.5s;
+                            color: black;
+                          }
+                          .heart:hover {
+                            color: white;
+                          }
+                          .options-part {
+                            opacity: 0;
+                            display: flex;
+                            justify-content: space-evenly;
+                            background-color: black;
+                            top: 65px;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            color: white;
+                            transition: all 0.5s;
+                            i {
+                              transition: all 0.2s;
+                              padding-top: 7px;
+                            }
+                            i:hover {
+                              color: #fcb941;
+                            }
+                            span {
+                              font-size: 20px;
+                            }
+                          }
+                        }
+                        .text-part {
+                          width: 250px !important;
+                          padding: 10px 15px;
+                          .mini-detail {
+                            color: #d7d7d7;
                           }
                           span {
+                            color: black;
                             font-size: 20px;
+                            transition: all 0.5s;
+                            cursor: pointer;
+                          }
+                          span:hover {
+                            color: #fcb941;
+                          }
+                          .cost {
+                            font-size: 20px;
+                            padding-top: 8px;
+                            color: #fcb941;
+                          }
+                          .stars {
+                            display: inline-block;
+                          }
+                          .reviews {
+                            color: #d7d7d7;
+                            display: inline-block;
                           }
                         }
                       }
-                      .text-part {
-                        width: 250px !important;
-                        padding: 10px 15px;
-                        .mini-detail {
-                          color: #d7d7d7;
+        
+                      .cards:hover {
+                        .options-part {
+                          opacity: 1 !important;
                         }
-                        span {
-                          font-size: 16px;
+                        .open-hovered {
+                          display: block !important;
                           transition: all 0.5s;
-                          cursor: pointer;
                         }
-                        span:hover {
-                          color: #fcb941;
-                        }
-                        .cost {
-                          font-size: 20px;
-                          padding-top: 8px;
-                          color: #fcb941;
-                        }
-                        .stars {
-                          display: inline-block;
-                        }
-                        .reviews {
-                          color: #d7d7d7;
-                          display: inline-block;
+                        .close-hovered {
+                          transition: all 0.5s;
+                          display: none !important;
                         }
                       }
                     }
@@ -1939,88 +2004,107 @@ main {
                   position: relative;
                   display: flex;
                   gap: 15px;
-                  .cards {
-                    transition: all 0.3s;
-                    border: 1px solid #ebebeb;
-                    cursor: pointer;
-                    .img-part {
-                      position: relative;
-                      p {
-                        position: absolute;
-                        padding: 15px;
-                        border-radius: 100px;
-                        color: white;
-                        left: 20px;
-                      }
-                      .new {
-                        background-color: #ef837b;
-                        top: 25px;
-                      }
-                      .top {
-                        background-color: #7dd2ea;
-                        top: 65px;
-                      }
-                      .heart {
-                        background-color: #fcb941;
-                        position: absolute;
-                        font-size: 18px;
-                        top: 25px;
-                        right: 15px;
-                        background-color: #fcb941;
-                        padding: 10px 10px;
-                        border-radius: 20px;
-                        transition: all 0.5s;
-                      }
-                      .heart:hover {
-                        color: white;
-                      }
-                      .options-part {
-                        opacity: 0;
-                        display: flex;
-                        justify-content: space-evenly;
-                        background-color: black;
-                        top: 65px;
-                        padding-top: 10px;
-                        padding-bottom: 10px;
-                        color: white;
-                        transition: all 0.5s;
-                        i {
-                          transition: all 0.2s;
-                          padding-top: 7px;
+                  a {
+                    .cards {
+                      transition: all 0.3s;
+                      border: 1px solid #ebebeb;
+                      cursor: pointer;
+                      display: block;
+                      .img-part {
+                        position: relative;
+                        p {
+                          position: absolute;
+                          padding: 15px;
+                          border-radius: 100px;
+                          color: white;
+                          left: 20px;
                         }
-                        i:hover {
-                          color: #fcb941;
+                        .new {
+                          background-color: #ef837b;
+                          top: 25px;
+                        }
+                        .top {
+                          background-color: #7dd2ea;
+                          top: 65px;
+                        }
+                        .heart {
+                          background-color: #fcb941;
+                          position: absolute;
+                          font-size: 18px;
+                          top: 25px;
+                          right: 15px;
+                          background-color: #fcb941;
+                          padding: 10px 10px;
+                          border-radius: 20px;
+                          transition: all 0.5s;
+                          color: black;
+                        }
+                        .heart:hover {
+                          color: white;
+                        }
+                        .options-part {
+                          opacity: 0;
+                          display: flex;
+                          justify-content: space-evenly;
+                          background-color: black;
+                          top: 65px;
+                          padding-top: 10px;
+                          padding-bottom: 10px;
+                          color: white;
+                          transition: all 0.5s;
+                          i {
+                            transition: all 0.2s;
+                            padding-top: 7px;
+                          }
+                          i:hover {
+                            color: #fcb941;
+                          }
+                          span {
+                            font-size: 20px;
+                          }
+                        }
+                      }
+                      .text-part {
+                        width: 250px !important;
+                        padding: 10px 15px;
+                        .mini-detail {
+                          color: #d7d7d7;
                         }
                         span {
+                          color: black;
                           font-size: 20px;
+                          transition: all 0.5s;
+                          cursor: pointer;
+                        }
+                        span:hover {
+                          color: #fcb941;
+                        }
+                        .cost {
+                          font-size: 20px;
+                          padding-top: 8px;
+                          color: #fcb941;
+                        }
+                        .stars {
+                          display: inline-block;
+                        }
+                        .reviews {
+                          color: #d7d7d7;
+                          display: inline-block;
                         }
                       }
                     }
-                    .text-part {
-                      width: 250px !important;
-                      padding: 10px 15px;
-                      .mini-detail {
-                        color: #d7d7d7;
+      
+                    .cards:hover {
+                      .options-part {
+                        opacity: 1 !important;
                       }
-                      span {
-                        font-size: 16px;
+                      .open-hovered {
+                        display: block !important;
                         transition: all 0.5s;
-                        cursor: pointer;
                       }
-                      span:hover {
-                        color: #fcb941;
-                      }
-                      .cost {
-                        font-size: 20px;
-                        padding-top: 8px;
-                        color: #fcb941;
-                      }
-                      .stars {
-                        display: inline-block;
-                      }
-                      .reviews {
-                        color: #d7d7d7;
-                        display: inline-block;
+                      .close-hovered {
+                        transition: all 0.5s;
+                        display: none !important;
                       }
                     }
                   }
@@ -2045,88 +2129,107 @@ main {
                   position: relative;
                   display: flex;
                   gap: 15px;
-                  .cards {
-                    transition: all 0.3s;
-                    border: 1px solid #ebebeb;
-                    cursor: pointer;
-                    .img-part {
-                      position: relative;
-                      p {
-                        position: absolute;
-                        padding: 15px;
-                        border-radius: 100px;
-                        color: white;
-                        left: 20px;
-                      }
-                      .new {
-                        background-color: #ef837b;
-                        top: 25px;
-                      }
-                      .top {
-                        background-color: #7dd2ea;
-                        top: 65px;
-                      }
-                      .heart {
-                        background-color: #fcb941;
-                        position: absolute;
-                        font-size: 18px;
-                        top: 25px;
-                        right: 15px;
-                        background-color: #fcb941;
-                        padding: 10px 10px;
-                        border-radius: 20px;
-                        transition: all 0.5s;
-                      }
-                      .heart:hover {
-                        color: white;
-                      }
-                      .options-part {
-                        opacity: 0;
-                        display: flex;
-                        justify-content: space-evenly;
-                        background-color: black;
-                        top: 65px;
-                        padding-top: 10px;
-                        padding-bottom: 10px;
-                        color: white;
-                        transition: all 0.5s;
-                        i {
-                          transition: all 0.2s;
-                          padding-top: 7px;
+                  a {
+                    .cards {
+                      transition: all 0.3s;
+                      border: 1px solid #ebebeb;
+                      cursor: pointer;
+                      display: block;
+                      .img-part {
+                        position: relative;
+                        p {
+                          position: absolute;
+                          padding: 15px;
+                          border-radius: 100px;
+                          color: white;
+                          left: 20px;
                         }
-                        i:hover {
-                          color: #fcb941;
+                        .new {
+                          background-color: #ef837b;
+                          top: 25px;
+                        }
+                        .top {
+                          background-color: #7dd2ea;
+                          top: 65px;
+                        }
+                        .heart {
+                          background-color: #fcb941;
+                          position: absolute;
+                          font-size: 18px;
+                          top: 25px;
+                          right: 15px;
+                          background-color: #fcb941;
+                          padding: 10px 10px;
+                          border-radius: 20px;
+                          transition: all 0.5s;
+                          color: black;
+                        }
+                        .heart:hover {
+                          color: white;
+                        }
+                        .options-part {
+                          opacity: 0;
+                          display: flex;
+                          justify-content: space-evenly;
+                          background-color: black;
+                          top: 65px;
+                          padding-top: 10px;
+                          padding-bottom: 10px;
+                          color: white;
+                          transition: all 0.5s;
+                          i {
+                            transition: all 0.2s;
+                            padding-top: 7px;
+                          }
+                          i:hover {
+                            color: #fcb941;
+                          }
+                          span {
+                            font-size: 20px;
+                          }
+                        }
+                      }
+                      .text-part {
+                        width: 250px !important;
+                        padding: 10px 15px;
+                        .mini-detail {
+                          color: #d7d7d7;
                         }
                         span {
+                          color: black;
                           font-size: 20px;
+                          transition: all 0.5s;
+                          cursor: pointer;
+                        }
+                        span:hover {
+                          color: #fcb941;
+                        }
+                        .cost {
+                          font-size: 20px;
+                          padding-top: 8px;
+                          color: #fcb941;
+                        }
+                        .stars {
+                          display: inline-block;
+                        }
+                        .reviews {
+                          color: #d7d7d7;
+                          display: inline-block;
                         }
                       }
                     }
-                    .text-part {
-                      width: 250px !important;
-                      padding: 10px 15px;
-                      .mini-detail {
-                        color: #d7d7d7;
+      
+                    .cards:hover {
+                      .options-part {
+                        opacity: 1 !important;
                       }
-                      span {
-                        font-size: 16px;
+                      .open-hovered {
+                        display: block !important;
                         transition: all 0.5s;
-                        cursor: pointer;
                       }
-                      span:hover {
-                        color: #fcb941;
-                      }
-                      .cost {
-                        font-size: 20px;
-                        padding-top: 8px;
-                        color: #fcb941;
-                      }
-                      .stars {
-                        display: inline-block;
-                      }
-                      .reviews {
-                        color: #d7d7d7;
-                        display: inline-block;
+                      .close-hovered {
+                        transition: all 0.5s;
+                        display: none !important;
                       }
                     }
                   }
@@ -2151,89 +2254,107 @@ main {
                   position: relative;
                   display: flex;
                   gap: 15px;
-                  .cards {
-                    transition: all 0.3s;
-                    border: 1px solid #ebebeb;
-                    cursor: pointer;
-                    display: block;
-                    .img-part {
-                      position: relative;
-                      p {
-                        position: absolute;
-                        padding: 15px;
-                        border-radius: 100px;
-                        color: white;
-                        left: 20px;
-                      }
-                      .new {
-                        background-color: #ef837b;
-                        top: 25px;
-                      }
-                      .top {
-                        background-color: #7dd2ea;
-                        top: 65px;
-                      }
-                      .heart {
-                        background-color: #fcb941;
-                        position: absolute;
-                        font-size: 18px;
-                        top: 25px;
-                        right: 15px;
-                        background-color: #fcb941;
-                        padding: 10px 10px;
-                        border-radius: 20px;
-                        transition: all 0.5s;
-                      }
-                      .heart:hover {
-                        color: white;
-                      }
-                      .options-part {
-                        opacity: 0;
-                        display: flex;
-                        justify-content: space-evenly;
-                        background-color: black;
-                        top: 65px;
-                        padding-top: 10px;
-                        padding-bottom: 10px;
-                        color: white;
-                        transition: all 0.5s;
-                        i {
-                          transition: all 0.2s;
-                          padding-top: 7px;
+                  a {
+                    .cards {
+                      transition: all 0.3s;
+                      border: 1px solid #ebebeb;
+                      cursor: pointer;
+                      display: block;
+                      .img-part {
+                        position: relative;
+                        p {
+                          position: absolute;
+                          padding: 15px;
+                          border-radius: 100px;
+                          color: white;
+                          left: 20px;
                         }
-                        i:hover {
-                          color: #fcb941;
+                        .new {
+                          background-color: #ef837b;
+                          top: 25px;
+                        }
+                        .top {
+                          background-color: #7dd2ea;
+                          top: 65px;
+                        }
+                        .heart {
+                          background-color: #fcb941;
+                          position: absolute;
+                          font-size: 18px;
+                          top: 25px;
+                          right: 15px;
+                          background-color: #fcb941;
+                          padding: 10px 10px;
+                          border-radius: 20px;
+                          transition: all 0.5s;
+                          color: black;
+                        }
+                        .heart:hover {
+                          color: white;
+                        }
+                        .options-part {
+                          opacity: 0;
+                          display: flex;
+                          justify-content: space-evenly;
+                          background-color: black;
+                          top: 65px;
+                          padding-top: 10px;
+                          padding-bottom: 10px;
+                          color: white;
+                          transition: all 0.5s;
+                          i {
+                            transition: all 0.2s;
+                            padding-top: 7px;
+                          }
+                          i:hover {
+                            color: #fcb941;
+                          }
+                          span {
+                            font-size: 20px;
+                          }
+                        }
+                      }
+                      .text-part {
+                        width: 250px !important;
+                        padding: 10px 15px;
+                        .mini-detail {
+                          color: #d7d7d7;
                         }
                         span {
+                          color: black;
                           font-size: 20px;
+                          transition: all 0.5s;
+                          cursor: pointer;
+                        }
+                        span:hover {
+                          color: #fcb941;
+                        }
+                        .cost {
+                          font-size: 20px;
+                          padding-top: 8px;
+                          color: #fcb941;
+                        }
+                        .stars {
+                          display: inline-block;
+                        }
+                        .reviews {
+                          color: #d7d7d7;
+                          display: inline-block;
                         }
                       }
                     }
-                    .text-part {
-                      width: 250px !important;
-                      padding: 10px 15px;
-                      .mini-detail {
-                        color: #d7d7d7;
+      
+                    .cards:hover {
+                      .options-part {
+                        opacity: 1 !important;
                       }
-                      span {
-                        font-size: 16px;
+                      .open-hovered {
+                        display: block !important;
                         transition: all 0.5s;
-                        cursor: pointer;
                       }
-                      span:hover {
-                        color: #fcb941;
-                      }
-                      .cost {
-                        font-size: 20px;
-                        padding-top: 8px;
-                        color: #fcb941;
-                      }
-                      .stars {
-                        display: inline-block;
-                      }
-                      .reviews {
-                        color: #d7d7d7;
-                        display: inline-block;
+                      .close-hovered {
+                        transition: all 0.5s;
+                        display: none !important;
                       }
                     }
                   }
@@ -2258,88 +2379,107 @@ main {
                   position: relative;
                   display: flex;
                   gap: 15px;
-                  .cards {
-                    transition: all 0.3s;
-                    border: 1px solid #ebebeb;
-                    cursor: pointer;
-                    .img-part {
-                      position: relative;
-                      p {
-                        position: absolute;
-                        padding: 15px;
-                        border-radius: 100px;
-                        color: white;
-                        left: 20px;
-                      }
-                      .new {
-                        background-color: #ef837b;
-                        top: 25px;
-                      }
-                      .top {
-                        background-color: #7dd2ea;
-                        top: 65px;
-                      }
-                      .heart {
-                        background-color: #fcb941;
-                        position: absolute;
-                        font-size: 18px;
-                        top: 25px;
-                        right: 15px;
-                        background-color: #fcb941;
-                        padding: 10px 10px;
-                        border-radius: 20px;
-                        transition: all 0.5s;
-                      }
-                      .heart:hover {
-                        color: white;
-                      }
-                      .options-part {
-                        opacity: 0;
-                        display: flex;
-                        justify-content: space-evenly;
-                        background-color: black;
-                        top: 65px;
-                        padding-top: 10px;
-                        padding-bottom: 10px;
-                        color: white;
-                        transition: all 0.5s;
-                        i {
-                          transition: all 0.2s;
-                          padding-top: 7px;
+                  a {
+                    .cards {
+                      transition: all 0.3s;
+                      border: 1px solid #ebebeb;
+                      cursor: pointer;
+                      display: block;
+                      .img-part {
+                        position: relative;
+                        p {
+                          position: absolute;
+                          padding: 15px;
+                          border-radius: 100px;
+                          color: white;
+                          left: 20px;
                         }
-                        i:hover {
-                          color: #fcb941;
+                        .new {
+                          background-color: #ef837b;
+                          top: 25px;
+                        }
+                        .top {
+                          background-color: #7dd2ea;
+                          top: 65px;
+                        }
+                        .heart {
+                          background-color: #fcb941;
+                          position: absolute;
+                          font-size: 18px;
+                          top: 25px;
+                          right: 15px;
+                          background-color: #fcb941;
+                          padding: 10px 10px;
+                          border-radius: 20px;
+                          transition: all 0.5s;
+                          color: black;
+                        }
+                        .heart:hover {
+                          color: white;
+                        }
+                        .options-part {
+                          opacity: 0;
+                          display: flex;
+                          justify-content: space-evenly;
+                          background-color: black;
+                          top: 65px;
+                          padding-top: 10px;
+                          padding-bottom: 10px;
+                          color: white;
+                          transition: all 0.5s;
+                          i {
+                            transition: all 0.2s;
+                            padding-top: 7px;
+                          }
+                          i:hover {
+                            color: #fcb941;
+                          }
+                          span {
+                            font-size: 20px;
+                          }
+                        }
+                      }
+                      .text-part {
+                        width: 250px !important;
+                        padding: 10px 15px;
+                        .mini-detail {
+                          color: #d7d7d7;
                         }
                         span {
+                          color: black;
                           font-size: 20px;
+                          transition: all 0.5s;
+                          cursor: pointer;
+                        }
+                        span:hover {
+                          color: #fcb941;
+                        }
+                        .cost {
+                          font-size: 20px;
+                          padding-top: 8px;
+                          color: #fcb941;
+                        }
+                        .stars {
+                          display: inline-block;
+                        }
+                        .reviews {
+                          color: #d7d7d7;
+                          display: inline-block;
                         }
                       }
                     }
-                    .text-part {
-                      width: 250px !important;
-                      padding: 10px 15px;
-                      .mini-detail {
-                        color: #d7d7d7;
+      
+                    .cards:hover {
+                      .options-part {
+                        opacity: 1 !important;
                       }
-                      span {
-                        font-size: 16px;
+                      .open-hovered {
+                        display: block !important;
                         transition: all 0.5s;
-                        cursor: pointer;
                       }
-                      span:hover {
-                        color: #fcb941;
-                      }
-                      .cost {
-                        font-size: 20px;
-                        padding-top: 8px;
-                        color: #fcb941;
-                      }
-                      .stars {
-                        display: inline-block;
-                      }
-                      .reviews {
-                        color: #d7d7d7;
-                        display: inline-block;
+                      .close-hovered {
+                        transition: all 0.5s;
+                        display: none !important;
                       }
                     }
                   }
@@ -2401,89 +2541,107 @@ main {
                   position: relative;
                   display: flex;
                   gap: 15px;
-                  .cards {
-                    transition: all 0.3s;
-                    border: 1px solid #ebebeb;
-                    cursor: pointer;
-                    display: block;
-                    .img-part {
-                      position: relative;
-                      p {
-                        position: absolute;
-                        padding: 15px;
-                        border-radius: 100px;
-                        color: white;
-                        left: 20px;
-                      }
-                      .new {
-                        background-color: #ef837b;
-                        top: 25px;
-                      }
-                      .top {
-                        background-color: #7dd2ea;
-                        top: 65px;
-                      }
-                      .heart {
-                        background-color: #fcb941;
-                        position: absolute;
-                        font-size: 18px;
-                        top: 25px;
-                        right: 15px;
-                        background-color: #fcb941;
-                        padding: 10px 10px;
-                        border-radius: 20px;
-                        transition: all 0.5s;
-                      }
-                      .heart:hover {
-                        color: white;
-                      }
-                      .options-part {
-                        opacity: 0;
-                        display: flex;
-                        justify-content: space-evenly;
-                        background-color: black;
-                        top: 65px;
-                        padding-top: 10px;
-                        padding-bottom: 10px;
-                        color: white;
-                        transition: all 0.5s;
-                        i {
-                          transition: all 0.2s;
-                          padding-top: 7px;
+                  a {
+                    .cards {
+                      transition: all 0.3s;
+                      border: 1px solid #ebebeb;
+                      cursor: pointer;
+                      display: block;
+                      .img-part {
+                        position: relative;
+                        p {
+                          position: absolute;
+                          padding: 15px;
+                          border-radius: 100px;
+                          color: white;
+                          left: 20px;
                         }
-                        i:hover {
-                          color: #fcb941;
+                        .new {
+                          background-color: #ef837b;
+                          top: 25px;
+                        }
+                        .top {
+                          background-color: #7dd2ea;
+                          top: 65px;
+                        }
+                        .heart {
+                          background-color: #fcb941;
+                          position: absolute;
+                          font-size: 18px;
+                          top: 25px;
+                          right: 15px;
+                          background-color: #fcb941;
+                          padding: 10px 10px;
+                          border-radius: 20px;
+                          transition: all 0.5s;
+                          color: black;
+                        }
+                        .heart:hover {
+                          color: white;
+                        }
+                        .options-part {
+                          opacity: 0;
+                          display: flex;
+                          justify-content: space-evenly;
+                          background-color: black;
+                          top: 65px;
+                          padding-top: 10px;
+                          padding-bottom: 10px;
+                          color: white;
+                          transition: all 0.5s;
+                          i {
+                            transition: all 0.2s;
+                            padding-top: 7px;
+                          }
+                          i:hover {
+                            color: #fcb941;
+                          }
+                          span {
+                            font-size: 20px;
+                          }
+                        }
+                      }
+                      .text-part {
+                        width: 250px !important;
+                        padding: 10px 15px;
+                        .mini-detail {
+                          color: #d7d7d7;
                         }
                         span {
+                          color: black;
                           font-size: 20px;
+                          transition: all 0.5s;
+                          cursor: pointer;
+                        }
+                        span:hover {
+                          color: #fcb941;
+                        }
+                        .cost {
+                          font-size: 20px;
+                          padding-top: 8px;
+                          color: #fcb941;
+                        }
+                        .stars {
+                          display: inline-block;
+                        }
+                        .reviews {
+                          color: #d7d7d7;
+                          display: inline-block;
                         }
                       }
                     }
-                    .text-part {
-                      width: 250px !important;
-                      padding: 10px 15px;
-                      .mini-detail {
-                        color: #d7d7d7;
+      
+                    .cards:hover {
+                      .options-part {
+                        opacity: 1 !important;
                       }
-                      span {
-                        font-size: 16px;
+                      .open-hovered {
+                        display: block !important;
                         transition: all 0.5s;
-                        cursor: pointer;
                       }
-                      span:hover {
-                        color: #fcb941;
-                      }
-                      .cost {
-                        font-size: 20px;
-                        padding-top: 8px;
-                        color: #fcb941;
-                      }
-                      .stars {
-                        display: inline-block;
-                      }
-                      .reviews {
-                        color: #d7d7d7;
-                        display: inline-block;
+                      .close-hovered {
+                        transition: all 0.5s;
+                        display: none !important;
                       }
                     }
                   }
@@ -2545,88 +2703,107 @@ main {
                 position: relative;
                 display: flex;
                 gap: 15px;
-                .cards {
-                  transition: all 0.3s;
-                  border: 1px solid #ebebeb;
-                  cursor: pointer;
-                  .img-part {
-                    position: relative;
-                    p {
-                      position: absolute;
-                      padding: 15px;
-                      border-radius: 100px;
-                      color: white;
-                      left: 20px;
-                    }
-                    .new {
-                      background-color: #ef837b;
-                      top: 25px;
-                    }
-                    .top {
-                      background-color: #7dd2ea;
-                      top: 65px;
-                    }
-                    .heart {
-                      background-color: #fcb941;
-                      position: absolute;
-                      font-size: 18px;
-                      top: 25px;
-                      right: 15px;
-                      background-color: #fcb941;
-                      padding: 10px 10px;
-                      border-radius: 20px;
-                      transition: all 0.5s;
-                    }
-                    .heart:hover {
-                      color: white;
-                    }
-                    .options-part {
-                      opacity: 0;
-                      display: flex;
-                      justify-content: space-evenly;
-                      background-color: black;
-                      top: 65px;
-                      padding-top: 10px;
-                      padding-bottom: 10px;
-                      color: white;
-                      transition: all 0.5s;
-                      i {
-                        transition: all 0.2s;
-                        padding-top: 7px;
+                a {
+                  .cards {
+                    transition: all 0.3s;
+                    border: 1px solid #ebebeb;
+                    cursor: pointer;
+                    display: block;
+                    .img-part {
+                      position: relative;
+                      p {
+                        position: absolute;
+                        padding: 15px;
+                        border-radius: 100px;
+                        color: white;
+                        left: 20px;
                       }
-                      i:hover {
-                        color: #fcb941;
+                      .new {
+                        background-color: #ef837b;
+                        top: 25px;
+                      }
+                      .top {
+                        background-color: #7dd2ea;
+                        top: 65px;
+                      }
+                      .heart {
+                        background-color: #fcb941;
+                        position: absolute;
+                        font-size: 18px;
+                        top: 25px;
+                        right: 15px;
+                        background-color: #fcb941;
+                        padding: 10px 10px;
+                        border-radius: 20px;
+                        transition: all 0.5s;
+                        color: black;
+                      }
+                      .heart:hover {
+                        color: white;
+                      }
+                      .options-part {
+                        opacity: 0;
+                        display: flex;
+                        justify-content: space-evenly;
+                        background-color: black;
+                        top: 65px;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        color: white;
+                        transition: all 0.5s;
+                        i {
+                          transition: all 0.2s;
+                          padding-top: 7px;
+                        }
+                        i:hover {
+                          color: #fcb941;
+                        }
+                        span {
+                          font-size: 20px;
+                        }
+                      }
+                    }
+                    .text-part {
+                      width: 250px !important;
+                      padding: 10px 15px;
+                      .mini-detail {
+                        color: #d7d7d7;
                       }
                       span {
+                        color: black;
                         font-size: 20px;
+                        transition: all 0.5s;
+                        cursor: pointer;
+                      }
+                      span:hover {
+                        color: #fcb941;
+                      }
+                      .cost {
+                        font-size: 20px;
+                        padding-top: 8px;
+                        color: #fcb941;
+                      }
+                      .stars {
+                        display: inline-block;
+                      }
+                      .reviews {
+                        color: #d7d7d7;
+                        display: inline-block;
                       }
                     }
                   }
-                  .text-part {
-                    width: 250px !important;
-                    padding: 10px 15px;
-                    .mini-detail {
-                      color: #d7d7d7;
+    
+                  .cards:hover {
+                    .options-part {
+                      opacity: 1 !important;
                     }
-                    span {
-                      font-size: 16px;
+                    .open-hovered {
+                      display: block !important;
                       transition: all 0.5s;
-                      cursor: pointer;
                     }
-                    span:hover {
-                      color: #fcb941;
-                    }
-                    .cost {
-                      font-size: 20px;
-                      padding-top: 8px;
-                      color: #fcb941;
-                    }
-                    .stars {
-                      display: inline-block;
-                    }
-                    .reviews {
-                      color: #d7d7d7;
-                      display: inline-block;
+                    .close-hovered {
+                      transition: all 0.5s;
+                      display: none !important;
                     }
                   }
                 }
@@ -2650,88 +2827,107 @@ main {
                 position: relative;
                 display: flex;
                 gap: 15px;
-                .cards {
-                  transition: all 0.3s;
-                  border: 1px solid #ebebeb;
-                  cursor: pointer;
-                  .img-part {
-                    position: relative;
-                    p {
-                      position: absolute;
-                      padding: 15px;
-                      border-radius: 100px;
-                      color: white;
-                      left: 20px;
-                    }
-                    .new {
-                      background-color: #ef837b;
-                      top: 25px;
-                    }
-                    .top {
-                      background-color: #7dd2ea;
-                      top: 65px;
-                    }
-                    .heart {
-                      background-color: #fcb941;
-                      position: absolute;
-                      font-size: 18px;
-                      top: 25px;
-                      right: 15px;
-                      background-color: #fcb941;
-                      padding: 10px 10px;
-                      border-radius: 20px;
-                      transition: all 0.5s;
-                    }
-                    .heart:hover {
-                      color: white;
-                    }
-                    .options-part {
-                      opacity: 0;
-                      display: flex;
-                      justify-content: space-evenly;
-                      background-color: black;
-                      top: 65px;
-                      padding-top: 10px;
-                      padding-bottom: 10px;
-                      color: white;
-                      transition: all 0.5s;
-                      i {
-                        transition: all 0.2s;
-                        padding-top: 7px;
+                a {
+                  .cards {
+                    transition: all 0.3s;
+                    border: 1px solid #ebebeb;
+                    cursor: pointer;
+                    display: block;
+                    .img-part {
+                      position: relative;
+                      p {
+                        position: absolute;
+                        padding: 15px;
+                        border-radius: 100px;
+                        color: white;
+                        left: 20px;
                       }
-                      i:hover {
-                        color: #fcb941;
+                      .new {
+                        background-color: #ef837b;
+                        top: 25px;
+                      }
+                      .top {
+                        background-color: #7dd2ea;
+                        top: 65px;
+                      }
+                      .heart {
+                        background-color: #fcb941;
+                        position: absolute;
+                        font-size: 18px;
+                        top: 25px;
+                        right: 15px;
+                        background-color: #fcb941;
+                        padding: 10px 10px;
+                        border-radius: 20px;
+                        transition: all 0.5s;
+                        color: black;
+                      }
+                      .heart:hover {
+                        color: white;
+                      }
+                      .options-part {
+                        opacity: 0;
+                        display: flex;
+                        justify-content: space-evenly;
+                        background-color: black;
+                        top: 65px;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        color: white;
+                        transition: all 0.5s;
+                        i {
+                          transition: all 0.2s;
+                          padding-top: 7px;
+                        }
+                        i:hover {
+                          color: #fcb941;
+                        }
+                        span {
+                          font-size: 20px;
+                        }
+                      }
+                    }
+                    .text-part {
+                      width: 250px !important;
+                      padding: 10px 15px;
+                      .mini-detail {
+                        color: #d7d7d7;
                       }
                       span {
+                        color: black;
                         font-size: 20px;
+                        transition: all 0.5s;
+                        cursor: pointer;
+                      }
+                      span:hover {
+                        color: #fcb941;
+                      }
+                      .cost {
+                        font-size: 20px;
+                        padding-top: 8px;
+                        color: #fcb941;
+                      }
+                      .stars {
+                        display: inline-block;
+                      }
+                      .reviews {
+                        color: #d7d7d7;
+                        display: inline-block;
                       }
                     }
                   }
-                  .text-part {
-                    width: 250px !important;
-                    padding: 10px 15px;
-                    .mini-detail {
-                      color: #d7d7d7;
+    
+                  .cards:hover {
+                    .options-part {
+                      opacity: 1 !important;
                     }
-                    span {
-                      font-size: 16px;
+                    .open-hovered {
+                      display: block !important;
                       transition: all 0.5s;
-                      cursor: pointer;
                     }
-                    span:hover {
-                      color: #fcb941;
-                    }
-                    .cost {
-                      font-size: 20px;
-                      padding-top: 8px;
-                      color: #fcb941;
-                    }
-                    .stars {
-                      display: inline-block;
-                    }
-                    .reviews {
-                      color: #d7d7d7;
-                      display: inline-block;
+                    .close-hovered {
+                      transition: all 0.5s;
+                      display: none !important;
                     }
                   }
                 }
@@ -2755,89 +2951,107 @@ main {
                 position: relative;
                 display: flex;
                 gap: 15px;
-                .cards {
-                  transition: all 0.3s;
-                  border: 1px solid #ebebeb;
-                  cursor: pointer;
-                  display: block;
-                  .img-part {
-                    position: relative;
-                    p {
-                      position: absolute;
-                      padding: 15px;
-                      border-radius: 100px;
-                      color: white;
-                      left: 20px;
-                    }
-                    .new {
-                      background-color: #ef837b;
-                      top: 25px;
-                    }
-                    .top {
-                      background-color: #7dd2ea;
-                      top: 65px;
-                    }
-                    .heart {
-                      background-color: #fcb941;
-                      position: absolute;
-                      font-size: 18px;
-                      top: 25px;
-                      right: 15px;
-                      background-color: #fcb941;
-                      padding: 10px 10px;
-                      border-radius: 20px;
-                      transition: all 0.5s;
-                    }
-                    .heart:hover {
-                      color: white;
-                    }
-                    .options-part {
-                      opacity: 0;
-                      display: flex;
-                      justify-content: space-evenly;
-                      background-color: black;
-                      top: 65px;
-                      padding-top: 10px;
-                      padding-bottom: 10px;
-                      color: white;
-                      transition: all 0.5s;
-                      i {
-                        transition: all 0.2s;
-                        padding-top: 7px;
+                a {
+                  .cards {
+                    transition: all 0.3s;
+                    border: 1px solid #ebebeb;
+                    cursor: pointer;
+                    display: block;
+                    .img-part {
+                      position: relative;
+                      p {
+                        position: absolute;
+                        padding: 15px;
+                        border-radius: 100px;
+                        color: white;
+                        left: 20px;
                       }
-                      i:hover {
-                        color: #fcb941;
+                      .new {
+                        background-color: #ef837b;
+                        top: 25px;
+                      }
+                      .top {
+                        background-color: #7dd2ea;
+                        top: 65px;
+                      }
+                      .heart {
+                        background-color: #fcb941;
+                        position: absolute;
+                        font-size: 18px;
+                        top: 25px;
+                        right: 15px;
+                        background-color: #fcb941;
+                        padding: 10px 10px;
+                        border-radius: 20px;
+                        transition: all 0.5s;
+                        color: black;
+                      }
+                      .heart:hover {
+                        color: white;
+                      }
+                      .options-part {
+                        opacity: 0;
+                        display: flex;
+                        justify-content: space-evenly;
+                        background-color: black;
+                        top: 65px;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        color: white;
+                        transition: all 0.5s;
+                        i {
+                          transition: all 0.2s;
+                          padding-top: 7px;
+                        }
+                        i:hover {
+                          color: #fcb941;
+                        }
+                        span {
+                          font-size: 20px;
+                        }
+                      }
+                    }
+                    .text-part {
+                      width: 250px !important;
+                      padding: 10px 15px;
+                      .mini-detail {
+                        color: #d7d7d7;
                       }
                       span {
+                        color: black;
                         font-size: 20px;
+                        transition: all 0.5s;
+                        cursor: pointer;
+                      }
+                      span:hover {
+                        color: #fcb941;
+                      }
+                      .cost {
+                        font-size: 20px;
+                        padding-top: 8px;
+                        color: #fcb941;
+                      }
+                      .stars {
+                        display: inline-block;
+                      }
+                      .reviews {
+                        color: #d7d7d7;
+                        display: inline-block;
                       }
                     }
                   }
-                  .text-part {
-                    width: 250px !important;
-                    padding: 10px 15px;
-                    .mini-detail {
-                      color: #d7d7d7;
+    
+                  .cards:hover {
+                    .options-part {
+                      opacity: 1 !important;
                     }
-                    span {
-                      font-size: 16px;
+                    .open-hovered {
+                      display: block !important;
                       transition: all 0.5s;
-                      cursor: pointer;
                     }
-                    span:hover {
-                      color: #fcb941;
-                    }
-                    .cost {
-                      font-size: 20px;
-                      padding-top: 8px;
-                      color: #fcb941;
-                    }
-                    .stars {
-                      display: inline-block;
-                    }
-                    .reviews {
-                      color: #d7d7d7;
-                      display: inline-block;
+                    .close-hovered {
+                      transition: all 0.5s;
+                      display: none !important;
                     }
                   }
                 }
@@ -2861,88 +3075,107 @@ main {
                 position: relative;
                 display: flex;
                 gap: 15px;
-                .cards {
-                  transition: all 0.3s;
-                  border: 1px solid #ebebeb;
-                  cursor: pointer;
-                  .img-part {
-                    position: relative;
-                    p {
-                      position: absolute;
-                      padding: 15px;
-                      border-radius: 100px;
-                      color: white;
-                      left: 20px;
-                    }
-                    .new {
-                      background-color: #ef837b;
-                      top: 25px;
-                    }
-                    .top {
-                      background-color: #7dd2ea;
-                      top: 65px;
-                    }
-                    .heart {
-                      background-color: #fcb941;
-                      position: absolute;
-                      font-size: 18px;
-                      top: 25px;
-                      right: 15px;
-                      background-color: #fcb941;
-                      padding: 10px 10px;
-                      border-radius: 20px;
-                      transition: all 0.5s;
-                    }
-                    .heart:hover {
-                      color: white;
-                    }
-                    .options-part {
-                      opacity: 0;
-                      display: flex;
-                      justify-content: space-evenly;
-                      background-color: black;
-                      top: 65px;
-                      padding-top: 10px;
-                      padding-bottom: 10px;
-                      color: white;
-                      transition: all 0.5s;
-                      i {
-                        transition: all 0.2s;
-                        padding-top: 7px;
+                a {
+                  .cards {
+                    transition: all 0.3s;
+                    border: 1px solid #ebebeb;
+                    cursor: pointer;
+                    display: block;
+                    .img-part {
+                      position: relative;
+                      p {
+                        position: absolute;
+                        padding: 15px;
+                        border-radius: 100px;
+                        color: white;
+                        left: 20px;
                       }
-                      i:hover {
-                        color: #fcb941;
+                      .new {
+                        background-color: #ef837b;
+                        top: 25px;
+                      }
+                      .top {
+                        background-color: #7dd2ea;
+                        top: 65px;
+                      }
+                      .heart {
+                        background-color: #fcb941;
+                        position: absolute;
+                        font-size: 18px;
+                        top: 25px;
+                        right: 15px;
+                        background-color: #fcb941;
+                        padding: 10px 10px;
+                        border-radius: 20px;
+                        transition: all 0.5s;
+                        color: black;
+                      }
+                      .heart:hover {
+                        color: white;
+                      }
+                      .options-part {
+                        opacity: 0;
+                        display: flex;
+                        justify-content: space-evenly;
+                        background-color: black;
+                        top: 65px;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        color: white;
+                        transition: all 0.5s;
+                        i {
+                          transition: all 0.2s;
+                          padding-top: 7px;
+                        }
+                        i:hover {
+                          color: #fcb941;
+                        }
+                        span {
+                          font-size: 20px;
+                        }
+                      }
+                    }
+                    .text-part {
+                      width: 250px !important;
+                      padding: 10px 15px;
+                      .mini-detail {
+                        color: #d7d7d7;
                       }
                       span {
+                        color: black;
                         font-size: 20px;
+                        transition: all 0.5s;
+                        cursor: pointer;
+                      }
+                      span:hover {
+                        color: #fcb941;
+                      }
+                      .cost {
+                        font-size: 20px;
+                        padding-top: 8px;
+                        color: #fcb941;
+                      }
+                      .stars {
+                        display: inline-block;
+                      }
+                      .reviews {
+                        color: #d7d7d7;
+                        display: inline-block;
                       }
                     }
                   }
-                  .text-part {
-                    width: 250px !important;
-                    padding: 10px 15px;
-                    .mini-detail {
-                      color: #d7d7d7;
+    
+                  .cards:hover {
+                    .options-part {
+                      opacity: 1 !important;
                     }
-                    span {
-                      font-size: 16px;
+                    .open-hovered {
+                      display: block !important;
                       transition: all 0.5s;
-                      cursor: pointer;
                     }
-                    span:hover {
-                      color: #fcb941;
-                    }
-                    .cost {
-                      font-size: 20px;
-                      padding-top: 8px;
-                      color: #fcb941;
-                    }
-                    .stars {
-                      display: inline-block;
-                    }
-                    .reviews {
-                      color: #d7d7d7;
-                      display: inline-block;
+                    .close-hovered {
+                      transition: all 0.5s;
+                      display: none !important;
                     }
                   }
                 }

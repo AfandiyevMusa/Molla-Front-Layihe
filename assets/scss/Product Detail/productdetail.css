@@ -1121,6 +1121,7 @@ header #main-nav .container .burger-m .table ul:hover .table {
 
 header #main-nav .container .burger-m:hover .table {
   display: block;
+  padding-top: 14px;
 }
 
 header #main-nav .container .burger-m:hover .tab-menu {
@@ -1133,6 +1134,7 @@ header #main-nav .container .burger-m:hover .x-icon {
 
 header #main-nav .container .burger-m:hover .not-table {
   background-color: #fcb941;
+  height: 54px;
 }
 
 header #main-nav .container .categories .list ul {
@@ -1443,6 +1445,8 @@ main #product-info .all .left .left-p img {
   width: 120px;
   height: 120px;
   cursor: pointer;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 main #product-info .all .left .left-p .active {
@@ -1462,11 +1466,13 @@ main #product-info .all .left .left-p .not-active:hover {
 
 main #product-info .all .left .right-p {
   position: relative;
+  width: auto;
+  height: auto;
 }
 
 main #product-info .all .left .right-p img {
-  width: 100%;
-  height: 100%;
+  width: 500px;
+  height: 500px;
 }
 
 main #product-info .all .left .right-p i {
@@ -2450,6 +2456,13 @@ footer #bottomF .last-infos span {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  #tab-part {
+    padding-top: 70px;
+  }
+  #tab-part .tabs .all-heads {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
   }
   #bottomF .last-infos {
     display: -webkit-box;

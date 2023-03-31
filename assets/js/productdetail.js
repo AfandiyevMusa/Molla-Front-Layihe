@@ -81,7 +81,7 @@ $(function () {
                 loop: false
             },
             576: {
-                items: 2,
+                items: 1,
                 nav: false,
                 loop: false
             },
@@ -194,4 +194,31 @@ $(function () {
         chooseLanguage.innerText = chooseSpanish.innerText;
         localStorage.setItem('languageChoice', chooseSpanish.innerText);
     });
+
+    //Sticky navbar
+    window.onscroll = function () { myFunction() };
+    var navbar = document.getElementById("main-nav");
+    var sticky = navbar.offsetTop;
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+
+    let imageArr = JSON.parse(localStorage.getItem('imageArr'));
+
+    let imgL1 = document.querySelector("#product-info .all .left .left-p .first");
+    let imgL2 = document.querySelector("#product-info .all .left .left-p .second");
+    let imgR = document.querySelector("#product-info .all .left .right-p img");
+
+    imageArr.forEach(eachArr => {
+        imgL1.setAttribute("src", eachArr.image1)
+        imgL2.setAttribute("src", eachArr.image2)
+        imgR.setAttribute("src", eachArr.image1);
+    });
+   
+    
+    
 })

@@ -35,13 +35,7 @@ $(function () {
 
     //Sidebar Shop
     let filterBar = document.querySelector("#filter-for-phone .all");
-    // let closePart = document.querySelector(".sidebar .close-part .close");
     let settingsButton = document.querySelector("#settings .all .button")
-
-    // settingsButton.addEventListener("click", function () {
-    //     filterBar.classList.add("active-filter");
-    //     filterBar.classList.remove("hide-filter");
-    // })
 
     settingsButton.addEventListener("click", function () {
         if (filterBar.classList.contains("hide-filter")) {
@@ -152,8 +146,6 @@ $(function () {
     }
     getWishlistCount(wishlisted);
 
-
-
     let cartProducts = JSON.parse(localStorage.getItem("cartProducts"));
     function getProductsCount(arr) {
         let cnt = 0;
@@ -223,4 +215,16 @@ $(function () {
         chooseLanguage.innerText = chooseSpanish.innerText;
         localStorage.setItem('languageChoice', chooseSpanish.innerText);
     });
+
+    //Sticky navbar
+    window.onscroll = function () { myFunction() };
+    var navbar = document.getElementById("main-nav");
+    var sticky = navbar.offsetTop;
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
 })

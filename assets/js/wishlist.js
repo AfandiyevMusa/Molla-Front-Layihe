@@ -189,4 +189,16 @@ $(function () {
         chooseLanguage.innerText = chooseSpanish.innerText;
         localStorage.setItem('languageChoice', chooseSpanish.innerText);
     });
+
+    //Sticky navbar
+    window.onscroll = function () { myFunction() };
+    var navbar = document.getElementById("main-nav");
+    var sticky = navbar.offsetTop;
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
 })
