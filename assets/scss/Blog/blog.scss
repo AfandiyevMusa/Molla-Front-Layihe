@@ -1046,20 +1046,6 @@ main {
             .up {
               width: 100%;
               height: 100%;
-              // .large-icon {
-              //   .icon {
-              //     // position: relative;
-              //     a {
-              //       i {
-              //         left: 50%;
-              //         bottom: 50%;
-              //         position: relative;
-              //         font-size: 25px;
-              //         color: #fcb941;
-              //       }
-              //     }
-              //   }
-              // }
               img {
                 cursor: pointer;
                 width: 100% !important;
@@ -1546,15 +1532,15 @@ main {
 
   #settings {
     display: none;
-    position: sticky !important;
-    top: 100px !important;
     z-index: 20;
+    position: sticky;
+    top: 100px;
+    float: right;
     .all {
-      position: relative;
       .button {
+        float: right;
         transition: all 0.5s;
-        position: absolute;
-        right: 0;
+        position: relative;
         i {
           cursor: pointer;
           display: flex;
@@ -1706,7 +1692,7 @@ footer {
   }
 }
 
-.slide-settings{
+.slide-settings {
   transform: translateX(-340px);
   transition: all 0.5s;
 }
@@ -1744,11 +1730,11 @@ footer {
       width: 400px !important;
     }
   }
-  #main-nav{
-    .categories{
-      .list{
-        ul{
-          span{
+  #main-nav {
+    .categories {
+      .list {
+        ul {
+          span {
             display: none;
           }
         }
@@ -1824,11 +1810,11 @@ footer {
   #main-content {
     .all {
       .col9 {
-        .left{
-          .each-content{
-            .down{
-              .fifth{
-                span{
+        .left {
+          .each-content {
+            .down {
+              .fifth {
+                span {
                   width: 60% !important;
                 }
               }
@@ -1887,11 +1873,11 @@ footer {
       .col3 {
       }
       .col9 {
-        .left{
-          .each-content{
-            .down{
-              .fifth{
-                span{
+        .left {
+          .each-content {
+            .down {
+              .fifth {
+                span {
                   width: 25% !important;
                 }
               }

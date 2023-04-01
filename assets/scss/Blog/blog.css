@@ -2000,21 +2000,18 @@ main #phone-content .all .col3 .right .about span {
 
 main #settings {
   display: none;
-  position: -webkit-sticky !important;
-  position: sticky !important;
-  top: 100px !important;
   z-index: 20;
-}
-
-main #settings .all {
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
+  float: right;
 }
 
 main #settings .all .button {
+  float: right;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  position: absolute;
-  right: 0;
+  position: relative;
 }
 
 main #settings .all .button i {

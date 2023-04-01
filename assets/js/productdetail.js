@@ -48,27 +48,6 @@ $(function () {
         })
     });
 
-    //cart and wishlists icon numbers
-    let wishlisted = JSON.parse(localStorage.getItem("wishlisted"));
-    function getWishlistCount(arr) {
-        let cnt = 0;
-        for (const eachItem of arr) {
-            cnt += eachItem.count;
-            document.querySelector(".wishlist-sup").innerText = cnt;
-        }
-    }
-    getWishlistCount(wishlisted);
-
-    let cartProducts = JSON.parse(localStorage.getItem("cartProducts"));
-    function getProductsCount(arr) {
-        let cnt = 0;
-        for (const eachItem of arr) {
-            cnt += eachItem.count;
-            document.querySelector(".cart sup").innerText = cnt;
-        }
-    }
-    getProductsCount(cartProducts);
-
     // you may like
     $('.cardss').owlCarousel({
         loop: true,
@@ -241,4 +220,25 @@ $(function () {
         imgL2.classList.remove("active");
         imgL2.classList.add("not-active");
     })
+
+    //cart and wishlists icon numbers
+    let wishlisted = JSON.parse(localStorage.getItem("wishlisted"));
+    function getWishlistCount(arr) {
+        let cnt = 0;
+        for (const eachItem of arr) {
+            cnt += eachItem.count;
+            document.querySelector(".wishlist-sup").innerText = cnt;
+        }
+    }
+    getWishlistCount(wishlisted);
+
+    let cartProducts = JSON.parse(localStorage.getItem("cartProducts"));
+    function getProductsCount(arr) {
+        let cnt = 0;
+        for (const eachItem of arr) {
+            cnt += eachItem.count;
+            document.querySelector(".cart sup").innerText = cnt;
+        }
+    }
+    getProductsCount(cartProducts);
 })
