@@ -39,9 +39,6 @@ $(function () {
         if (!this.classList.contains("clicked-input")) {
             this.classList.add("clicked-input");
         }
-        // else {
-        //     eachInput.classList.add("nonclicked-input");
-        // }
     })
 
     //Adding Cart Part

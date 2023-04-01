@@ -315,7 +315,7 @@ $(function () {
 
     let addCartBtns = document.querySelectorAll(".addToCart");
     let cartProducts = [];
-    if (JSON.parse(localStorage.getItem("cartProducts")) != null) {
+    if (JSON.parse(localStorage.getItem("cartProducts")) != undefined) {
         cartProducts = JSON.parse(localStorage.getItem("cartProducts"));
     }
 
@@ -407,7 +407,7 @@ $(function () {
                 if (unlistedIndex > -1) {
                     wishlisted.splice(unlistedIndex, 1);
                 }
-                
+
                 alertMessage.firstElementChild.innerText = "Product deleted from Wishlist";
                 localStorage.setItem("wishlisted", JSON.stringify(wishlisted));
                 let decreasedSup = parseInt(document.querySelector(".wishlist-sup").innerText) - 1;
@@ -457,22 +457,93 @@ $(function () {
     let imageArr = [];
 
     links.forEach(eachLink => {
-        eachLink.addEventListener("click", function (e){
+        eachLink.addEventListener("click", function (e) {
             let mainImg = this.firstElementChild.children[2].getAttribute("src");
             let hovImg = this.firstElementChild.children[3].getAttribute("src");
             let productName = this.children[1].children[1].innerText;
             let productPrice = this.children[1].children[2].innerText;
-            
+
             imageArr.push({
                 image1: mainImg,
                 image2: hovImg,
                 name: productName,
                 price: productPrice
             });
-            
+
             localStorage.setItem("imageArr", JSON.stringify(imageArr));
         })
     });
 
-    let cartBtn = document.querySelector("#main-nav .shopping")
+    //add to cart dropdown
+    let dropBody = document.querySelector("#cart-info .table .all-infos")
+    let dropTotal = document.querySelector("#cart-info .table .bottom .total .totalPrice")
+    let emptyMessage = document.querySelector("#cart-info .empty-message")
+    let productDropdown = document.querySelector("#cart-info .table")
+
+    if (cartProducts.length == 0) {
+        productDropdown.classList.add("d-none");
+        emptyMessage.classList.remove("d-none");
+    } else {
+        productDropdown.classList.remove("d-none");
+        emptyMessage.classList.add("d-none");
+        cartProducts.forEach(eachProduct => {
+            dropBody.innerHTML += `<div class="each-info" data-id="${eachProduct.id}">
+            <div class="info">
+                <span>${eachProduct.name}</span>
+                <p>${eachProduct.count} X $${parseFloat(eachProduct.price.substring(1))}</p>
+            </div>
+            <div class="photo">
+                <img src="${eachProduct.image}" alt="">
+            </div>
+            <div class="option">
+                <i class="fa-solid fa-x delete-all"></i>
+            </div>
+        </div>`
+        });
+
+        // localStorage.setItem("cartProducts", JSON.stringify(cartProducts));
+
+        let allDeleteBtns = document.querySelectorAll(".delete-all");
+        for (let i = 0; i < allDeleteBtns.length; i++) {
+            allDeleteBtns[i].addEventListener("click", function (e) {
+                allDeleteBtns[i].parentElement.parentElement.remove();
+                let itemDeleted = cartProducts.find(m => m.id == allDeleteBtns[i].parentElement.parentElement.getAttribute("data-id"));
+                // console.log(allDeleteBtns[i].closest('.each-info').querySelector('.info p').textContent.split(' ')[0]);
+                let indexOfProduct = cartProducts.indexOf(itemDeleted)
+                if (indexOfProduct > -1) {
+                    cartProducts.splice(indexOfProduct, 1)
+                }
+                if (cartProducts.length == 0) {
+                    productDropdown.classList.add("d-none");
+                    emptyMessage.classList.remove("d-none");
+                }
+                localStorage.setItem("cartProducts", JSON.stringify(cartProducts))
+                let num = parseInt(document.querySelector(".cart sup").innerText) - parseInt(allDeleteBtns[i].closest('.each-info').querySelector('.info p').textContent.split(' ')[0]);
+                document.querySelector(".cart sup").innerText = num
+                dropTotal.innerText = "$" + `${totalSum(JSON.parse(localStorage.getItem("cartProducts"))).toFixed(2)}`;
+            })
+        }
+
+        function totalSum(str) {
+            let sum = 0;
+            for (const eachStr of str) {
+                sum += (parseFloat(eachStr.price.substring(1)) * parseFloat(eachStr.count))
+            }
+            return sum;
+        }
+        dropTotal.innerText = "$" + `${totalSum(JSON.parse(localStorage.getItem("cartProducts"))).toFixed(2)}`;
+    }
+
+    let cartB = document.querySelector("#down-nav .cartlist")
+    let info = document.querySelector("#cart-info")
+    cartB.addEventListener("mouseenter", function (e) {
+        e.preventDefault();
+        info.classList.remove("d-none");
+    })
+
+    info.addEventListener("mouseleave", function (e) {
+        e.preventDefault(e)
+        info.classList.add("d-none");
+    })
+
 })

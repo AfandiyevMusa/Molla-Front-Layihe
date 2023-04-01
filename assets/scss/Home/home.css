@@ -451,8 +451,8 @@ header #down-nav {
 }
 
 header #down-nav .container {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 header #down-nav .container .logo a img {
@@ -1339,6 +1339,165 @@ main #info-message .all span {
   padding-bottom: 20px;
   padding-left: 25px;
   padding-right: 45px;
+  color: white;
+  background-color: #fcb941;
+}
+
+main #cart-info {
+  width: 300px !important;
+}
+
+main #cart-info .container .empty-message {
+  position: absolute;
+  top: 161px;
+  right: 180px;
+  z-index: 100;
+}
+
+main #cart-info .container .empty-message span {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background-color: #fff;
+  -webkit-box-shadow: 5px 10px 16px rgba(51, 51, 51, 0.05), -5px 10px 16px rgba(51, 51, 51, 0.05);
+          box-shadow: 5px 10px 16px rgba(51, 51, 51, 0.05), -5px 10px 16px rgba(51, 51, 51, 0.05);
+  text-align: center;
+  padding-top: 31px;
+  padding-bottom: 31px;
+  padding-left: 110px;
+  padding-right: 110px;
+  color: #8a8a8a;
+  font-size: 17px;
+}
+
+main #cart-info .container .table {
+  background-color: white;
+  position: absolute;
+  top: 132px;
+  right: 180px;
+  z-index: 100;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 400px;
+  padding: 30px;
+}
+
+main #cart-info .container .table .all-infos {
+  overflow-y: auto;
+  height: 150px;
+}
+
+main #cart-info .container .table .all-infos .each-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+main #cart-info .container .table .all-infos .each-info .info {
+  width: 300px;
+}
+
+main #cart-info .container .table .all-infos .each-info .info span {
+  font-weight: 300;
+  font-size: 14px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+main #cart-info .container .table .all-infos .each-info .info span:hover {
+  color: #fcb941;
+}
+
+main #cart-info .container .table .all-infos .each-info .info p {
+  padding-top: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #8e8e8e;
+}
+
+main #cart-info .container .table .all-infos .each-info .photo {
+  position: relative;
+  top: 20px;
+}
+
+main #cart-info .container .table .all-infos .each-info .photo img {
+  max-width: 60px;
+}
+
+main #cart-info .container .table .all-infos .each-info .option i {
+  font-size: 13px;
+  color: #8b8c8d;
+  position: relative;
+  top: 35px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+main #cart-info .container .table .all-infos .each-info .option i:hover {
+  color: black;
+}
+
+main #cart-info .container .table .bottom .total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+main #cart-info .container .table .bottom .total span {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+main #cart-info .container .table .bottom .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 15px;
+  text-decoration: none;
+  text-align: center;
+}
+
+main #cart-info .container .table .bottom .buttons .view {
+  width: 100% !important;
+  color: white;
+  background-color: #fcb941;
+  border: 1px solid #fcb941;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+main #cart-info .container .table .bottom .buttons .view:hover {
+  color: #fcb941;
+  background-color: white;
+}
+
+main #cart-info .container .table .bottom .buttons .checkout {
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  width: 100% !important;
+  color: #fcb941;
+  background-color: white;
+  border: 1px solid #fcb941;
+}
+
+main #cart-info .container .table .bottom .buttons .checkout i {
+  padding-left: 10px;
+}
+
+main #cart-info .container .table .bottom .buttons .checkout:hover {
   color: white;
   background-color: #fcb941;
 }

@@ -334,8 +334,8 @@ header {
     background-color: #333;
     border-bottom: 1px solid #ebebeb;
     .container {
-      padding-top: 20px;
-      padding-bottom: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
       .logo {
         a {
           img {
@@ -1003,6 +1003,134 @@ main {
         padding-right: 45px;
         color: white;
         background-color: #fcb941;
+      }
+    }
+  }
+
+  #cart-info {
+    width: 300px !important;
+    .container {
+      .empty-message {
+        position: absolute;
+        top: 161px;
+        right: 180px;
+        z-index: 100;
+        span {
+          transition: all 0.3s;
+          background-color: #fff;
+          box-shadow: 5px 10px 16px rgba(51, 51, 51, 0.05),
+            -5px 10px 16px rgba(51, 51, 51, 0.05);
+          text-align: center;
+          padding-top: 31px;
+          padding-bottom: 31px;
+          padding-left: 110px;
+          padding-right: 110px;
+          color: #8a8a8a;
+          font-size: 17px;
+        }
+      }
+      .table {
+        background-color: white;
+        position: absolute;
+        top: 132px;
+        right: 180px;
+        z-index: 100;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        width: 400px;
+        padding: 30px;
+        .all-infos {
+          overflow-y: auto;
+          height: 150px;
+          .each-info {
+            display: flex;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #ebebeb;
+            .info {
+              width: 300px;
+              span {
+                font-weight: 300;
+                font-size: 14px;
+                cursor: pointer;
+                transition: all 0.5s;
+              }
+              span:hover{
+                color: #fcb941;
+              }
+              p {
+                padding-top: 10px;
+                font-size: 14px;
+                font-weight: 400;
+                color: #8e8e8e;
+              }
+            }
+            .photo {
+              position: relative;
+              top: 20px;
+              img {
+                max-width: 60px;
+              }
+            }
+            .option {
+              i {
+                font-size: 13px;
+                color: #8b8c8d;
+                position: relative;
+                top: 35px;
+                cursor: pointer;
+                transition: all 0.5s;
+              }
+              i:hover{
+                color: black;
+              }
+            }
+          }
+        }
+        .bottom {
+          .total {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 10px;
+            padding-bottom: 15px;
+            span {
+              text-transform: uppercase;
+              font-weight: 300;
+            }
+          }
+          .buttons {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            text-decoration: none;
+            text-align: center;
+            .view {
+              width: 100% !important;
+              color: white;
+              background-color: #fcb941;
+              border: 1px solid #fcb941;
+              cursor: pointer;
+              transition: all 0.5s;
+            }
+            .view:hover {
+              color: #fcb941;
+              background-color: white;
+            }
+            .checkout {
+              cursor: pointer;
+              transition: all 0.5s;
+              width: 100% !important;
+              color: #fcb941;
+              background-color: white;
+              border: 1px solid #fcb941;
+              i {
+                padding-left: 10px;
+              }
+            }
+            .checkout:hover {
+              color: white;
+              background-color: #fcb941;
+            }
+          }
+        }
       }
     }
   }
