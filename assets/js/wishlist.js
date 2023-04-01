@@ -74,6 +74,10 @@ $(function () {
                     wishlisted.splice(indexDeleted, 1)
                 }
                 localStorage.setItem("wishlisted", JSON.stringify(wishlisted))
+                if (wishlisted.length == 0) {
+                    productTable.classList.add("d-none")
+                    cartPart.classList.remove("d-none")
+                }
                 let num = parseInt(document.querySelector(".wishlist-sup").innerText) - 1;
                 document.querySelector(".wishlist-sup").innerText = num
             })

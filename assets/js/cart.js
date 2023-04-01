@@ -87,6 +87,7 @@ $(function () {
                 if (decreasedProduct.count > 1) {
                     decreasedProduct.count -= 1;
                     minusBtns[i].nextElementSibling.value = decreasedProduct.count;
+
                     let productLastPrice = minusBtns[i].parentElement.nextElementSibling.innerText.substring(1);
                     productLastPrice = (parseFloat(productLastPrice) - parseFloat(decreasedProduct.price.substring(1))).toFixed(2);
                     minusBtns[i].parentElement.nextElementSibling.innerText = "$ " + productLastPrice;
@@ -128,6 +129,10 @@ $(function () {
                     cartProducts.splice(indexDeleted, 1)
                 }
                 localStorage.setItem("cartProducts", JSON.stringify(cartProducts))
+                if (cartProducts.length == 0) {
+                    productTable.classList.add("d-none")
+                    cartPart.classList.remove("d-none")
+                }
                 let num = parseInt(document.querySelector(".cart sup").innerText) - parseInt(deleteBtns[i].parentElement.previousElementSibling.previousElementSibling.children[1].value);
                 document.querySelector(".cart sup").innerText = num
                 subtotal.innerText = "$" + `${total(JSON.parse(localStorage.getItem("cartProducts"))).toFixed(2)}`;

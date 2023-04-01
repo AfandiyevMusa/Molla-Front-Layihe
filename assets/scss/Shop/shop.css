@@ -1437,7 +1437,13 @@ main #shop .all .col3 {
   width: 25%;
 }
 
-main #shop .all .col3 .filters {
+main #shop .all .col3 .left-part {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
+}
+
+main #shop .all .col3 .left-part .filters {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1446,37 +1452,37 @@ main #shop .all .col3 .filters {
           justify-content: space-between;
 }
 
-main #shop .all .col3 .filters h6 {
+main #shop .all .col3 .left-part .filters h6 {
   font-weight: 400;
   font-size: 16px;
 }
 
-main #shop .all .col3 .filters span {
+main #shop .all .col3 .left-part .filters span {
   color: #fcb941;
   font-weight: 300;
   cursor: pointer;
   font-size: 15px;
 }
 
-main #shop .all .col3 .accordion {
+main #shop .all .col3 .left-part .accordion {
   padding-top: 20px;
   border: none !important;
   margin-left: -20px !important;
 }
 
-main #shop .all .col3 .accordion .accordion-item {
+main #shop .all .col3 .left-part .accordion .accordion-item {
   border: none !important;
   border-top: 1px solid #ebebeb !important;
   padding-top: 7px !important;
   padding-bottom: 7px !important;
 }
 
-main #shop .all .col3 .accordion .accordion-item .accordion-header {
+main #shop .all .col3 .left-part .accordion .accordion-item .accordion-header {
   background-color: transparent !important;
   border: none !important;
 }
 
-main #shop .all .col3 .accordion .accordion-item .accordion-header button {
+main #shop .all .col3 .left-part .accordion .accordion-item .accordion-header button {
   border: none !important;
   background-color: white;
   color: black;
@@ -1484,19 +1490,19 @@ main #shop .all .col3 .accordion .accordion-item .accordion-header button {
   font-weight: 300;
 }
 
-main #shop .all .col3 .accordion .accordion-item .accordion-header button i {
+main #shop .all .col3 .left-part .accordion .accordion-item .accordion-header button i {
   color: black;
 }
 
-main #shop .all .col3 .accordion .accordion-item .accordion-collapse {
+main #shop .all .col3 .left-part .accordion .accordion-item .accordion-collapse {
   width: 100%;
 }
 
-main #shop .all .col3 .accordion .accordion-item .accordion-collapse .category {
+main #shop .all .col3 .left-part .accordion .accordion-item .accordion-collapse .category {
   padding-top: 20px;
 }
 
-main #shop .all .col3 .accordion .accordion-item .accordion-collapse .category .each-category {
+main #shop .all .col3 .left-part .accordion .accordion-item .accordion-collapse .category .each-category {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1505,7 +1511,7 @@ main #shop .all .col3 .accordion .accordion-item .accordion-collapse .category .
           justify-content: space-between;
 }
 
-main #shop .all .col3 .accordion .accordion-item .accordion-collapse .category .each-category span {
+main #shop .all .col3 .left-part .accordion .accordion-item .accordion-collapse .category .each-category span {
   cursor: pointer;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -1513,11 +1519,11 @@ main #shop .all .col3 .accordion .accordion-item .accordion-collapse .category .
   font-weight: 300;
 }
 
-main #shop .all .col3 .accordion .accordion-item .accordion-collapse .category .each-category span:hover {
+main #shop .all .col3 .left-part .accordion .accordion-item .accordion-collapse .category .each-category span:hover {
   color: #fcb941;
 }
 
-main #shop .all .col3 .accordion .accordion-item .accordion-collapse .category .each-category p {
+main #shop .all .col3 .left-part .accordion .accordion-item .accordion-collapse .category .each-category p {
   font-weight: 300;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1534,22 +1540,22 @@ main #shop .all .col3 .accordion .accordion-item .accordion-collapse .category .
   background-color: #f8f8f8;
 }
 
-main #shop .all .col3 .accordion .accordion-item .accordion-collapse .size .each-input {
+main #shop .all .col3 .left-part .accordion .accordion-item .accordion-collapse .size .each-input {
   padding-bottom: 5px;
 }
 
-main #shop .all .col3 .accordion .accordion-item .accordion-collapse .size .each-input input {
+main #shop .all .col3 .left-part .accordion .accordion-item .accordion-collapse .size .each-input input {
   height: 15px;
   width: 15px;
   accent-color: black;
 }
 
-main #shop .all .col3 .accordion .accordion-item .accordion-collapse .size .each-input label {
+main #shop .all .col3 .left-part .accordion .accordion-item .accordion-collapse .size .each-input label {
   font-size: 16px;
   padding-left: 10px;
 }
 
-main #shop .all .col3 .accordion .accordion-item .accordion-collapse .colour button {
+main #shop .all .col3 .left-part .accordion .accordion-item .accordion-collapse .colour button {
   width: 27px;
   height: 27px;
   border: none;
@@ -1557,26 +1563,26 @@ main #shop .all .col3 .accordion .accordion-item .accordion-collapse .colour but
   margin-right: 5px;
 }
 
-main #shop .all .col3 .accordion .accordion-item .accordion-collapse .brands .each-input {
+main #shop .all .col3 .left-part .accordion .accordion-item .accordion-collapse .brands .each-input {
   padding-bottom: 5px;
 }
 
-main #shop .all .col3 .accordion .accordion-item .accordion-collapse .brands .each-input input {
+main #shop .all .col3 .left-part .accordion .accordion-item .accordion-collapse .brands .each-input input {
   height: 15px;
   width: 15px;
   accent-color: black;
 }
 
-main #shop .all .col3 .accordion .accordion-item .accordion-collapse .brands .each-input label {
+main #shop .all .col3 .left-part .accordion .accordion-item .accordion-collapse .brands .each-input label {
   font-size: 16px;
   padding-left: 10px;
 }
 
-main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price {
+main #shop .all .col3 .left-part .accordion .accordion-item .accordion-collapse .price {
   width: 100%;
 }
 
-main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .up {
+main #shop .all .col3 .left-part .accordion .accordion-item .accordion-collapse .price .up {
   padding-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1586,7 +1592,7 @@ main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .up 
           justify-content: space-between;
 }
 
-main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .up span {
+main #shop .all .col3 .left-part .accordion .accordion-item .accordion-collapse .price .up span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1596,24 +1602,24 @@ main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .up 
   font-weight: 300;
 }
 
-main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .up p {
+main #shop .all .col3 .left-part .accordion .accordion-item .accordion-collapse .price .up p {
   color: #fcb941;
   font-weight: 300;
   cursor: pointer;
 }
 
-main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom {
+main #shop .all .col3 .left-part .accordion .accordion-item .accordion-collapse .price .bottom {
   width: 100%;
 }
 
-main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom .range-slider {
+main #shop .all .col3 .left-part .accordion .accordion-item .accordion-collapse .price .bottom .range-slider {
   height: 5px;
   position: relative;
   background-color: #eeeeee;
   border-radius: 2px;
 }
 
-main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom .range-slider .range-selected {
+main #shop .all .col3 .left-part .accordion .accordion-item .accordion-collapse .price .bottom .range-slider .range-selected {
   height: 100%;
   left: 0%;
   right: 0%;
@@ -1622,11 +1628,11 @@ main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .bot
   background-color: black;
 }
 
-main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom .range-input {
+main #shop .all .col3 .left-part .accordion .accordion-item .accordion-collapse .price .bottom .range-input {
   position: relative;
 }
 
-main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom .range-input input {
+main #shop .all .col3 .left-part .accordion .accordion-item .accordion-collapse .price .bottom .range-input input {
   position: absolute;
   width: 100%;
   height: 5px;
@@ -1637,7 +1643,7 @@ main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .bot
   -moz-appearance: none;
 }
 
-main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom .range-input input::-webkit-slider-thumb {
+main #shop .all .col3 .left-part .accordion .accordion-item .accordion-collapse .price .bottom .range-input input::-webkit-slider-thumb {
   height: 20px;
   width: 20px;
   border-radius: 50%;
@@ -1647,7 +1653,7 @@ main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .bot
   -webkit-appearance: none;
 }
 
-main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom .range-input input::-moz-range-thumb {
+main #shop .all .col3 .left-part .accordion .accordion-item .accordion-collapse .price .bottom .range-input input::-moz-range-thumb {
   height: 15px;
   width: 15px;
   border-radius: 50%;
@@ -1657,7 +1663,7 @@ main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .bot
   -moz-appearance: none;
 }
 
-main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom .range-price {
+main #shop .all .col3 .left-part .accordion .accordion-item .accordion-collapse .price .bottom .range-price {
   margin: 30px 0;
   width: 100%;
   display: -webkit-box;
@@ -1668,11 +1674,11 @@ main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .bot
           justify-content: space-between;
 }
 
-main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom .range-price label {
+main #shop .all .col3 .left-part .accordion .accordion-item .accordion-collapse .price .bottom .range-price label {
   margin-right: 5px;
 }
 
-main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom .range-price input {
+main #shop .all .col3 .left-part .accordion .accordion-item .accordion-collapse .price .bottom .range-price input {
   border: none;
   outline: none;
   width: 55px;
@@ -1680,34 +1686,34 @@ main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .bot
   color: #494949;
 }
 
-main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom .range-price .min {
+main #shop .all .col3 .left-part .accordion .accordion-item .accordion-collapse .price .bottom .range-price .min {
   position: relative;
   right: 50px;
   bottom: 8px;
 }
 
-main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom .range-price p {
+main #shop .all .col3 .left-part .accordion .accordion-item .accordion-collapse .price .bottom .range-price p {
   z-index: 1;
   color: #494949;
 }
 
-main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom .range-price .max {
+main #shop .all .col3 .left-part .accordion .accordion-item .accordion-collapse .price .bottom .range-price .max {
   position: relative;
   bottom: 8px;
   left: 12px;
 }
 
-main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom .range-price .max-part {
+main #shop .all .col3 .left-part .accordion .accordion-item .accordion-collapse .price .bottom .range-price .max-part {
   position: relative;
   left: 60px;
 }
 
-main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom .range-price input:first-of-type {
+main #shop .all .col3 .left-part .accordion .accordion-item .accordion-collapse .price .bottom .range-price input:first-of-type {
   margin-right: 15px;
 }
 
-main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom .range-price input::-webkit-outer-spin-button,
-main #shop .all .col3 .accordion .accordion-item .accordion-collapse .price .bottom .range-price input::-webkit-inner-spin-button {
+main #shop .all .col3 .left-part .accordion .accordion-item .accordion-collapse .price .bottom .range-price input::-webkit-outer-spin-button,
+main #shop .all .col3 .left-part .accordion .accordion-item .accordion-collapse .price .bottom .range-price input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }

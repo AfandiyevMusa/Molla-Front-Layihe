@@ -142,20 +142,17 @@ $(function () {
         responsive: {
             0: {
                 items: 1,
-                nav: true,
-                loop: false
+                nav: true
             },
-            600: {
+            576: {
                 items: 2,
-                nav: false,
-                loop: false
+                nav: false
             },
-            750: {
-                items: 1,
-                nav: true,
-                loop: false
+            900: {
+                items: 2,
+                nav: false
             },
-            1000: {
+            1200: {
                 items: 4,
                 nav: true,
                 loop: false
@@ -210,22 +207,24 @@ $(function () {
     })
     //Trending Products Carousel
     $('.trending-products').owlCarousel({
-        loop: true,
+        loop: false,
         margin: 10,
         responsiveClass: true,
         responsive: {
             0: {
                 items: 1,
-                nav: true,
-                loop: false
+                nav: true
             },
-            600: {
-                items: 3,
-                nav: false,
-                loop: false
+            576: {
+                items: 2,
+                nav: false
             },
-            1000: {
+            900: {
                 items: 3,
+                nav: false
+            },
+            1200: {
+                items: 4,
                 nav: true,
                 loop: false
             }
@@ -233,8 +232,8 @@ $(function () {
     })
 
     //Trending Products TabMenu
-    let names = document.querySelectorAll("#trending-products .all-of-them .heads .list-type h6");
-    let trends = document.querySelectorAll("#trending-products .all-of-them .products-list .allcards .allcontents");
+    let names = document.querySelectorAll("#trending-products .all .list-type h6");
+    let trends = document.querySelectorAll("#trending-products .all .allcards .allcontents");
 
     names.forEach(eachName => {
         eachName.addEventListener("click", function (e) {
@@ -259,16 +258,18 @@ $(function () {
         responsive: {
             0: {
                 items: 1,
-                nav: true,
-                loop: false
+                nav: true
             },
-            600: {
-                items: 3,
-                nav: false,
-                loop: false
+            576: {
+                items: 2,
+                nav: false
             },
-            1000: {
-                items: 3,
+            900: {
+                items: 2,
+                nav: false
+            },
+            1200: {
+                items: 4,
                 nav: true,
                 loop: false
             }
@@ -276,8 +277,8 @@ $(function () {
     })
 
     //Top Selling Products TabMenu
-    let sellnames = document.querySelectorAll("#top-selling-products .all-of-them .heads .list-type h6");
-    let topSellingProducts = document.querySelectorAll("#top-selling-products .all-of-them .products-list .allcards .allcontents");
+    let sellnames = document.querySelectorAll("#top-selling-products  .heads .list-type h6");
+    let topSellingProducts = document.querySelectorAll("#top-selling-products  .products-list .allcards .allcontents");
 
     sellnames.forEach(eachSellName => {
         eachSellName.addEventListener("click", function (e) {
@@ -472,4 +473,6 @@ $(function () {
             localStorage.setItem("imageArr", JSON.stringify(imageArr));
         })
     });
+
+    let cartBtn = document.querySelector("#main-nav .shopping")
 })
