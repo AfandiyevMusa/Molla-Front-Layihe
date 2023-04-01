@@ -451,7 +451,7 @@ $(function () {
         }
     })
 
-    //for productslider
+    //for product detail
     let links = document.querySelectorAll(".cards")
     let imageArr = [];
 
@@ -459,13 +459,16 @@ $(function () {
         eachLink.addEventListener("click", function (e){
             let mainImg = this.firstElementChild.children[2].getAttribute("src");
             let hovImg = this.firstElementChild.children[3].getAttribute("src");
+            let productName = this.children[1].children[1].innerText;
+            let productPrice = this.children[1].children[2].innerText;
             
             imageArr.push({
                 image1: mainImg,
-                image2: hovImg
+                image2: hovImg,
+                name: productName,
+                price: productPrice
             });
-            console.log(mainImg);
-            console.log(hovImg);
+            
             localStorage.setItem("imageArr", JSON.stringify(imageArr));
         })
     });

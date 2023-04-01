@@ -212,13 +212,33 @@ $(function () {
     let imgL1 = document.querySelector("#product-info .all .left .left-p .first");
     let imgL2 = document.querySelector("#product-info .all .left .left-p .second");
     let imgR = document.querySelector("#product-info .all .left .right-p img");
+    let imgName = document.querySelector("#product-info .all .right .text h4");
+    let imgPrice = document.querySelector("#product-info .all .right .text h3");
 
     imageArr.forEach(eachArr => {
         imgL1.setAttribute("src", eachArr.image1)
         imgL2.setAttribute("src", eachArr.image2)
         imgR.setAttribute("src", eachArr.image1);
+        imgName.innerHTML = eachArr.name;
+        imgPrice.innerHTML = eachArr.price;
     });
    
-    
-    
+    //change between photos
+    let attr2 = imgL2.getAttribute("src");
+    imgL2.addEventListener("click", function(e){
+        imgR.setAttribute("src", attr2);
+        imgL1.classList.remove("active");
+        imgL1.classList.add("not-active");
+        imgL2.classList.add("active");
+        imgL2.classList.remove("not-active");
+    })
+
+    let attr1 = imgL1.getAttribute("src");
+    imgL1.addEventListener("click", function(e){
+        imgR.setAttribute("src", attr1);
+        imgL1.classList.add("active");
+        imgL1.classList.remove("not-active");
+        imgL2.classList.remove("active");
+        imgL2.classList.add("not-active");
+    })
 })
